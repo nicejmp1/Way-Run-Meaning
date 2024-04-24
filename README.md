@@ -52,5 +52,8 @@ http://marathon.pe.kr/index_fleemarket.html
 
 # 디자인 참고 레퍼런스
 
+# 웹사이트 구조
+![image](https://github.com/nicejmp1/Way-Run-Meaning/assets/163364733/64b388b7-f37f-419e-8b52-ea2ac6f93b80)
+
 
 
