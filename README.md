@@ -1,12 +1,9 @@
 <div align="center">
 <img width="1000" alt="image" src="https://github.com/nicejmp1/Way-Run-Meaning/assets/163364733/caa572e4-5383-4f84-a7cb-c6396728a005">
-
 </div>
-
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Gasoek+One&size=30&pause=1000&color=186FFB&center=true&vCenter=true&random=false&width=600&height=200&lines=Never+Stop!+%E2%9C%8B;Keep+going+together+running)](https://git.io/typing-svg)
-  
+
 </div>
 
 
