@@ -1,5 +1,5 @@
 ![image](https://github.com/nicejmp1/Way-Run-Meaning/assets/163364733/d4282f12-64df-4aeb-9754-2efc3688c86a)
-# 프로젝트 참여자
+# 팀 프로젝트 참여자
 - 박정민
 - 황인지
 - 안지은
