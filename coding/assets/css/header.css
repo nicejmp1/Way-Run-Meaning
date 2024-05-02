@@ -2,6 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid var(--mainColor);
+
 }
 
 .header__inner .logo {
@@ -15,9 +17,7 @@
     background-image: url(../img/WRM-logo.png);
     margin-bottom: 10px;
     margin-top: 10px;
-
 }
-
 
 .header__inner .nav ul {
     display: flex;
@@ -62,3 +62,28 @@
     font-family: var(--fontG);
     color: var(--mainColor);
 }
+
+/* 
+@media (max-width: 800px) {
+
+    .header__inner .logo {
+        width: 80px;
+        display: none;
+    }
+
+    .header__inner .nav ul {
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .header__inner .nav ul li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .header__inner .nav ul li a {
+        border-bottom: 1px solid transparent;
+
+    }
+} */

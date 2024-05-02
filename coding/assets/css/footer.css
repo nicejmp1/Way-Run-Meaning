@@ -1,3 +1,33 @@
 #footer {}
 
 #footer .container {}
+
+.footer1 .footer-logo {
+    background-image: url(../img/WRM-logo.png);
+}
+
+.footer2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer2 ul li {
+    margin: 0 10px;
+    text-align: center;
+
+}
+
+.footer2 ul li a {
+    display: inline-block;
+    color: var(--mainColor);
+    border-right: 1px solid red;
+    padding: 0 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.footer2 ul li:last-child a {
+    border-right: none;
+}

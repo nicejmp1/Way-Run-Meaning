@@ -1,14 +1,16 @@
+/* body */
 body {
     background-color: var(--white);
 }
 
+/* wrap */
 #wrap {
     width: 100%;
-    border-bottom: 1px solid var(--mainColor);
 }
 
 .container {
     max-width: 1260px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -35,6 +37,23 @@ body {
     bottom: 50%;
 }
 
+.line-top {
+    width: 100%;
+    height: 1px;
+    position: relative;
+    border-bottom: 3px solid var(--black);
+}
+
+.line-top::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--maincolor);
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+}
+
 .line-hover:hover {
     text-decoration: underline;
     text-underline-position: under;
@@ -45,4 +64,15 @@ body {
     text-decoration: underline;
     text-underline-position: under;
     color: var(--pointcolor);
+}
+
+/* main */
+#main {
+    min-height: 50vh;
+}
+
+/* footer */
+
+#footer {
+    margin-top: 6rem;
 }
