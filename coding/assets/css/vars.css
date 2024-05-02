@@ -1,0 +1,46 @@
+:root {
+    --fontN: "NanumSquareNeo";
+    --fontG: "GmarketSans";
+    --fontM: "Montserrat";
+
+    --mainColor: #186ffb;
+    --pointColor: #46ff85;
+
+    --white: #fff;
+    --white100: #fff;
+    --white200: #e1e1e1;
+    --white300: #dcdcdc;
+    --white400: #ddd;
+    --white500: #fff;
+    --white600: #b2b2b2;
+
+    --black: #000;
+    --black100: #111;
+    --black200: #222;
+    --black300: #333;
+    --black400: #444;
+    --black500: #555;
+    --black600: #666;
+    --black700: #777;
+
+    /* 기본 폰트 설정 */
+    font-family: var(--fontN);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* 아이폰 가로 모드에서 글씨 확대 금지 */
+    -webkit-text-size-adjust: 100%;
+
+    /* 모든 이미지
+    --snsInsta: url(../img/sns-instar.svg);
+    --snsGit: url(../img/sns-git.svg);
+    --snsYoutube: url(../img/sns-youtube.svg);
+    --snsAsk: url(../img/sns-spek.svg); */
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 14px;
+    }
+}
