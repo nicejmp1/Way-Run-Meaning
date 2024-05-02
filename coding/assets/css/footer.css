@@ -1,33 +1,72 @@
 #footer {}
 
-#footer .container {}
+#footer .container {
+    position: relative;
+}
 
-.footer1 .footer-logo {
-    background-image: url(../img/WRM-logo.png);
+.footer1 {}
+
+.footer1 img {
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 40px;
+
+}
+
+.footer2 {
+    margin-bottom: 40px;
 }
 
 .footer2 ul {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .footer2 ul li {
     margin: 0 10px;
     text-align: center;
-
+    color: var(--mainColor);
 }
 
 .footer2 ul li a {
     display: inline-block;
     color: var(--mainColor);
-    border-right: 1px solid red;
     padding: 0 20px;
-    font-size: 10px;
+    font-size: 8px;
     text-transform: uppercase;
 }
 
 .footer2 ul li:last-child a {
     border-right: none;
+    margin-right: 0;
+}
+
+.footer3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer3 ul {
+    color: var(--mainColor);
+    display: flex;
+}
+
+.footer3 ul li {
+    margin-top: 10px;
+}
+
+.footer3 ul li a {
+    color: var(--mainColor);
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 8px;
 }
