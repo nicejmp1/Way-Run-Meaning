@@ -11,9 +11,9 @@ var swiper = new Swiper('.swiper-container.two', {
         depth: 100,
         slideShadows: true,
         stretch: 100,
-        scale: 0.9
+        scale: 0.8
     },
     autoplay: {
-        delay: 1000,
+        delay: 2000,
     }
 });

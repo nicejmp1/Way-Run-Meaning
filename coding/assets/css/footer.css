@@ -1,70 +1,140 @@
-#footer .container {
-    position: relative;
+#footer {
+    background-color: var(--black100);
+    height: auto;
 }
 
-
-.footer1 img {
-    width: 120px;
-    height: 60px;
-    /* position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, -50%);
-    margin-bottom: 40px; */
-    margin-bottom: 40px;
-    margin-left: 45%;
+#footer hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-color: #717171;
 }
 
-.footer2 {
-    margin-bottom: 40px;
+#footer p.maile {
+    font-size: 10px;
+    padding-bottom: 60px;
+    color: var(--black700);
 }
 
-.footer2 ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.footer2 ul li {
-    margin: 0 10px;
-    text-align: center;
-    color: var(--mainColor);
-}
-
-.footer2 ul li a {
-    display: inline-block;
-    color: var(--mainColor);
-    padding: 0 20px;
-    font-size: 8px;
-    text-transform: uppercase;
-}
-
-.footer2 ul li:last-child a {
-    border-right: none;
-    margin-right: 0;
-}
-
-.footer3 {
+.footer__lnner {
+    padding: 2.5rem 0;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
 }
 
-.footer3 ul {
-    color: var(--mainColor);
+.footer__lnner .left {
+    width: 50%;
+}
+
+.footer__lnner .left>ul {
     display: flex;
+    margin-bottom: 60px;
 }
 
-.footer3 ul li {
-    margin-top: 10px;
+.footer__lnner .left>ul>li {
+    padding: 0 30px
 }
 
-.footer3 ul li a {
-    color: var(--mainColor);
+.footer__lnner .left ul>li>a {
     display: inline-block;
-    padding: 0 20px;
-    font-size: 8px;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.footer__lnner .left ul>li>ul {
+    text-align: center;
+}
+
+.footer__lnner .left ul>li>ul>li>a {
+    margin: 12px 0;
+    font-size: 12px;
+    color: var(--black700);
+}
+
+.footer__lnner .left ul li ul .footer__lnner .right {
+    width: 50%;
+    text-align: right;
+}
+
+.footer__bot p.copy {
+    font-size: 12px;
+    color: #3a3a3a;
+}
+
+.footer__bot {
+    display: flex;
+    /* Flexbox 레이아웃 활성화 */
+    justify-content: space-between;
+    /* 왼쪽과 오른쪽 컨텐츠를 양 끝으로 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    /* Padding for visual spacing */
+}
+
+.footer__bot .left_bot,
+.footer__bot .right_bot {
+    display: flex;
+    /* 각 컨테이너도 Flexbox로 설정 */
+}
+
+.footer__bot .right_bot ul {
+    display: flex;
+    /* 오른쪽 부분의 리스트를 가로로 배치 */
+    padding: 0;
+    /* 기본 padding 제거 */
+    list-style: none;
+    /* 리스트 스타일 제거 */
+}
+
+.footer__bot .right_bot ul li {
+    margin-right: 10px;
+    /* 리스트 아이템 간의 간격 */
+}
+
+.footer__bot .right_bot ul li a {
+    font-size: 10px;
+    color: var(--white);
+}
+
+.footer__bot .right_bot ul li:last-child {
+    margin-right: 0;
+    /* 마지막 리스트 아이템의 마진 제거 */
+}
+
+.footer__lnner .right .sns ul {
+    display: flex;
+    justify-content: right;
+}
+
+.footer__lnner .right .sns li {
+    margin-left: 4px;
+}
+
+.footer__lnner .right .sns li a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    background-image: url(../img/sns-discord.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.footer__lnner .right .sns li:nth-child(2) a {
+    background-image: url(../img/sns-insta.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer__lnner .right .sns li:nth-child(3) a {
+    background-image: url(../img/sns-twitter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer__lnner .right .sns li:nth-child(4) a {
+    background-image: url(../img/sns-youtube.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
