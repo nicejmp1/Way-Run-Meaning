@@ -10,6 +10,7 @@
 }
 
 .header__inner .logo a {
+    margin-top: 10px;
     width: 98px;
     height: 53px;
     display: inline-block;
@@ -39,7 +40,7 @@
 
 .header__inner .nav ul li.active a {
     border-bottom: 6px solid var(--pointColor);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .header__inner .nav ul li a:hover {
@@ -59,6 +60,7 @@
     display: inline-block;
     font-family: var(--fontG);
     color: var(--mainColor);
+    font-weight: 300;
 }
 
 @media (max-width: 1000px) {

@@ -100,6 +100,7 @@ main__ranking : 인기있는 마라톤
 
 }
 
+
 /* main__info_post */
 
 .main__info_post {
@@ -110,6 +111,60 @@ main__ranking : 인기있는 마라톤
 .main__info_post .main_post {
     display: flex;
     flex-wrap: wrap;
+}
+
+.main__info_post .main_post>div {
+    position: relative;
+    margin-bottom: 20px;
+    /* 각 게시물 사이 간격 조정 */
+    padding: 20px;
+    border-radius: 10px;
+    /* 모서리 둥글게 처리 */
+    /* 배경색 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* 그림자 효과 */
+}
+
+/* 각 게시물을 감싸는 div에 대한 스타일 */
+.post1,
+.post2,
+.post3,
+.post4,
+.post5,
+.post6 {
+    position: relative;
+    /* 상대적 위치 설정 */
+    margin-bottom: 20px;
+    /* 게시물 간 간격 */
+
+    /* 경계선 추가 */
+    padding: 10px;
+    /* 내부 여백 */
+}
+
+/* 하트 아이콘 위치 및 스타일 */
+.heart-icon {
+    position: absolute;
+    top: -218px;
+    /* 이미지 상단에서 10px 아래 */
+    right: 40px;
+    /* 이미지 우측에서 10px 내부 */
+    width: 36px;
+    /* 하트 아이콘 너비 */
+    height: 30px;
+    /* 하트 아이콘 높이 */
+    cursor: pointer;
+    /* 마우스 오버시 포인터 모양 변경 */
+    z-index: 5;
+    /* 다른 요소 위에 표시 */
+}
+
+/* 하트 아이콘 이미지 스타일 */
+.heart-icon img {
+    width: 100%;
+    /* 부모 요소에 맞게 너비 조정 */
+    height: auto;
+    /* 높이 자동 조정 */
 }
 
 .main__info_post .main_post .post1,
