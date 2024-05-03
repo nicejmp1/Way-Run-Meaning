@@ -120,9 +120,6 @@ main__ranking : 인기있는 마라톤
     padding: 20px;
     border-radius: 10px;
     /* 모서리 둥글게 처리 */
-    /* 배경색 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    /* 그림자 효과 */
 }
 
 /* 각 게시물을 감싸는 div에 대한 스타일 */
@@ -194,6 +191,7 @@ main__ranking : 인기있는 마라톤
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 26px;
+    /* object-fit: cover; */
 }
 
 .main__info_post .main_post .post1 .map,

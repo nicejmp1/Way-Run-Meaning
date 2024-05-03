@@ -3,20 +3,24 @@
     height: auto;
 }
 
+
 #footer hr {
     margin-top: 10px;
     margin-bottom: 20px;
+    height: 1px;
+    background-color: var(--mainColor);
     border-color: var(--mainColor);
+    border-style: solid none none;
 }
 
 #footer p.maile {
     font-size: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     color: var(--mainColor);
 }
 
 .footer__lnner {
-    padding: 2.5rem 0;
+    padding: 1.2rem 0;
     display: flex;
     justify-content: space-between;
 }
