@@ -1,20 +1,18 @@
-#footer {}
-
 #footer .container {
     position: relative;
 }
 
-.footer1 {}
 
 .footer1 img {
     width: 120px;
     height: 60px;
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, -50%);
+    margin-bottom: 40px; */
     margin-bottom: 40px;
-
+    margin-left: 45%;
 }
 
 .footer2 {
