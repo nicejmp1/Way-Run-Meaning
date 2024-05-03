@@ -1,6 +1,11 @@
-/* * {
-    outline: 1px solid red;
-} */
+/*
+main__inner : 메인 
+main__title : 메인 타이틀
+main__img   : 메인 이미지
+main__info  : 마라톤 카테고리
+main__info_post : 마라톤 메인 포스터
+main__ranking : 인기있는 마라톤
+**/
 
 .main__title {
     margin-top: 100px;
@@ -42,37 +47,37 @@
     background-size: cover;
 }
 
-.main_info {
+.main__info {
     text-align: center;
     margin-top: 200px;
 }
 
-.main_info span {
+.main__info span {
     font-size: 80px;
     font-weight: 800;
     font-family: var(--fontM);
     color: var(--mainColor);
 }
 
-.main_info ul {
+.main__info ul {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
 
-.main_info ul li {
+.main__info ul li {
     margin: 0 20px;
     font-size: 20px;
 }
 
-.main_info ul li.active a {
+.main__info ul li.active a {
     background-color: var(--mainColor);
     color: var(--white);
     font-weight: 800;
 }
 
-.main_info ul li a {
+.main__info ul li a {
     width: 140px;
     padding: 10px 0;
     display: inline-block;
@@ -81,38 +86,38 @@
     border-radius: 30px;
 }
 
-.main_info ul li a:hover {
+.main__info ul li a:hover {
     background-color: var(--mainColor);
     color: var(--white);
     font-weight: 800;
 }
 
 @media (max-width: 1000px) {
-    .main_info ul li a {
+    .main__info ul li a {
         width: 100px;
         font-size: 16px;
     }
 
 }
 
-/* main_info_post */
+/* main__info_post */
 
-.main_info_post {
+.main__info_post {
     margin-bottom: 200px;
     text-align: center;
 }
 
-.main_info_post .main_post {
+.main__info_post .main_post {
     display: flex;
     flex-wrap: wrap;
 }
 
-.main_info_post .main_post .post1,
-.main_info_post .main_post .post2,
-.main_info_post .main_post .post3,
-.main_info_post .main_post .post4,
-.main_info_post .main_post .post5,
-.main_info_post .main_post .post6 {
+.main__info_post .main_post .post1,
+.main__info_post .main_post .post2,
+.main__info_post .main_post .post3,
+.main__info_post .main_post .post4,
+.main__info_post .main_post .post5,
+.main__info_post .main_post .post6 {
     width: 406px;
     height: auto;
     margin-left: 0.6rem;
@@ -123,12 +128,12 @@
     line-height: 1;
 }
 
-.main_info_post .main_post .post1 img,
-.main_info_post .main_post .post2 img,
-.main_info_post .main_post .post3 img,
-.main_info_post .main_post .post4 img,
-.main_info_post .main_post .post5 img,
-.main_info_post .main_post .post6 img {
+.main__info_post .main_post .post1 img,
+.main__info_post .main_post .post2 img,
+.main__info_post .main_post .post3 img,
+.main__info_post .main_post .post4 img,
+.main__info_post .main_post .post5 img,
+.main__info_post .main_post .post6 img {
     height: 540px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,53 +141,53 @@
     margin-bottom: 26px;
 }
 
-.main_info_post .main_post .post1 .map,
-.main_info_post .main_post .post2 .map,
-.main_info_post .main_post .post3 .map,
-.main_info_post .main_post .post4 .map,
-.main_info_post .main_post .post5 .map,
-.main_info_post .main_post .post6 .map {
+.main__info_post .main_post .post1 .map,
+.main__info_post .main_post .post2 .map,
+.main__info_post .main_post .post3 .map,
+.main__info_post .main_post .post4 .map,
+.main__info_post .main_post .post5 .map,
+.main__info_post .main_post .post6 .map {
     font-size: 14px;
     color: var(--back500);
     font-weight: 300;
     margin-bottom: 10px;
 }
 
-.main_info_post .main_post .post1 .tit,
-.main_info_post .main_post .post2 .tit,
-.main_info_post .main_post .post3 .tit,
-.main_info_post .main_post .post4 .tit,
-.main_info_post .main_post .post5 .tit,
-.main_info_post .main_post .post6 .tit {
+.main__info_post .main_post .post1 .tit,
+.main__info_post .main_post .post2 .tit,
+.main__info_post .main_post .post3 .tit,
+.main__info_post .main_post .post4 .tit,
+.main__info_post .main_post .post5 .tit,
+.main__info_post .main_post .post6 .tit {
     font-size: 24px;
     color: var(--mainColor);
     margin-bottom: 10px;
 }
 
-.main_info_post .main_post .post1 .price,
-.main_info_post .main_post .post2 .price,
-.main_info_post .main_post .post3 .price,
-.main_info_post .main_post .post4 .price,
-.main_info_post .main_post .post5 .price,
-.main_info_post .main_post .post6 .price {
+.main__info_post .main_post .post1 .price,
+.main__info_post .main_post .post2 .price,
+.main__info_post .main_post .post3 .price,
+.main__info_post .main_post .post4 .price,
+.main__info_post .main_post .post5 .price,
+.main__info_post .main_post .post6 .price {
     font-size: 18px;
     color: var(--back500);
     margin-bottom: 10px;
 }
 
-.main_info_post .main_post .post1 .day,
-.main_info_post .main_post .post2 .day,
-.main_info_post .main_post .post3 .day,
-.main_info_post .main_post .post4 .day,
-.main_info_post .main_post .post5 .day,
-.main_info_post .main_post .post6 .day {
+.main__info_post .main_post .post1 .day,
+.main__info_post .main_post .post2 .day,
+.main__info_post .main_post .post3 .day,
+.main__info_post .main_post .post4 .day,
+.main__info_post .main_post .post5 .day,
+.main__info_post .main_post .post6 .day {
     font-size: 14px;
     color: var(--back500);
     margin-bottom: 60px;
     font-weight: 300;
 }
 
-.main_info_post .pl a {
+.main__info_post .pl a {
     display: inline-block;
     width: 140px;
     padding: 10px 0px 10px 0px;
@@ -192,14 +197,14 @@
     color: var(--white);
 }
 
-/* main_ranking */
-.main_ranking {
+/* main__ranking */
+.main__ranking {
     background: var(--mainColor);
     text-align: center;
     height: 1200px;
 }
 
-.main_ranking .rank {
+.main__ranking .rank {
     display: inline-block;
     margin-top: 200px;
     font-size: 80px;
@@ -208,16 +213,14 @@
     margin-bottom: 150px;
 }
 
-.main_ranking .rank_post {
+.main__ranking .rank_post {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-.rank_post>div {}
-
-.main_ranking .rank_post_1 {
+.main__ranking .rank_post_1 {
     background-color: var(--white);
     width: 300px;
     height: 420px;
@@ -226,17 +229,17 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
-.main_ranking .rank_post_1 img {
+.main__ranking .rank_post_1 img {
     width: 100%;
     height: 320px;
 }
 
-.main_ranking .rank_post_1 h2 {
+.main__ranking .rank_post_1 h2 {
     color: var(--mainColor);
     font-size: 24px;
 }
 
-.main_ranking .rank_post_2 {
+.main__ranking .rank_post_2 {
     background-color: var(--white);
     width: 300px;
     height: 420px;
@@ -245,17 +248,17 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
-.main_ranking .rank_post_2 img {
+.main__ranking .rank_post_2 img {
     width: 100%;
     height: 320px;
 }
 
-.main_ranking .rank_post_2 h2 {
+.main__ranking .rank_post_2 h2 {
     color: var(--mainColor);
     font-size: 24px;
 }
 
-.main_ranking .rank_post_3 {
+.main__ranking .rank_post_3 {
     background-color: var(--white);
     width: 300px;
     height: 420px;
@@ -264,12 +267,87 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
-.main_ranking .rank_post_3 img {
+.main__ranking .rank_post_3 img {
     width: 100%;
     height: 320px;
 }
 
-.main_ranking .rank_post_3 h2 {
+.main__ranking .rank_post_3 h2 {
     color: var(--mainColor);
     font-size: 24px;
+}
+
+/* main__sub__title */
+.main__sub__title {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.main__sub__title span {
+    display: inline-block;
+    font-size: 60px;
+    margin-bottom: 100px;
+    font-family: var(--fontG);
+}
+
+.main__sub__title .main__sub__post {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__sub__title .main__sub__post .post1,
+.main__sub__title .main__sub__post .post2,
+.main__sub__title .main__sub__post .post3 {
+    width: 406px;
+    height: auto;
+    margin-left: 0.6rem;
+    margin-right: 0.125rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1;
+}
+
+.main__sub__title .main__sub__post .post1 img,
+.main__sub__title .main__sub__post .post2 img,
+.main__sub__title .main__sub__post .post3 img {
+    height: 540px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 26px;
+}
+
+.main__sub__title .main__sub__post .post1 .map,
+.main__sub__title .main__sub__post .post2 .map,
+.main__sub__title .main__sub__post .post3 .map {
+    font-size: 14px;
+    color: var(--back500);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.main__sub__title .main__sub__post .post1 .tit,
+.main__sub__title .main__sub__post .post2 .tit,
+.main__sub__title .main__sub__post .post3 .tit {
+    font-size: 24px;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+}
+
+.main__sub__title .main__sub__post .post1 .price,
+.main__sub__title .main__sub__post .post2 .price,
+.main__sub__title .main__sub__post .post3 .price {
+    font-size: 18px;
+    color: var(--back500);
+    margin-bottom: 10px;
+}
+
+.main__sub__title .main__sub__post .post1 .day,
+.main__sub__title .main__sub__post .post2 .day,
+.main__sub__title .main__sub__post .post3 .day {
+    font-size: 14px;
+    color: var(--back500);
+    margin-bottom: 60px;
+    font-weight: 300;
 }
