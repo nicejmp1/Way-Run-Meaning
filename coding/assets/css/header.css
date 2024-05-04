@@ -20,17 +20,81 @@
 }
 
 
-.header__inner .nav ul {
+.header__inner .nav>ul {
+    display: flex;
+    position: relative;
+    /* 이 부분 확인 */
+    overflow: visible;
+    /* 메인 메뉴가 서브메뉴를 잘라내지 않도록 */
+}
+
+.header__inner .nav>ul>li {
+    margin: 0 2rem;
+    padding: 0 3rem;
+    position: relative;
+    /* 서브메뉴 위치 조정을 위해 */
+}
+
+.header__inner .nav>ul>li>a {
+    display: inline-block;
+    font-family: var(--fontG);
+    border-bottom: 6px solid transparent;
+    color: var(--mainColor);
+    font-weight: 300;
+    text-decoration: none;
+    /* 기본 링크 스타일 제거 */
+}
+
+.header__inner .nav>ul>li.active>a {
+    border-bottom: 6px solid var(--pointColor);
+    font-weight: 500;
+}
+
+.header__inner .nav>ul>li>a:hover {
+    border-bottom: 6px solid var(--pointColor);
+    transition: all 0.3s;
+}
+
+/* 서브메뉴 스타일 */
+.header__inner .nav>ul>li>ul {
+    display: none;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    background-color: var(--mainColor);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+
+.header__inner .nav>ul>li>ul>li>a {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block;
+    color: var(--white);
+}
+
+.header__inner .nav>ul>li>ul>li>a:hover {
+    background-color: #2a8dde;
+    font-weight: 600;
+    color: var(--black);
+}
+
+/* .header__inner .nav>ul {
     display: flex;
 }
 
-.header__inner .nav ul li {
+.header__inner .nav>ul>li {
     position: relative;
     margin: 0 2rem;
     padding: 0 3rem;
 }
 
-.header__inner .nav ul li a {
+.header__inner .nav>ul>li>a {
     display: inline-block;
     font-family: var(--fontG);
     border-bottom: 6px solid transparent;
@@ -38,16 +102,30 @@
     font-weight: 300;
 }
 
-.header__inner .nav ul li.active a {
+.header__inner .nav>ul>li.active>a {
     border-bottom: 6px solid var(--pointColor);
     font-weight: 500;
 }
 
-.header__inner .nav ul li a:hover {
+.header__inner .nav>ul>li>a:hover {
     border-bottom: 6px solid var(--pointColor);
     transition: all 0.3s;
+} */
+
+/* .header__inner .submenu>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: var(--fontG);
+    font-weight: 300;
 }
 
+.header__inner .submenu>li>a {
+    display: inline-block;
+    padding: 10px;
+
+} */
 
 .header__inner .member ul {
     display: flex;

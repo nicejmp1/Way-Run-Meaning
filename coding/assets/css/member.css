@@ -8,14 +8,14 @@
 */
 
 /* member__form : 濡쒓렇�� */
-#main .member__inner {
+/* #main .member__inner {
     border: 1px solid var(--mainColor);
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 50px;
     width: 580px;
     margin-bottom: 50px;
-}
+} 
 
 #main p {
     font-size: 36px;
@@ -81,7 +81,7 @@
 }
 
 /* member__checkID */
-#main .member__inner {
+/* #main .member__inner {
     border: 1px solid var(--mainColor);
     border-radius: 30px;
     margin: 0 auto;
@@ -153,7 +153,7 @@
 }
 
 /* |-- member__insert : �뚯썝媛��� */
-#main .insert__inner {
+/* #main .insert__inner {
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 50px;
@@ -225,7 +225,7 @@
 }
 
 /* -- member__congrats */
-#main__congrats .member__inner {
+/* #main__congrats .member__inner {
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 10px;
@@ -281,4 +281,4 @@
     margin-bottom: 0;
     margin-top: 480px;
     display: inline-block;
-}
+}  */

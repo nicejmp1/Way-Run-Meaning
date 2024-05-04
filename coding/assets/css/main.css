@@ -37,7 +37,7 @@ main__ranking : 인기있는 마라톤
     background-image: linear-gradient(to bottom, var(--white), var(--mainColor) 70%);
 }
 
-.main__img img {
+.main__img>img {
     width: 1260px;
     height: 100%;
     margin-bottom: 200px;
