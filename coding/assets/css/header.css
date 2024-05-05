@@ -1,3 +1,11 @@
+/* 
+header__inner : 전체적인 헤더 영역
+header__inner .logo : 헤더 logo
+header__inner .nav : 메뉴바
+header__inner .member : 로그인 영역
+*/
+
+
 .header__inner {
     display: flex;
     align-items: center;
@@ -6,19 +14,19 @@
 }
 
 .header__inner .logo {
-    width: 100px;
-}
-
-.header__inner .logo a {
-    margin-top: 10px;
-    width: 98px;
-    height: 53px;
+    margin-top: 5px;
+    width: 120px;
+    height: 60px;
     display: inline-block;
-    background-image: url(../img/WRM-logo.png);
+    object-fit: cover;
     /* margin-bottom: 0.625rem;
     margin-top: 0.625rem; */
 }
 
+.header__inner .logo a img {
+    width: 100px;
+    height: 50px;
+}
 
 .header__inner .nav>ul {
     display: flex;
@@ -72,7 +80,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    font-size: 14px;
+    font-size: 1ㅋpx;
     font-weight: 300;
     display: inline-block;
     color: var(--white);

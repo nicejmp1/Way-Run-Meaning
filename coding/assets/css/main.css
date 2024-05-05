@@ -5,22 +5,24 @@ main__img   : 메인 이미지
 main__info  : 마라톤 카테고리
 main__info_post : 마라톤 메인 포스터
 main__ranking : 인기있는 마라톤
+main__banner
 **/
 
-.main__title {
-    margin-top: 100px;
-    text-align: center;
-    color: var(--mainColor);
 
+#main {
+    background-color: var(--backgroundColor);
+}
+
+
+.main__title {
+    width: 100%;
+    height: auto;
 }
 
 .main__title img {
     width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 50px;
+    height: auto;
+    display: block;
 }
 
 .main__title h2 {
