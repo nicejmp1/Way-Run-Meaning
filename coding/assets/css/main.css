@@ -161,8 +161,8 @@ main__banner
 .main__info .container .main__post .post1,
 .post2,
 .post3 {
-    width: 390px;
-    height: 636px;
+    width: 348px;
+    height: 542px;
     background-color: var(--white);
     display: flex;
     align-items: center;
@@ -174,9 +174,8 @@ main__banner
 .main__info .container .main__post .post1>img,
 .main__info .container .main__post .post2>img,
 .main__info .container .main__post .post3>img {
-
-    width: 324px;
-    height: 398px;
+    width: 277px;
+    height: 348px;
     border-radius: 20px;
     margin-top: 36px;
 }
@@ -194,7 +193,8 @@ main__banner
 .main__post .post2 .tit,
 .main__post .post3 .tit {
     margin-top: 16px;
-    font-size: 22px;
+    font-size: 20px;
+    margin-left: 10px;
     color: var(--mainColor);
 }
 
@@ -204,15 +204,19 @@ main__banner
     margin-top: 10px;
     font-size: 16px;
     font-weight: 400;
+    margin-left: 10px;
+
 }
 
 .main__post .post1 .day,
 .main__post .post2 .day,
 .main__post .post3 .day {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--black500);
     margin-bottom: 20px;
+    margin-left: 10px;
+
 }
 
 .main__post .post1 a,
@@ -247,8 +251,8 @@ main__banner
 .main__info .container .main__post2 .post4,
 .post5,
 .post6 {
-    width: 390px;
-    height: 636px;
+    width: 348px;
+    height: 542px;
     background-color: var(--white);
     display: flex;
     align-items: center;
@@ -260,8 +264,8 @@ main__banner
 .main__info .container .main__post2 .post4>img,
 .main__info .container .main__post2 .post5>img,
 .main__info .container .main__post2 .post6>img {
-    width: 324px;
-    height: 398px;
+    width: 277px;
+    height: 348px;
     border-radius: 20px;
     margin-top: 36px;
 }
@@ -279,7 +283,8 @@ main__banner
 .main__post2 .post5 .tit,
 .main__post2 .post6 .tit {
     margin-top: 16px;
-    font-size: 22px;
+    margin-left: 10px;
+    font-size: 20px;
     color: var(--mainColor);
 }
 
@@ -288,6 +293,7 @@ main__banner
 .main__post2 .post6 .pip {
     margin-top: 10px;
     font-size: 16px;
+    margin-left: 10px;
     font-weight: 400;
 }
 
@@ -295,7 +301,8 @@ main__banner
 .main__post2 .post5 .day,
 .main__post2 .post6 .day {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
+    margin-left: 10px;
     color: var(--black500);
     margin-bottom: 20px;
 }
@@ -388,8 +395,8 @@ main__banner
 .main__rank .container .main__rank__post .rank1,
 .rank2,
 .rank3 {
-    width: 390px;
-    height: 636px;
+    width: 348px;
+    height: 542px;
     background-color: var(--white);
     display: flex;
     align-items: center;
@@ -415,9 +422,8 @@ main__banner
 .main__rank .container .main__rank__post .rank1>img,
 .main__rank .container .main__rank__post .rank2>img,
 .main__rank .container .main__rank__post .rank3>img {
-
-    width: 324px;
-    height: 398px;
+    width: 277px;
+    height: 348px;
     border-radius: 20px;
     margin-top: 36px;
 }
@@ -435,8 +441,9 @@ main__banner
 .main__rank__post .rank2 .tit,
 .main__rank__post .rank3 .tit {
     margin-top: 16px;
-    font-size: 22px;
+    font-size: 20px;
     color: var(--mainColor);
+    margin-left: 10px;
 }
 
 .main__rank__post .rank1 .pip,
@@ -445,15 +452,19 @@ main__banner
     margin-top: 10px;
     font-size: 16px;
     font-weight: 400;
+    margin-left: 10px;
+
 }
 
 .main__rank__post .rank1 .day,
 .main__rank__post .rank2 .day,
 .main__rank__post .rank3 .day {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--black500);
     margin-bottom: 20px;
+    margin-left: 10px;
+
 }
 
 .main__rank__post .rank1 a,
