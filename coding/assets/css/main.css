@@ -10,6 +10,7 @@ main__banner
 
 #wrap {
     background-color: var(--backgroundColor);
+    overflow: hidden
 }
 
 .main__title {
@@ -19,7 +20,7 @@ main__banner
     margin-bottom: 150px;
 }
 
-.main__title>img {
+.main__title .banner {
     width: 100%;
     height: auto;
     display: block;
@@ -47,6 +48,8 @@ main__banner
     color: var(--mainColor);
     font-family: var(--fontN);
     font-weight: 600;
+    transition: all 0.3s;
+
 }
 
 .main__title .banner2>a:hover {
@@ -233,6 +236,7 @@ main__banner
     border-radius: 0 0 20px 20px;
     color: var(--mainColor);
     font-size: 16px;
+    transition: all 0.3s;
 }
 
 .main__post .post1 a:hover,
@@ -322,6 +326,8 @@ main__banner
     border-radius: 0 0 20px 20px;
     color: var(--mainColor);
     font-size: 16px;
+    transition: all 0.3s;
+
 }
 
 .main__post2 .post4 a:hover,
@@ -348,6 +354,8 @@ main__banner
     color: var(--mainColor);
     border-radius: 30px;
     font-size: 20px;
+    transition: all 0.3s;
+
 }
 
 .main__info>a:hover {
@@ -484,6 +492,8 @@ main__banner
     border-radius: 0 0 20px 20px;
     color: var(--mainColor);
     font-size: 16px;
+    transition: all 0.3s;
+
 }
 
 .main__rank__post .rank1 a:hover,
@@ -507,15 +517,18 @@ main__banner
     text-align: center;
 }
 
-.main__crew .container>h5 {
+.main__crew .container .main__crew__rank {
+    color: var(--mainColor);
+}
+
+.main__crew .container .main__crew__rank h5 {
     font-size: 46px;
     font-weight: 900;
     color: var(--mainColor);
     font-family: var(--fontM);
 }
 
-.main__crew .container>p {
-    color: var(--mainColor);
+.main__crew .containe .main__crew__rank p {
     font-size: 20px;
     font-family: var(--fontN);
 }
@@ -754,7 +767,51 @@ main__banner
 }
 
 .main__goal .goal__box {
+    display: flex;
+    text-align: left;
+    justify-content: center;
     margin-top: 80px;
+}
+
+.main__goal .goal__box .goal__box1,
+.main__goal .goal__box .goal__box2 {
+    width: 346px;
+    height: 446px;
+    background-color: var(--mainColor);
+    margin-right: 20px;
+}
+
+.main__goal .goal__box .goal__box3 {
+    width: 346px;
+    height: 446px;
+    background-color: var(--mainColor);
+}
+
+.main__goal .goal__box .goal__box1>p,
+.main__goal .goal__box .goal__box2>p,
+.main__goal .goal__box .goal__box3>p {
+    color: var(--white);
+    font-size: 34px;
+    font-family: var(--fontG);
+    padding: 40px 40px 0px 40px;
+}
+
+.main__goal .goal__box .goal__box1>span,
+.main__goal .goal__box .goal__box2>span,
+.main__goal .goal__box .goal__box3>span {
+    color: var(--white);
+    font-size: 12px;
+    font-family: var(--fontG);
+    padding: 40px 40px 0px 40px;
+}
+
+.main__goal .goal__box .goal__box1 .star,
+.main__goal .goal__box .goal__box2 .star2,
+.main__goal .goal__box .goal__box3 .star3 {
+    width: 100%;
+    height: 100%;
+    margin-left: 140px;
+    margin-top: 20px;
 }
 
 .cover {
@@ -762,9 +819,7 @@ main__banner
     margin-bottom: 10rem;
     display: flex;
     margin-top: 10vh;
-    transform: rotate(-6deg);
     background-color: var(--mainColor);
-
 }
 
 .cover>p {
