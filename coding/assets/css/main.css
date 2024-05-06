@@ -764,11 +764,12 @@ main__banner
     margin-top: 10vh;
     transform: rotate(-6deg);
     background-color: var(--mainColor);
+
 }
 
 .cover>p {
     font-size: 5vw;
     font-weight: 400;
     color: var(--white);
-    font-family: var(--fontG);
+    font-family: var(--fontP);
 }
