@@ -70,7 +70,7 @@
                     <div class="main__title">
                         <img src="./assets/img/svg/banner.svg" alt="">
                         <div class="banner2">
-                            <img src="./assets/img/good.svg" alt=""><a href="#">웨이런미닝 모토 바로가기</a>
+                            <img src="./assets/img/good.svg" alt=""><a href="#main__motto">웨이런미닝 모토 바로가기</a>
                         </div>
                     </div>
                 </div>
@@ -270,7 +270,7 @@
                 </div>
                 <!-- //main__crew -->
 
-                <div class="main__motto">
+                <div id="main__motto">
                     <div class="container">
                         <img src="./assets/img/Our Motto.svg" alt="">
                         <div class="box1">
@@ -309,6 +309,21 @@
                                 <img src="./assets/img/post1.png" alt="">
                                 <p>웨이런미닝과 함께 달릴 준비 되셨나요?</p>
                             </div>
+                        </div>
+                        <div class="box3">
+                            <img src="./assets/img/character.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cover">
+                    <p class="first-parallel"></p>
+                </div>
+                <div class="main__goal">
+                    <div class="container">
+                        <h6>GOAL</h6>
+                        <p>목표</p>
+                        <div class="goal__box">
+                            <img src="./assets/img/goal.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -385,7 +400,53 @@
                 })
             })
         }
+
+        const pTag1 = document.querySelector('.first-parallel')
+
+
+        const textArr1 = 'Way Run meaning Marthon & Running '.split(' ')
+
+
+        let count1 = 0
+
+
+        initTexts(pTag1, textArr1)
+
+
+        function initTexts(element, textArray) {
+            textArray.push(...textArray)
+            for (let i = 0; i < textArray.length; i++) {
+                element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`
+            }
+        }
+
+        function marqueeText(count, element, direction) {
+            if (count > element.scrollWidth / 2) {
+                element.style.transform = `translate3d(0, 0, 0)`
+                count = 0
+            }
+            element.style.transform = `translate3d(${direction * count}px, 0, 0)`
+
+            return count
+        }
+
+        function animate() {
+            count1++
+
+            count1 = marqueeText(count1, pTag1, -1)
+
+            window.requestAnimationFrame(animate)
+        }
+
+        function scrollHandler() {
+            count1 += 15
+
+        }
+
+        window.addEventListener('scroll', scrollHandler)
+        animate()
     </script>
+
 </body>
 
 </html>
