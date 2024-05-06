@@ -137,6 +137,7 @@ main__banner
 
 .main__info .container {
     margin-top: 11.25rem;
+    width: 1100px;
 }
 
 .main__info .container>h3 {
@@ -362,6 +363,10 @@ main__banner
     margin-top: 150px;
 }
 
+.main__rank .container {
+    width: 1100px;
+}
+
 .main__rank .container>h4 {
     font-size: 46px;
     font-weight: 900;
@@ -480,6 +485,10 @@ main__banner
 
 }
 
+.main__crew .container {
+    width: 1100px;
+}
+
 .main__crew .container>h5 {
     font-size: 46px;
     font-weight: 900;
@@ -502,12 +511,11 @@ main__banner
 .crew__rank .crew2,
 .crew__rank .crew3,
 .crew__rank .crew4 {
-    width: 300px;
-    height: 330px;
+    width: 260px;
+    height: 310px;
     background-color: var(--mainColor);
     border-radius: 20px;
-    margin-right: 20px;
-
+    margin-right: 10px;
 }
 
 .crew__rank .crew1 .box1,
@@ -547,7 +555,7 @@ main__banner
 .crew__rank .crew4 .box2 {
     text-align: center;
     color: var(--white);
-    font-size: 30px;
+    font-size: 28px;
     font-family: var(--fontG);
     font-weight: bold;
 }
@@ -556,10 +564,17 @@ main__banner
 .crew__rank .crew2 .box3,
 .crew__rank .crew3 .box3,
 .crew__rank .crew4 .box3 {
-    width: 258px;
-    height: 180px;
+    width: 226px;
+    height: 160px;
     background-color: var(--white);
     margin: 0 20px;
+    border-radius: 20px;
+}
+
+.crew__rank .crew1 .box3>img,
+.crew__rank .crew2 .box3>img,
+.crew__rank .crew3 .box3>img,
+.crew__rank .crew4 .box3>img {
     border-radius: 20px;
 }
 
@@ -617,6 +632,8 @@ main__banner
     width: 60%;
 }
 
-.main__mooto .box1 .box1-2 {
+
+.main__mooto .box1 .box1-2 .box1-2-1 {
+    width: 100%;
     height: 82%;
 }
