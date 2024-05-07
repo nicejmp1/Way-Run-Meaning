@@ -65,6 +65,7 @@
         <!-- //header -->
 
         <main id="main" role="main">
+            <div id="cursor"></div>
             <div class="main__inner">
                 <div class="container">
                     <div class="main__title">
@@ -574,6 +575,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./assets/js/movetext.js"></script>
     <script src="./assets/plugin/slider.js"></script>
     <script src="./assets/js/gsap.js"></script>
@@ -613,6 +615,12 @@
                 });
             })
         })
+
+        document.addEventListener('mousemove', function (e) {
+            const cursor = document.getElementById('cursor');
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
 
     </script>
 

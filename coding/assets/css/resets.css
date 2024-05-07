@@ -128,3 +128,16 @@ table {
     width: 100%;
     border-spacing: 0;
 }
+
+#cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s linear;
+    z-index: 10000;
+    cursor: none;
+}
