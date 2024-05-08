@@ -36,20 +36,32 @@
                         <ul>
                             <li><a href="information.html">대회일정</a>
                                 <ul class="submenu">
-                                    <li><a href="information.html">전체</a></li>
-                                    <li><a href="#">마라톤</a></li>
-                                    <li><a href="#">플로깅</a></li>
+                                    <li><a href="information.html">마라톤</a></li>
+                                    <li><a href="#">러닝</a></li>
+                                    <li><a href="#">이벤트</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">커뮤니티</a>
                                 <ul class="submenu">
-                                    <li><a href="#">커뮤</a></li>
-                                    <li><a href="#">커뮤</a></li>
-                                    <li><a href="#">커뮤</a></li>
+                                    <li><a href="#">개인/크루활동</a></li>
+                                    <li><a href="#">개인/크루사진</a></li>
+                                    <li><a href="#">#</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">게시판</a></li>
-                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">게시판</a>
+                                <ul class="submenu">
+                                    <li><a href="#">훈련팁</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">#</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">마이페이지</a>
+                                <ul class="submenu">
+                                    <li><a href="#">다이어리</a></li>
+                                    <li><a href="#">메달보관함</a></li>
+                                    <li><a href="#">#</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div class="member">
@@ -217,7 +229,7 @@
                         <div class="cont1">
                             <h2>Our Services</h2>
                             <p>마이페이지를 이용한 일정관리, <br>
-                                양한 대회 일정을 한눈에 파악하고, <br>
+                                다양한 대회 일정을 한눈에 파악하고, <br>
                                 훈련 커뮤니티로 실력을 향상 시켜보세요!!</p>
                         </div>
                         <div class="cont2">
@@ -358,7 +370,7 @@
                                     <span>CREW LEADER </span>
                                 </div>
                                 <div class="box3">
-                                    <img src="./assets/img/peop.svg" alt="">
+                                    <img src="./assets/img/peop.svg" alt="크루장사진">
                                 </div>
                             </div>
                             <div class="crew2">
@@ -372,7 +384,7 @@
                                     <span>CREW LEADER </span>
                                 </div>
                                 <div class="box3">
-                                    <img src="./assets/img/peop.svg" alt="">
+                                    <img src="./assets/img/peop.svg" alt="크루장사진">
                                 </div>
                             </div>
                             <div class="crew3">
@@ -386,7 +398,7 @@
                                     <span>CREW LEADER </span>
                                 </div>
                                 <div class="box3">
-                                    <img src="./assets/img/peop.svg" alt="">
+                                    <img src="./assets/img/peop.svg" alt="크루장사진">
                                 </div>
                             </div>
                             <div class="crew4">
@@ -400,7 +412,7 @@
                                     <span>CREW LEADER </span>
                                 </div>
                                 <div class="box3">
-                                    <img src="./assets/img/peop.svg" alt="">
+                                    <img src="./assets/img/peop.svg" alt="크루장사진">
                                 </div>
                             </div>
                         </div>
@@ -410,7 +422,7 @@
 
                 <div id="main__motto">
                     <div class="container">
-                        <img src="./assets/img/Our Motto.svg" alt="">
+                        <img src="./assets/img/Our Motto.svg" alt="크루장사진">
                         <div class="box1">
                             <div class="box1-1">
                                 <div class="box1-1-1">
@@ -464,7 +476,7 @@
                             <a href="">
                                 <div class="goal__box1">
                                     <p>마라톤 <br>
-                                        일정을 <br>
+                                        일정을 한눈에 <br>
                                         확인하고
                                     </p>
                                     <span>marathon schedule check</span>
@@ -481,8 +493,8 @@
                             <a href="#">
                                 <div class="goal__box2">
                                     <p>러너들과 <br>
-                                        소통하며 <br>
-                                        기록하고
+                                        소통하고 <br>
+                                        기록하며
                                     </p>
                                     <span>Communicate and record with runners</span>
                                     <div class="star2">
@@ -574,26 +586,37 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script src="./assets/js/movetext.js"></script>
     <script src="./assets/plugin/slider.js"></script>
     <script src="./assets/js/gsap.js"></script>
 
     <script>
-        window.onload = function () {
-            const navList = document.querySelectorAll(".nav >ul>li");
+        $(function () {
+            $(".nav>ul>li").mouseover(function () {  //메뉴에 오버했을 때 서브메뉴를 보여줘라!
+                $(this).find(".submenu").stop().slideDown(200);
+            });
+            $(".nav>ul>li").mouseout(function () {
+                $(this).find(".submenu").stop().slideUp(200);
+            });
+        });
+    </script>
 
-            navList.forEach(function (navItem) {
-                navItem.addEventListener("mouseover", function () {
-                    this.querySelector(".submenu").style.display = "block";
-                })
+    <script>
+        // window.onload = function () {
+        //     const navList = document.querySelectorAll(".nav >ul>li");
 
-                navItem.addEventListener("mouseout", function () {
-                    this.querySelector(".submenu").style.display = "none";
-                })
-            })
-        }
+        //     navList.forEach(function (navItem) {
+        //         navItem.addEventListener("mouseover", function () {
+        //             this.querySelector(".submenu").style.display = "block";
+        //         })
 
+        //         navItem.addEventListener("mouseout", function () {
+        //             this.querySelector(".submenu").style.display = "none";
+        //         })
+        //     })
+        // }
 
         document.addEventListener('DOMContentLoaded', function () {
             let boxs = document.querySelectorAll('.goal__box1, .goal__box2, .goal__box3');
