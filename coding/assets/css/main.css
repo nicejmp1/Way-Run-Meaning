@@ -67,7 +67,6 @@ main__banner
 
 .main__sub {
     width: 100%;
-    height: 640px;
     background-color: var(--mainColor);
 }
 
@@ -79,7 +78,7 @@ main__banner
 
 .main__sub .cont1>h2 {
     width: 500px;
-    margin-top: 125px;
+    margin-top: 160px;
     font-size: 60px;
     background-color: var(--backgroundColor);
     margin-bottom: 56px;
@@ -109,12 +108,12 @@ main__banner
 .main__sub .cont2 .box {
     width: 260px;
     height: 170px;
-    margin-top: 150px;
+    margin-top: 194px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--backgroundColor);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .main__sub .cont2 .box>img {
@@ -124,9 +123,9 @@ main__banner
 
 .main__sub .cont2>p {
     margin-top: 40px;
+    margin-bottom: 160px;
     color: var(--white);
 }
-
 
 
 @media (max-width: 1000px) {
@@ -139,7 +138,7 @@ main__banner
 
 
 .main__info .container {
-    margin-top: 11.25rem;
+    margin-top: 160px;
     width: 1100px;
     text-align: center;
 }
@@ -149,16 +148,18 @@ main__banner
     font-weight: 900;
     font-family: var(--fontM);
     color: var(--mainColor);
+    margin-bottom: 5px;
 }
 
 .main__info .container>p {
     color: var(--mainColor);
     font-size: 20px;
     font-family: var(--fontN);
+    font-weight: bold;
 }
 
 .main__info .container .main__post {
-    margin-top: 120px;
+    margin-top: 80px;
     display: flex;
 }
 
@@ -179,10 +180,10 @@ main__banner
 .main__info .container .main__post .post1>img,
 .main__info .container .main__post .post2>img,
 .main__info .container .main__post .post3>img {
-    width: 277px;
+    width: 283px;
     height: 348px;
     border-radius: 20px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
 .main__info .container .main__post .post1 .content1,
@@ -197,7 +198,7 @@ main__banner
 .main__post .post1 .tit,
 .main__post .post2 .tit,
 .main__post .post3 .tit {
-    margin-top: 16px;
+    margin-top: 10px;
     font-size: 20px;
     margin-left: 10px;
     color: var(--mainColor);
@@ -207,7 +208,7 @@ main__banner
 .main__post .post1 .pip,
 .main__post .post2 .pip,
 .main__post .post3 .pip {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
@@ -217,12 +218,11 @@ main__banner
 .main__post .post1 .day,
 .main__post .post2 .day,
 .main__post .post3 .day {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 14px;
     color: var(--black500);
     margin-bottom: 20px;
     margin-left: 10px;
-
 }
 
 .main__post .post1 a,
@@ -235,7 +235,7 @@ main__banner
     text-align: center;
     border-radius: 0 0 20px 20px;
     color: var(--mainColor);
-    font-size: 16px;
+    font-size: 14px;
     transition: all 0.3s;
 }
 
@@ -271,10 +271,10 @@ main__banner
 .main__info .container .main__post2 .post4>img,
 .main__info .container .main__post2 .post5>img,
 .main__info .container .main__post2 .post6>img {
-    width: 277px;
+    width: 283px;
     height: 348px;
     border-radius: 20px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
 .main__info .container .main__post2 .post4 .content4,
@@ -289,7 +289,7 @@ main__banner
 .main__post2 .post4 .tit,
 .main__post2 .post5 .tit,
 .main__post2 .post6 .tit {
-    margin-top: 16px;
+    margin-top: 10px;
     margin-left: 10px;
     font-size: 20px;
     color: var(--mainColor);
@@ -299,7 +299,7 @@ main__banner
 .main__post2 .post4 .pip,
 .main__post2 .post5 .pip,
 .main__post2 .post6 .pip {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 16px;
     margin-left: 10px;
     font-weight: 400;
@@ -308,7 +308,7 @@ main__banner
 .main__post2 .post4 .day,
 .main__post2 .post5 .day,
 .main__post2 .post6 .day {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 14px;
     margin-left: 10px;
     color: var(--black500);
@@ -325,7 +325,7 @@ main__banner
     text-align: center;
     border-radius: 0 0 20px 20px;
     color: var(--mainColor);
-    font-size: 16px;
+    font-size: 14px;
     transition: all 0.3s;
 
 }
@@ -346,9 +346,9 @@ main__banner
 
 .main__info>a {
     display: inline-block;
-    margin-top: 130px;
-    margin-bottom: 140px;
-    padding: 10px 50px;
+    margin-top: 80px;
+    margin-bottom: 160px;
+    padding: 10px 60px;
     background-color: var(--white);
     border: 1px solid var(--mainColor);
     color: var(--mainColor);
@@ -371,7 +371,7 @@ main__banner
 .main__info__box>a {
     display: inline-block;
     color: var(--white);
-    padding: 30px;
+    padding: 80px;
     font-size: 24px;
 }
 
@@ -379,7 +379,7 @@ main__banner
 /* main__rank */
 
 .main__rank {
-    margin-top: 150px;
+    margin-top: 160px;
 }
 
 .main__rank .container {
@@ -395,14 +395,16 @@ main__banner
 }
 
 .main__rank .container>p {
+    margin-top: 5px;
     color: var(--mainColor);
     font-size: 20px;
+    font-weight: bold;
     font-family: var(--fontN);
 }
 
 .main__rank .container .main__rank__post {
     display: flex;
-    margin-top: 74px;
+    margin-top: 80px;
 }
 
 .main__rank .container .main__rank__post .rank1,
@@ -417,28 +419,61 @@ main__banner
     border-radius: 20px;
     margin-right: 20px;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 160px;
 }
 
 .main__rank .container .main__rank__post .rank1::after {
     content: '1';
     background-image: url(../ico/wrm__ranking.svg);
     border: none;
-    width: 72px;
-    height: 120px;
-    font-size: 60px;
-    text-align: center;
+    width: 63.73px;
+    height: 103.89px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    color: var(--white);
+    left: 10%;
+}
+
+.main__rank .container .main__rank__post .rank2::after {
+    content: '2';
+    background-image: url(../ico/wrm__ranking.svg);
+    border: none;
+    width: 63.73px;
+    height: 103.89px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--white);
+    left: 10%;
+}
+
+.main__rank .container .main__rank__post .rank3::after {
+    content: '3';
+    background-image: url(../ico/wrm__ranking.svg);
+    border: none;
+    width: 63.73px;
+    height: 103.89px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--white);
     left: 10%;
 }
 
 .main__rank .container .main__rank__post .rank1>img,
 .main__rank .container .main__rank__post .rank2>img,
 .main__rank .container .main__rank__post .rank3>img {
-    width: 277px;
+    width: 283px;
     height: 348px;
     border-radius: 20px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
 .main__rank .container .main__rank__post .rank1 .content1,
@@ -453,7 +488,7 @@ main__banner
 .main__rank__post .rank1 .tit,
 .main__rank__post .rank2 .tit,
 .main__rank__post .rank3 .tit {
-    margin-top: 16px;
+    margin-top: 10px;
     font-size: 20px;
     color: var(--mainColor);
     margin-left: 10px;
@@ -463,7 +498,7 @@ main__banner
 .main__rank__post .rank1 .pip,
 .main__rank__post .rank2 .pip,
 .main__rank__post .rank3 .pip {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
@@ -473,7 +508,7 @@ main__banner
 .main__rank__post .rank1 .day,
 .main__rank__post .rank2 .day,
 .main__rank__post .rank3 .day {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 14px;
     color: var(--black500);
     margin-bottom: 20px;
@@ -491,7 +526,7 @@ main__banner
     text-align: center;
     border-radius: 0 0 20px 20px;
     color: var(--mainColor);
-    font-size: 16px;
+    font-size: 14px;
     transition: all 0.3s;
 
 }
@@ -507,8 +542,8 @@ main__banner
 
 .main__crew {
     background-color: #F7E1CD;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 160px;
+    padding-bottom: 133px;
 
 }
 
@@ -531,11 +566,12 @@ main__banner
 .main__crew .containe .main__crew__rank p {
     font-size: 20px;
     font-family: var(--fontN);
+    font-weight: bold;
 }
 
 .crew__rank {
     display: flex;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .crew__rank .crew1,
@@ -613,12 +649,12 @@ main__banner
 
 #main__motto {
     background-color: var(--mainColor);
-    padding-top: 200px;
+    padding-top: 186px;
     text-align: center;
 }
 
 #main__motto .container {
-    padding-bottom: 200px;
+    padding-bottom: 172px;
 }
 
 #main__motto .container>img {
@@ -633,11 +669,11 @@ main__banner
 }
 
 #main__motto .box1 .box1-1 {
-    width: 50%;
+    width: 40%;
 }
 
 #main__motto .box1 .box1-1-1 {
-    background-color: #fff;
+    background-color: var(--backgroundColor);
     height: 30%;
     display: flex;
     justify-content: center;
@@ -646,7 +682,7 @@ main__banner
 }
 
 #main__motto .box1 .box1-1-1>p {
-    font-size: 40px;
+    font-size: 50px;
     color: var(--mainColor);
     font-family: var(--fontG);
     font-weight: 800;
@@ -654,7 +690,7 @@ main__banner
 
 #main__motto .box1 .box1-1-2 {
     margin-top: 25px;
-    height: 46%;
+    height: 40%;
     background-color: var(--backgroundColor);
     border-radius: 20px;
     display: flex;
@@ -670,23 +706,24 @@ main__banner
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 60%;
 }
 
 #main__motto .box1 .box1-2>img {
-    height: 80%;
+    height: 74%;
 }
 
 #main__motto .box1 .box1-2>p {
     text-align: left;
     margin-right: 30px;
-    margin-top: 20px;
+    margin-top: 26px;
     color: var(--white);
     line-height: 2;
+    font-size: 16px;
 }
 
 #main__motto .box2 {
     display: flex;
-    padding: 40px;
 }
 
 #main__motto .box2 .box2-1 {
@@ -730,17 +767,20 @@ main__banner
 #main__motto .box2 .box2-2>p,
 #main__motto .box2 .box2-3>p {
     color: var(--white);
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 14px;
+    line-height: 2;
 }
 
 #main__motto .box3 {
-    width: 800px;
-    height: 430px;
+    width: 848px;
+    height: 433px;
+    margin-top: 110px;
     background-color: var(--backgroundColor);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 
 #main__motto .box3>img {
@@ -762,8 +802,9 @@ main__banner
 
 .main__goal .container>p {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     color: var(--mainColor);
+    font-weight: bold;
 }
 
 .main__goal .goal__box {
@@ -771,20 +812,23 @@ main__banner
     text-align: left;
     justify-content: center;
     margin-top: 80px;
+    margin-bottom: 160px;
 }
 
 .main__goal .goal__box .goal__box1,
 .main__goal .goal__box .goal__box2 {
-    width: 346px;
-    height: 446px;
+    width: 343px;
+    height: 444px;
     background-color: var(--mainColor);
     margin-right: 20px;
+    border-radius: 20px;
 }
 
 .main__goal .goal__box .goal__box3 {
-    width: 346px;
-    height: 446px;
+    width: 343px;
+    height: 444px;
     background-color: var(--mainColor);
+    border-radius: 20px;
 }
 
 .main__goal .goal__box .goal__box1>p,
@@ -816,9 +860,9 @@ main__banner
 
 .cover {
     width: 100vw;
-    margin-bottom: 10rem;
+    margin-bottom: 11rem;
     display: flex;
-    margin-top: 10vh;
+    margin-top: 160px;
     background-color: var(--mainColor);
 }
 
@@ -826,5 +870,5 @@ main__banner
     font-size: 5vw;
     font-weight: 400;
     color: var(--white);
-    font-family: var(--fontP);
+    font-family: var(--fontG);
 }

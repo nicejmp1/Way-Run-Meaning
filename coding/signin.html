@@ -64,26 +64,33 @@
         </header>
         <!-- //header -->
 
-        <div class="main__log">
-            <div class="log">
+        <div class="main__signin">
+            <div class="signin">
                 <div class="wrapper">
-                    <form id="login" tabindex="500">
-                        <h3>로그인</h3>
+                    <form id="sign" tabindex="500">
+                        <h3>회원가입</h3>
                         <div class="mail">
-                            <input type="mail" name="mail">
+                            <input type="mail" name="메일" placeholder="이메일 입력">
                             <label>Mail</label>
                         </div>
+                        <div class="uid">
+                            <input type="text" name="이름" placeholder="이름 입력">
+                            <label>User Name</label>
+                        </div>
                         <div class="passwd">
-                            <input type="password" name="password">
+                            <input type="password" name="비밀번호" placeholder="비밀번호 입력">
                             <label>Password</label>
                         </div>
-                        <div class="submit">
-                            <button class="dark">로그인</button>
+                        <div class="passwdC">
+                            <input type="password" name="비밀번호 확인" placeholder="비밀번호 확인">
+                            <label>Password</label>
                         </div>
-                        <div class="checks">
-                            <ul>
-                                <li><a href="checkIDPSW.html" class="line-under">아이디, 비밀번호를 잊어버리셨나요?</a></li>
-                            </ul>
+                        <div class="name">
+                            <input type="text" name="닉네임" placeholder="닉네임 입력">
+                            <label>Nickname</label>
+                        </div>
+                        <div class="submit">
+                            <button class="dark">가입완료</button>
                         </div>
                     </form>
 
