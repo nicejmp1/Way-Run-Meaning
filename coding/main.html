@@ -601,7 +601,28 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let boxs = document.querySelectorAll('.goal__box1, .goal__box2, .goal__box3');
 
+            boxs.forEach(function (box) {
+                box.addEventListener('mouseover', function () {
+                    this.style.backgroundColor = '#fff';
+                    this.querySelector('p').style.color = '#FF4409';
+                    this.querySelector('span').style.color = '#FF4409';
+                    this.querySelector('.svg-path').setAttribute('fill', '#FF4409'); // SVG 색상 변경
+                });
+                box.addEventListener('mouseout', function () {
+                    // 마우스가 요소에서 벗어날 때 색상 복원
+                    this.style.backgroundColor = ''; // 원래 백그라운드 색상으로 복원
+                    this.querySelector('p').style.color = ''; // 원래 텍스트 색상으로 복원
+                    this.querySelector('span').style.color = ''; // 원래 span 텍스트 색상으로 복원
+                    this.querySelector('.svg-path').setAttribute('fill', '#FBF1E7'); // SVG 색상 변경
+                });
+            })
+        })
+
+    </script>
 </body>
 
 </html>

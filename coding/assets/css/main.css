@@ -145,10 +145,11 @@ main__banner
 
 .main__info .container>h3 {
     font-size: 46px;
-    font-weight: 900;
-    font-family: var(--fontM);
+    font-weight: 800;
+    font-family: var(--fontG);
     color: var(--mainColor);
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .main__info .container>p {
@@ -686,6 +687,7 @@ main__banner
     color: var(--mainColor);
     font-family: var(--fontG);
     font-weight: 800;
+    line-height: 1.2;
 }
 
 #main__motto .box1 .box1-1-2 {
