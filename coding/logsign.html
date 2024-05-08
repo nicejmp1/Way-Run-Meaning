@@ -17,11 +17,17 @@
     <meta name="twitter:url" content="#">
     <meta name="twitter:image" content="#">
     <meta name="twitter:description" content="WayRunMeaning에서 다양한 마라톤 정보와 일정을 확인하세요!" />
+
     <link href="assets/ico/favicon.png" rel="favicon icon">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>WayRunMeaning : 러닝 & 마라톤</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <title>WayRunMeaning : 러닝 & 마라톤</title>
 </head>
 
 <body>
@@ -54,8 +60,7 @@
                     </nav>
                     <div class="member">
                         <ul>
-                            <li><a href="login.html">로그인</a></li>
-                            <li><a href="signin.html">회원가입</a></li>
+                            <li><a href="logsign.html">로그인</a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,17 +69,25 @@
         </header>
         <!-- //header -->
 
-        <div class="main__log">
-            <div class="log">
+        <div class="main_logsign">
+            <div class="logsign">
+                <div class="log-btn splits">
+                    <p>로그인을 해주세요!</p>
+                    <button>로그인하기</button>
+                </div>
+                <div class="sign-btn splits">
+                    <p>회원가입을 해주세요!</p>
+                    <button>가입하기</button>
+                </div>
                 <div class="wrapper">
                     <form id="login" tabindex="500">
                         <h3>로그인</h3>
                         <div class="mail">
-                            <input type="mail" name="mail">
+                            <input type="mail" name="메일" placeholder="이메일 입력">
                             <label>Mail</label>
                         </div>
                         <div class="passwd">
-                            <input type="password" name="password">
+                            <input type="password" name="비밀번호" placeholder="비밀번호 입력">
                             <label>Password</label>
                         </div>
                         <div class="submit">
@@ -86,7 +99,33 @@
                             </ul>
                         </div>
                     </form>
-
+                    <form id="signin" tabindex="502">
+                        <h3>회원가입</h3>
+                        <div class="mail">
+                            <input type="mail" name="메일" placeholder="이메일 입력">
+                            <div class="btn">이메일 중복검사</div>
+                            <label>Mail</label>
+                        </div>
+                        <div class="uid">
+                            <input type="text" name="이름" placeholder="이름 입력">
+                            <label>User Name</label>
+                        </div>
+                        <div class="passwd">
+                            <input type="password" name="비밀번호" placeholder="비밀번호 입력">
+                            <label>Password</label>
+                        </div>
+                        <div class="passwdC">
+                            <input type="password" name="비밀번호 확인" placeholder="비밀번호 확인">
+                            <label>Password</label>
+                        </div>
+                        <div class="name">
+                            <input type="text" name="닉네임" placeholder="닉네임 입력">
+                            <label>Nickname</label>
+                        </div>
+                        <div class="submit">
+                            <button class="dark">가입완료</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -158,58 +197,77 @@
         </footer>
         <!-- //footer -->
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script src="./assets/js/movetext.js"></script>
-    <script src="./assets/plugin/slider.js"></script>
-    <script src="./assets/js/gsap.js"></script>
-
     <script>
-        window.onload = function () {
-            const navList = document.querySelectorAll(".nav >ul>li");
+        $(document).ready(function () {
+            $(".logsign .sign-btn button").click(function () {
+                $('.logsign .wrapper').addClass('move');
+                $('.main_logsign').css('background', '#e0b722');
+                $(".logsign .log-btn button").removeClass('active');
+                $(this).addClass('active');
 
-            navList.forEach(function (navItem) {
-                navItem.addEventListener("mouseover", function () {
-                    this.querySelector(".submenu").style.display = "block";
-                })
+            });
+            $(".logsign .log-btn button").click(function () {
+                $('.logsign .wrapper').removeClass('move');
+                $('.main_logsign').css('background', '#ff4931');
+                $(".logsign .sign-btn button").removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
 
-                navItem.addEventListener("mouseout", function () {
-                    this.querySelector(".submenu").style.display = "none";
-                })
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/movetext.js"></script>
+<script src="./assets/plugin/slider.js"></script>
+<script src="./assets/js/gsap.js"></script>
+
+<script>
+    window.onload = function () {
+        const navList = document.querySelectorAll(".nav >ul>li");
+
+        navList.forEach(function (navItem) {
+            navItem.addEventListener("mouseover", function () {
+                this.querySelector(".submenu").style.display = "block";
             })
-        }
 
-
-        document.addEventListener('DOMContentLoaded', function () {
-            let boxs = document.querySelectorAll('.goal__box1, .goal__box2, .goal__box3');
-
-            boxs.forEach(function (box) {
-                box.addEventListener('mouseover', function () {
-                    this.style.backgroundColor = '#fff';
-                    this.querySelector('p').style.color = '#FF4409';
-                    this.querySelector('span').style.color = '#FF4409';
-                    this.querySelector('.svg-path').setAttribute('fill', '#FF4409'); // SVG 색상 변경
-                });
-                box.addEventListener('mouseout', function () {
-                    // 마우스가 요소에서 벗어날 때 색상 복원
-                    this.style.backgroundColor = ''; // 원래 백그라운드 색상으로 복원
-                    this.querySelector('p').style.color = ''; // 원래 텍스트 색상으로 복원
-                    this.querySelector('span').style.color = ''; // 원래 span 텍스트 색상으로 복원
-                    this.querySelector('.svg-path').setAttribute('fill', '#FBF1E7'); // SVG 색상 변경
-                });
+            navItem.addEventListener("mouseout", function () {
+                this.querySelector(".submenu").style.display = "none";
             })
         })
+    }
 
-        document.addEventListener('mousemove', function (e) {
-            const cursor = document.getElementById('cursor');
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        });
 
-    </script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let boxs = document.querySelectorAll('.goal__box1, .goal__box2, .goal__box3');
+
+        boxs.forEach(function (box) {
+            box.addEventListener('mouseover', function () {
+                this.style.backgroundColor = '#fff';
+                this.querySelector('p').style.color = '#FF4409';
+                this.querySelector('span').style.color = '#FF4409';
+                this.querySelector('.svg-path').setAttribute('fill', '#FF4409'); // SVG 색상 변경
+            });
+            box.addEventListener('mouseout', function () {
+                // 마우스가 요소에서 벗어날 때 색상 복원
+                this.style.backgroundColor = ''; // 원래 백그라운드 색상으로 복원
+                this.querySelector('p').style.color = ''; // 원래 텍스트 색상으로 복원
+                this.querySelector('span').style.color = ''; // 원래 span 텍스트 색상으로 복원
+                this.querySelector('.svg-path').setAttribute('fill', '#FBF1E7'); // SVG 색상 변경
+            });
+        })
+    })
+
+    document.addEventListener('mousemove', function (e) {
+        const cursor = document.getElementById('cursor');
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+</script>
 
 </body>
 
