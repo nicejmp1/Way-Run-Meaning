@@ -41,7 +41,7 @@ main__banner
 .main__title .banner2>a {
     text-align: center;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 100px;
     background-color: var(--backgroundColor);
     border-radius: 30px;
     color: var(--mainColor);
