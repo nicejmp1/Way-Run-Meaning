@@ -287,7 +287,7 @@
 
 /* log : 로그인 */
 .main__log {
-    background: #ff4931;
+    background: #ff4409;
     transition: all .5s;
     padding: 1px;
     display: flex;
@@ -298,7 +298,7 @@
 .log {
     width: 45%;
     margin: 100px auto;
-    background: rgba(255, 255, 255, .5);
+    background: #f7e1cd;
     min-height: 400px;
     display: table;
     position: relative;
@@ -314,7 +314,7 @@
 
 .log button {
     background: transparent;
-    /* //background-image: linear-gradient(90deg, #e0b722, #ff4931); */
+    /* //background-image: linear-gradient(90deg, #e0b722, #ff4409); */
     display: inline-block;
     padding: 10px 30px;
     border: 3px solid #fff;
@@ -327,8 +327,8 @@
 }
 
 .log button.dark {
-    border-color: #ff4931;
-    background: #ff4931;
+    border-color: #ff4409;
+    background: #ff4409;
     cursor: pointer;
 }
 
@@ -424,7 +424,7 @@
 
 .log .wrapper input:focus {
     outline: none;
-    border-color: #ff4931;
+    border-color: #ff4409;
 }
 
 @media (max-width: 767px) {
@@ -467,7 +467,7 @@
 
     .splits button.active {
         opacity: 1;
-        background: #ff4931;
+        background: #ff4409;
     }
 
     .splits.rgstr-btn button.active {
@@ -491,7 +491,7 @@ select:-webkit-autofill {
 
 /* veen : 아이디 & 비밀번호 찾기 */
 .main_check {
-    background: #ff4931;
+    background: #ff4409;
     transition: all .5s;
     padding: 1px;
     display: flex;
@@ -518,7 +518,7 @@ select:-webkit-autofill {
 
 .veen button {
     background: transparent;
-    /* //background-image: linear-gradient(90deg, #e0b722, #ff4931); */
+    /* //background-image: linear-gradient(90deg, #e0b722, #ff4409); */
     display: inline-block;
     padding: 10px 30px;
     border: 3px solid #fff;
@@ -531,8 +531,8 @@ select:-webkit-autofill {
 }
 
 .veen button.dark {
-    border-color: #ff4931;
-    background: #ff4931;
+    border-color: #ff4409;
+    background: #ff4409;
 }
 
 .veen .move button.dark {
@@ -635,7 +635,7 @@ select:-webkit-autofill {
 
 .veen .wrapper input:focus {
     outline: none;
-    border-color: #ff4931;
+    border-color: #ff4409;
 }
 
 .veen>.wrapper.move {
@@ -686,7 +686,7 @@ select:-webkit-autofill {
 
     .splits button.active {
         opacity: 1;
-        background: #ff4931;
+        background: #ff4409;
     }
 
     .splits.psw-btn button.active {
