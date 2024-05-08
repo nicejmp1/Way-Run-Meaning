@@ -292,6 +292,7 @@
     padding: 1px;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -436,7 +437,6 @@
     border: solid 1px #999;
     font-family: var(--fontN);
     font-size: 12px;
-    position: relative;
 }
 
 .logsign .wrapper input:focus {
@@ -452,23 +452,53 @@
     border-color: #9BABB8;
 }
 
+#signin .mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+#signin .mail input {
+    width: 100%;
+    margin-right: 0px;
+}
+
+#signin .mail .btns {
+    min-width: fit-content;
+    margin: 0px;
+}
+
+#signin .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+#signin .name input {
+    width: 100%;
+    margin-right: 0px;
+}
+
+#signin .name .btns {
+    min-width: fit-content;
+    margin: 0px;
+}
+
 #signin>div .btns {
     padding: 5px 8px;
     background-color: #9BABB8;
     font-family: var(--fontN);
-    font-size: 12px;
+    font-size: 10px;
     color: #fff;
     margin-top: 5px;
     border-radius: 30px;
     width: 30%;
     margin-left: 35%;
     cursor: pointer;
-}
-
-#signin .mail input {
-    width: 60%;
-    /* margin-right: 30%; */
-    position: relative;
 }
 
 #login .checks {
