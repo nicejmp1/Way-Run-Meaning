@@ -17,7 +17,7 @@ main__banner
     width: 100%;
     height: auto;
     margin-top: 9.375rem;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .main__title .banner {
@@ -29,7 +29,6 @@ main__banner
 
 .main__title .banner2 {
     width: 100%;
-    height: 1000px;
     background-image: url(../img/banner2.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -49,6 +48,7 @@ main__banner
     font-family: var(--fontN);
     font-weight: 600;
     transition: all 0.3s;
+    margin-bottom: 200px;
 
 }
 
