@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*  기본 설정 */
+@import "fonts.css";
+@import "vars.css";
+@import "resets.css";
+@import "commons.css";
+
+/* 섹션 설정 */
+@import "header.css";
+@import "footer.css";
+@import "member.css";
+@import "intro.css";
+@import "board.css";
+@import "main.css";
+@import "media.css";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* 로그인 로그아웃 */
+
+/* 일정 카테고리 */
+@import "information.css";
+
+/* 외부CSS  */
+@import "../plugin/slider.css"
