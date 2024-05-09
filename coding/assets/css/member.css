@@ -468,6 +468,9 @@
 #signin .mail .btns {
     min-width: fit-content;
     margin: 0px;
+    padding: 13px;
+    border-radius: 0;
+    font-size: 10px;
 }
 
 #signin .name {
@@ -486,6 +489,9 @@
 #signin .name .btns {
     min-width: fit-content;
     margin: 0px;
+    padding: 13px;
+    border-radius: 0;
+    font-size: 10px;
 }
 
 #signin>div .btns {
