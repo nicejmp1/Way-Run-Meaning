@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1000" alt="image" src="https://github.com/nicejmp1/Way-Run-Meaning/assets/163364733/caa572e4-5383-4f84-a7cb-c6396728a005">
+<img width="1000" alt="image" src="https://github.com/parksohyunnn/Way-Run-Meaning/assets/164127801/416c3b72-b9d7-4a69-856e-7af66aab682c)">
 </div>
 
 # 👨‍👩‍👧‍👦 팀 프로젝트 참여자(Way Run Meaning)
