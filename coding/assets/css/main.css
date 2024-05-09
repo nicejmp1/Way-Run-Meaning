@@ -489,7 +489,7 @@ main__banner
 .main__rank__post .rank1 .tit,
 .main__rank__post .rank2 .tit,
 .main__rank__post .rank3 .tit {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 20px;
     color: var(--mainColor);
     margin-left: 10px;
@@ -499,7 +499,6 @@ main__banner
 .main__rank__post .rank1 .pip,
 .main__rank__post .rank2 .pip,
 .main__rank__post .rank3 .pip {
-    margin-top: 5px;
     font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
@@ -509,7 +508,6 @@ main__banner
 .main__rank__post .rank1 .day,
 .main__rank__post .rank2 .day,
 .main__rank__post .rank3 .day {
-    margin-top: 5px;
     font-size: 14px;
     color: var(--black500);
     margin-bottom: 20px;
