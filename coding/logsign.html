@@ -27,6 +27,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <style type="text/css">
+        .site-link {
+            padding: 5px 15px;
+            position: fixed;
+            z-index: 99999;
+            background: #fff;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+            right: 30px;
+            bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .site-link img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
     <title>WayRunMeaning : 러닝 & 마라톤</title>
 </head>
 
@@ -103,7 +120,7 @@
                         <h3>회원가입</h3>
                         <div class="mail">
                             <input type="mail" name="메일" placeholder="이메일 입력">
-                            <div class="btn">이메일 중복검사</div>
+                            <div class="btns">이메일 중복검사</div>
                             <label>Mail</label>
                         </div>
                         <div class="uid">
@@ -120,6 +137,7 @@
                         </div>
                         <div class="name">
                             <input type="text" name="닉네임" placeholder="닉네임 입력">
+                            <div class="btns">닉네임 중복검사</div>
                             <label>Nickname</label>
                         </div>
                         <div class="submit">
@@ -131,23 +149,6 @@
         </div>
 
 
-        <style type="text/css">
-            .site-link {
-                padding: 5px 15px;
-                position: fixed;
-                z-index: 99999;
-                background: #fff;
-                box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
-                right: 30px;
-                bottom: 30px;
-                border-radius: 10px;
-            }
-
-            .site-link img {
-                width: 30px;
-                height: 30px;
-            }
-        </style>
 
         <footer id="footer" role="contentinfo">
             <hr>
@@ -201,7 +202,7 @@
         $(document).ready(function () {
             $(".logsign .sign-btn button").click(function () {
                 $('.logsign .wrapper').addClass('move');
-                $('.main_logsign').css('background', '#000');
+                $('.main_logsign').css('background', '#e0b722');
                 $(".logsign .log-btn button").removeClass('active');
                 $(this).addClass('active');
 
