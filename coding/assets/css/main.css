@@ -145,13 +145,8 @@ main__banner
 }
 
 .main__info .container>h3 {
-<<<<<<< Updated upstream
-    font-size: 46px;
-    font-weight: 900;
-=======
     font-size: 40px;
     font-weight: 500;
->>>>>>> Stashed changes
     font-family: var(--fontO);
     color: var(--mainColor);
     margin-bottom: 5px;
@@ -400,14 +395,9 @@ main__banner
     font-weight: 500;
     font-family: var(--fontO);
     color: var(--mainColor);
-<<<<<<< Updated upstream
-    font-family: var(--fontO);
-    text-transform: uppercase;
-=======
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: -1px;
->>>>>>> Stashed changes
 }
 
 .main__rank .container>p {
@@ -575,14 +565,9 @@ main__banner
     font-weight: 500;
     font-family: var(--fontO);
     color: var(--mainColor);
-<<<<<<< Updated upstream
-    font-family: var(--fontO);
-    text-transform: uppercase;
-=======
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: -1px;
->>>>>>> Stashed changes
 }
 
 .main__crew .container .main__crew__rank span {
