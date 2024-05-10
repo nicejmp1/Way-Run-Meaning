@@ -41,14 +41,15 @@ main__banner
 .main__title .banner2>a {
     text-align: center;
     display: inline-block;
-    padding: 10px 100px;
+    padding: 20px 60px;
     background-color: var(--backgroundColor);
-    border-radius: 30px;
+    border-radius: 50px;
     color: var(--mainColor);
     font-family: var(--fontN);
     font-weight: 600;
     transition: all 0.3s;
     margin-bottom: 200px;
+    font-size: 18px;
 
 }
 
@@ -144,19 +145,21 @@ main__banner
 }
 
 .main__info .container>h3 {
-    font-size: 46px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: 500;
     font-family: var(--fontO);
     color: var(--mainColor);
     margin-bottom: 5px;
     text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 .main__info .container>p {
+    margin-top: 5px;
     color: var(--mainColor);
-    font-size: 20px;
+    font-weight: normal;
     font-family: var(--fontN);
-    font-weight: bold;
+    font-size: 18px;
 }
 
 .main__info .container .main__post {
@@ -351,7 +354,6 @@ main__banner
     margin-bottom: 160px;
     padding: 10px 60px;
     background-color: var(--white);
-    border: 1px solid var(--mainColor);
     color: var(--mainColor);
     border-radius: 30px;
     font-size: 20px;
@@ -389,19 +391,21 @@ main__banner
 }
 
 .main__rank .container>h4 {
-    font-size: 46px;
-    font-weight: 900;
-    color: var(--mainColor);
+    font-size: 40px;
+    font-weight: 500;
     font-family: var(--fontO);
+    color: var(--mainColor);
+    margin-bottom: 5px;
     text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 .main__rank .container>p {
     margin-top: 5px;
     color: var(--mainColor);
-    font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
     font-family: var(--fontN);
+    font-size: 18px;
 }
 
 .main__rank .container .main__rank__post {
@@ -557,17 +561,21 @@ main__banner
 }
 
 .main__crew .container .main__crew__rank h5 {
-    font-size: 46px;
-    font-weight: 900;
-    color: var(--mainColor);
+    font-size: 40px;
+    font-weight: 500;
     font-family: var(--fontO);
+    color: var(--mainColor);
+    margin-bottom: 5px;
     text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
-.main__crew .containe .main__crew__rank p {
-    font-size: 20px;
+.main__crew .container .main__crew__rank span {
+    margin-top: 5px;
+    color: var(--mainColor);
+    font-weight: normal;
     font-family: var(--fontN);
-    font-weight: bold;
+    font-size: 18px;
 }
 
 .crew__rank {
@@ -804,10 +812,11 @@ main__banner
 }
 
 .main__goal .container>p {
-    font-size: 20px;
     margin-top: 5px;
     color: var(--mainColor);
-    font-weight: bold;
+    font-weight: normal;
+    font-family: var(--fontN);
+    font-size: 18px;
 }
 
 .main__goal .goal__box {
