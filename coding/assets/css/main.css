@@ -145,8 +145,8 @@ main__banner
 
 .main__info .container>h3 {
     font-size: 46px;
-    font-weight: 800;
-    font-family: var(--fontG);
+    font-weight: 900;
+    font-family: var(--fontO);
     color: var(--mainColor);
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -392,7 +392,8 @@ main__banner
     font-size: 46px;
     font-weight: 900;
     color: var(--mainColor);
-    font-family: var(--fontM);
+    font-family: var(--fontO);
+    text-transform: uppercase;
 }
 
 .main__rank .container>p {
@@ -559,7 +560,8 @@ main__banner
     font-size: 46px;
     font-weight: 900;
     color: var(--mainColor);
-    font-family: var(--fontM);
+    font-family: var(--fontO);
+    text-transform: uppercase;
 }
 
 .main__crew .containe .main__crew__rank p {
@@ -622,8 +624,8 @@ main__banner
     text-align: center;
     color: var(--white);
     font-size: 28px;
-    font-family: var(--fontG);
-    font-weight: bold;
+    font-weight: 900;
+    font-family: var(--fontM);
 }
 
 .crew__rank .crew1 .box3,
@@ -796,8 +798,9 @@ main__banner
 .main__goal .container>h6 {
     font-size: 46px;
     font-weight: 900;
-    font-family: var(--fontG);
+    font-family: var(--fontO);
     color: var(--mainColor);
+    text-transform: uppercase;
 }
 
 .main__goal .container>p {
@@ -845,7 +848,8 @@ main__banner
 .main__goal .goal__box .goal__box3>span {
     color: var(--white);
     font-size: 12px;
-    font-family: var(--fontG);
+    font-family: var(--fontO);
+    font-weight: 400;
     padding: 40px 40px 0px 40px;
 }
 
@@ -868,7 +872,7 @@ main__banner
 
 .cover>p {
     font-size: 5vw;
-    font-weight: 400;
+    font-weight: 900;
     color: var(--white);
-    font-family: var(--fontG);
+    font-family: var(--fontO);
 }
