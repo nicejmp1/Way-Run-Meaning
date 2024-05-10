@@ -96,8 +96,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -105,8 +105,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -114,8 +114,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -123,8 +123,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -132,8 +132,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -141,8 +141,17 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -150,8 +159,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -159,8 +168,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -168,17 +177,19 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../fonts/Montserrat-Thin.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
+
+
 @font-face {
     font-family: 'Oswald';
-    src: url('Oswald-Regular.woff2') format('woff2'),
-        url('Oswald-Regular.woff') format('woff');
+    src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -186,8 +197,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -195,8 +206,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -204,8 +215,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -213,8 +224,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -222,8 +233,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -231,8 +242,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -240,8 +251,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -249,8 +260,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 800;
     font-style: italic;
     font-display: swap;
@@ -258,8 +269,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-ThinItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
