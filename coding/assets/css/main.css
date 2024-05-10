@@ -145,8 +145,6 @@ main__banner
 }
 
 .main__info .container>h3 {
-    font-size: 46px;
-    font-weight: 900;
     font-size: 40px;
     font-weight: 500;
     font-family: var(--fontO);
