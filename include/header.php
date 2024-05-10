@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="header__inner">
                     <div class="logo">
-                        <a href="main.html"><img src="../assets/img/logo.svg" alt="로고"></a>
+                        <a href="../index.php"><img src="../assets/ico/wrm_nav_rogo.svg" alt="로고"></a>
                     </div>
                     <nav class="nav">
                         <ul>
@@ -28,7 +28,7 @@
                     <?php if(isset($_SESSION['memberID'])){ ?>
                             <ul>
                                 <li class="active">
-                                    <a href="../signin/signout.php">
+                                    <a href="../logout/logout.php">
                                         <?=$_SESSION['youNickName']?>님.
                                     </a>
                                 </li>
