@@ -172,6 +172,7 @@
         url('../fonts/Montserrat-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
+<<<<<<< Updated upstream
     font-display: swap;
 }
 
@@ -264,4 +265,23 @@
     font-weight: 900;
     font-style: italic;
     font-display: swap;
+=======
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+}
+
+@font-face {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald&display=swap')
+}
+
+@font-face {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap')
+>>>>>>> Stashed changes
 }

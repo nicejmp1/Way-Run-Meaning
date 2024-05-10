@@ -1,7 +1,12 @@
 :root {
     --fontN: "NanumSquareNeo";
     --fontG: "GmarketSans";
+<<<<<<< Updated upstream
     --fontM: "Montserrat-Thin";
+=======
+    --fontM: "Montserrat";
+    --fontP: "Pacifico";
+>>>>>>> Stashed changes
     --fontO: "Oswald";
 
     --mainColor: #ff4409;
