@@ -58,14 +58,14 @@
                             <div>
                                 <div class="mail">
                                     <label for="youEmail">이메일</label>
-                                    <input type="mail" name="youEmail" id="youEmail" placeholder="이메일을 적어주세요!" autocomplete="off">
+                                    <input type="mail" name="youEmail" id="youEmail" placeholder="이메일 입력" autocomplete="off">
                                     <div class="btns" onclick="EmailCheck()">이메일 중복검사</div>
                                 </div>
                                 <p class="msg" id="youEmailComment"></p>
                             </div>
                             <div class="uid">
                                 <label for="youName">User Name</label>
-                                <input type="text" name="youName" id="youName" placeholder="이름을 적어주세요!" autocomplete="off">
+                                <input type="text" name="youName" id="youName" placeholder="이름 입력" autocomplete="off">
                                 <p class="msg" id="youNameComment"></p>
                             </div>
                             <div class="passwd">
@@ -78,10 +78,12 @@
                                 <input type="password" name="youPassC" id="youPassC" placeholder="비밀번호 확인" autocomplete="off">
                                 <p class="msg" id="youPassCComment"></p>
                             </div>
-                            <div class="name">
-                                <label for="youNickName">Nickname</label>
-                                <input type="text" name="youNickName" id="youNickName" placeholder="닉네임 입력" autocomplete="off">
-                                <div class="btns" onclick="NickNameCheck()">닉네임 중복검사</div>
+                            <div>
+                                <div class="name">
+                                    <label for="youNickName">Nickname</label>
+                                    <input type="text" name="youNickName" id="youNickName" placeholder="닉네임 입력" autocomplete="off">
+                                    <div class="btns" onclick="NickNameCheck()">닉네임 중복검사</div>
+                                </div>
                                 <p class="msg" id="youNickNameComment"></p>
                             </div>
                             <div class="submit">
@@ -192,7 +194,7 @@ function EmailCheck() {
 
     // 이메일 입력 여부 확인
     if (youEmail == null || youEmail === '') {
-        $("#youEmailComment").text("➟ 이메일을 입력해주세요!");
+        $("#youEmailComment").text("➟ 이메일을 입력해주세요.");
         $("#youEmail").focus();
         return false;
     } else {
@@ -236,7 +238,7 @@ function NickNameCheck() {
 
     // 닉네임 입력 여부 확인
     if (youNickName == null || youNickName === '') {
-        $("#youNickNameComment").text("➟ 닉네임을 입력해주세요!");
+        $("#youNickNameComment").text("➟ 닉네임을 입력해주세요.");
         $("#youNickName").focus();
         return false;
     } else {
@@ -245,7 +247,7 @@ function NickNameCheck() {
 
         // 올바르지 않은 닉네임 형식 확인
         if (!getyouNickName.test($("#youNickName").val())) {
-            $("#youNickNameComment").text("➟ 닉네임은 한글, 영문, 숫자를 포함하여 3~20자 이내로 작성해주세요.");
+            $("#youNickNameComment").text("➟ 닉네임은 10자 이내로 작성해주세요.");
             $("#youNickName").val('');
             $("#youNickName").focus();
             return false;
@@ -280,7 +282,7 @@ function signupChecks() {
 
     // 이름 입력 여부 확인
     if (youName == null || youName === '') {
-        $("#youNameComment").text("➟ 이름을 입력해주세요!");
+        $("#youNameComment").text("➟ 이름을 입력해주세요.");
         $("#youName").focus();
         return false;
     } else {
@@ -301,7 +303,7 @@ function signupChecks() {
 
     // 비밀번호 입력 여부 확인
     if (youPass == null || youPass === '') {
-        $("#youPassComment").text("➟ 비밀번호를 입력해주세요!");
+        $("#youPassComment").text("➟ 비밀번호를 입력해주세요.");
         $("#youPass").focus();
         return false;
     } else {
