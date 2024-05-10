@@ -28,7 +28,7 @@
                     <?php if(isset($_SESSION['memberID'])){ ?>
                             <ul>
                                 <li class="active">
-                                    <a href="../signin/signout.php">
+                                    <a href="../logout/logout.php">
                                         <?=$_SESSION['youNickName']?>님.
                                     </a>
                                 </li>
