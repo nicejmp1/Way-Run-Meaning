@@ -1,20 +1,18 @@
 #footer {
-    background-color: var(--white);
     height: auto;
 }
 
 
 #footer hr {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
     height: 1px;
-    background-color: var(--mainColor);
     border-color: var(--mainColor);
     border-style: solid none none;
 }
 
 #footer p.maile {
-    font-size: 10px;
+    font-size: 0.875rem;
     padding-bottom: 30px;
     color: var(--mainColor);
 }
@@ -31,16 +29,16 @@
 
 .footer__lnner .left>ul {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 3.25rem;
 }
 
 .footer__lnner .left>ul>li {
-    padding: 0 30px
+    padding: 0 1.875rem
 }
 
 .footer__lnner .left ul>li>a {
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.25rem;
     color: var(--mainColor);
 }
 
@@ -49,8 +47,8 @@
 }
 
 .footer__lnner .left ul>li>ul>li>a {
-    margin: 12px 0;
-    font-size: 12px;
+    margin: 0.875rem 0;
+    font-size: 0.875rem;
     color: var(--mainColor);
 }
 
@@ -60,18 +58,14 @@
 }
 
 .footer__bot p.copy {
-    font-size: 12px;
+    font-size: 0.875rem;
     color: var(--mainColor)
 }
 
 .footer__bot {
     display: flex;
-    /* Flexbox 레이아웃 활성화 */
     justify-content: space-between;
-    /* 왼쪽과 오른쪽 컨텐츠를 양 끝으로 정렬 */
     align-items: center;
-    /* 세로 중앙 정렬 */
-    /* Padding for visual spacing */
 }
 
 .footer__bot .left_bot,
@@ -80,7 +74,7 @@
     /* 각 컨테이너도 Flexbox로 설정 */
 }
 
-.footer__bot .right_bot ul {
+.footer__bot .right_bot>ul {
     display: flex;
     /* 오른쪽 부분의 리스트를 가로로 배치 */
     padding: 0;
@@ -89,17 +83,17 @@
     /* 리스트 스타일 제거 */
 }
 
-.footer__bot .right_bot ul li {
-    margin-right: 10px;
+.footer__bot .right_bot>ul>li {
+    margin-right: 0.875rem;
     /* 리스트 아이템 간의 간격 */
 }
 
-.footer__bot .right_bot ul li a {
-    font-size: 10px;
+.footer__bot .right_bot>ul>li>a {
+    font-size: 0.875rem;
     color: var(--mainColor);
 }
 
-.footer__bot .right_bot ul li:last-child {
+.footer__bot .right_bot>ul>li:last-child {
     margin-right: 0;
     /* 마지막 리스트 아이템의 마진 제거 */
 }
@@ -119,26 +113,63 @@
     height: 25px;
     background-color: var(--mainColor);
     border-radius: 50%;
-    background-image: url(../img/sns-discord.svg);
+    background-image: url(../img/sns-icon/sns-discord.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
 .footer__lnner .right .sns li:nth-child(2) a {
-    background-image: url(../img/sns-insta.svg);
+    background-image: url(../img/sns-icon/sns-insta.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .footer__lnner .right .sns li:nth-child(3) a {
-    background-image: url(../img/sns-twitter.svg);
+    background-image: url(../img/sns-icon/sns-twitter.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .footer__lnner .right .sns li:nth-child(4) a {
-    background-image: url(../img/sns-youtube.svg);
+    background-image: url(../img/sns-icon/sns-youtube.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media(max-width:500px) {
+    .footer__lnner {
+        padding: 0;
+    }
+
+    .footer__lnner .left>ul>li {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .footer__lnner .left>ul>li>a {
+        display: inline;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .footer__bot .right_bot>ul>li {
+        margin: 0.75rem;
+    }
+
+    .footer__bot .right_bot>ul>li>a {
+        font-size: 0.75rem;
+    }
+
+    .footer__lnner .left ul>li>ul>li>a {
+        margin: 0.625rem;
+    }
+
+    .footer__bot {
+        flex-direction: column;
+    }
+
+    #footer p.maile {
+        text-align: center;
+    }
 }
