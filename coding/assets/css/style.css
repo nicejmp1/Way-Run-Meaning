@@ -16,7 +16,8 @@
 @import "media.css";
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-/* 로그인 로그아웃 */
+/* 커뮤니티 - 게시판 */
+@import "comm_notice.css";
 
 /* 일정 카테고리 */
 @import "information.css";
