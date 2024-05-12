@@ -1,0 +1,517 @@
+/* 
+    |-- logsign : 로그인&회원가입
+    |-- veen : 아이디 & 비밀번호 찾기
+*/
+
+/* logsign : 로그인&회원가입 */
+.main_logsign {
+    background: #ff4931;
+    transition: all .5s;
+    padding: 1px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logsign {
+    width: 70%;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, .5);
+    min-height: 400px;
+    display: table;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.logsign>div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+
+.logsign>div .btn {
+    padding: 5px 40px;
+    background-color: #9BABB8;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: var(--fontN);
+    font-size: 12px;
+}
+
+.logsign button {
+    background: transparent;
+    /* //background-image: linear-gradient(90deg, #e0b722, #ff4931); */
+    display: inline-block;
+    padding: 10px 30px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    background-clip: padding-box;
+    position: relative;
+    color: #FFF;
+    /* //box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28); */
+    transition: all .25s;
+    font-family: var(--fontN);
+}
+
+.logsign button.dark {
+    border-color: #ff4931;
+    background: #ff4931;
+}
+
+.logsign .move button.dark {
+    border-color: #9BABB8;
+    background: #9BABB8;
+}
+
+.logsign .splits p {
+    font-size: 18px;
+    font-family: var(--fontN);
+}
+
+.logsign button:active {
+    box-shadow: none;
+}
+
+.logsign button:focus {
+    outline: none;
+}
+
+.logsign>.wrapper {
+    position: absolute;
+    width: 40%;
+    height: 120%;
+    top: -10%;
+    left: 15%;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    transition: all .5s;
+    color: #303030;
+    overflow: hidden;
+}
+
+.logsign .wrapper>form {
+    padding: 15px 30px 30px;
+    width: 100%;
+    transition: all .5s;
+    background: #fff;
+    width: 100%;
+}
+
+.logsign .wrapper>form:focus {
+    outline: none;
+}
+
+.logsign .wrapper #login {
+    padding-top: 13%;
+    visibility: visible;
+}
+
+.logsign .wrapper #signin {
+    transform: translateY(-71%) translateX(100%);
+    visibility: hidden;
+}
+
+.logsign .wrapper.move #signin {
+    transform: translateY(-75%) translateX(0%);
+    visibility: visible;
+}
+
+.logsign .wrapper.move #login {
+    transform: translateX(-100%);
+    visibility: hidden;
+}
+
+.logsign .wrapper>form>div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.logsign .wrapper label {
+    position: absolute;
+    top: -7px;
+    font-size: 12px;
+    white-space: nowrap;
+    background: #fff;
+    text-align: left;
+    left: 15px;
+    padding: 0 5px;
+    color: #999;
+    pointer-events: none;
+}
+
+.logsign .wrapper h3 {
+    margin-bottom: 25px;
+    font-family: var(--fontG);
+}
+
+.logsign .wrapper input {
+    height: 40px;
+    padding: 5px 15px;
+    width: 100%;
+    border: solid 1px #999;
+    font-family: var(--fontN);
+    font-size: 12px;
+}
+
+.logsign .wrapper input:focus {
+    outline: none;
+    border-color: #ff4931;
+}
+
+.logsign>.wrapper.move {
+    left: 45%;
+}
+
+.logsign>.wrapper.move input:focus {
+    border-color: #9BABB8;
+}
+
+#signin .mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+#signin .mail input {
+    width: 100%;
+    margin-right: 0px;
+}
+
+#signin .mail .btns {
+    min-width: fit-content;
+    margin: 0px;
+    padding: 13px;
+    border-radius: 0;
+    font-size: 10px;
+}
+
+#signin .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+#signin .name input {
+    width: 100%;
+    margin-right: 0px;
+}
+
+#signin .name .btns {
+    min-width: fit-content;
+    margin: 0px;
+    padding: 13px;
+    border-radius: 0;
+    font-size: 10px;
+}
+
+#signin>div .btns {
+    padding: 5px 8px;
+    background-color: #9BABB8;
+    font-family: var(--fontN);
+    font-size: 1px;
+    color: #fff;
+    margin-top: 5px;
+    border-radius: 30px;
+    width: 30%;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+#login .checks {
+    font-family: var(--fontN);
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .logsign {
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .logsign>.wrapper {
+        position: relative;
+        height: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .logsign>div {
+        display: inline-block;
+    }
+
+    .splits {
+        width: 50%;
+        background: #fff;
+        float: left;
+    }
+
+    .splits button {
+        width: 100%;
+        border-radius: 0;
+        background: #505050;
+        border: 0;
+        opacity: .7;
+    }
+
+    .splits button.active {
+        opacity: 1;
+    }
+
+    .splits button.active {
+        opacity: 1;
+        background: #ff4931;
+    }
+
+    .splits.sign-btn button.active {
+        background: #9BABB8;
+    }
+
+    .splits p {
+        display: none;
+        font-family: var(--fontN);
+    }
+
+    .logsign>.wrapper.move {
+        left: 0%;
+    }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: inset 0 0 0 50px #fff
+}
+
+/* veen : 아이디 & 비밀번호 찾기 */
+.main_check {
+    background: #ff4931;
+    transition: all .5s;
+    padding: 1px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.veen {
+    width: 70%;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, .5);
+    min-height: 400px;
+    display: table;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.veen>div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+
+.veen button {
+    background: transparent;
+    /* //background-image: linear-gradient(90deg, #9BABB8, #ff4931); */
+    display: inline-block;
+    padding: 10px 30px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    background-clip: padding-box;
+    position: relative;
+    color: #FFF;
+    /* //box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28); */
+    transition: all .25s;
+}
+
+.veen button.dark {
+    border-color: #ff4931;
+    background: #ff4931;
+}
+
+.veen .move button.dark {
+    border-color: #9BABB8;
+    background: #9BABB8;
+}
+
+.veen .splits p {
+    font-size: 18px;
+    font-family: var(--fontN);
+}
+
+.veen button:active {
+    box-shadow: none;
+}
+
+.veen button:focus {
+    outline: none;
+}
+
+.veen>.wrapper {
+    position: absolute;
+    width: 40%;
+    height: 120%;
+    top: -10%;
+    left: 15%;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    transition: all .5s;
+    color: #303030;
+    overflow: hidden;
+}
+
+.veen .wrapper>form {
+    padding: 15px 30px 30px;
+    width: 100%;
+    transition: all .5s;
+    background: #fff;
+    width: 100%;
+}
+
+.veen .wrapper>form:focus {
+    outline: none;
+}
+
+.veen .wrapper #register1 {
+    padding-top: 13%;
+    visibility: visible;
+}
+
+.veen .wrapper #psw {
+    transform: translateY(-80%) translateX(100%);
+    visibility: hidden;
+}
+
+.veen .wrapper.move #psw {
+    transform: translateY(-120%) translateX(0%);
+    visibility: visible;
+}
+
+.veen .wrapper.move #register1 {
+    transform: translateX(-100%);
+    visibility: hidden;
+}
+
+.veen .wrapper>form>div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.veen .wrapper label {
+    position: absolute;
+    top: -7px;
+    font-size: 12px;
+    white-space: nowrap;
+    background: #fff;
+    text-align: left;
+    left: 15px;
+    padding: 0 5px;
+    color: #999;
+    pointer-events: none;
+}
+
+.veen .wrapper h3 {
+    margin-bottom: 25px;
+    font-family: var(--fontG);
+}
+
+.veen .wrapper input {
+    height: 40px;
+    padding: 5px 15px;
+    width: 100%;
+    border: solid 1px #999;
+    font-family: var(--fontN);
+    font-size: 12px;
+}
+
+.veen .wrapper input:focus {
+    outline: none;
+    border-color: #ff4931;
+}
+
+.veen>.wrapper.move {
+    left: 45%;
+}
+
+.veen>.wrapper.move input:focus {
+    border-color: #9BABB8;
+}
+
+#register1 .checks {
+    font-family: var(--fontN);
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .veen {
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .veen>.wrapper {
+        position: relative;
+        height: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .veen>div {
+        display: inline-block;
+    }
+
+    .splits {
+        width: 50%;
+        background: #fff;
+        float: left;
+    }
+
+    .splits button {
+        width: 100%;
+        border-radius: 0;
+        background: #505050;
+        border: 0;
+        opacity: .7;
+    }
+
+    .splits button.active {
+        opacity: 1;
+    }
+
+    .splits button.active {
+        opacity: 1;
+        background: #ff4931;
+    }
+
+    .splits.psw-btn button.active {
+        background: #9BABB8;
+    }
+
+    .splits p {
+        display: none;
+        font-family: var(--fontN);
+    }
+
+    .veen>.wrapper.move {
+        left: 0%;
+    }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: inset 0 0 0 50px #fff
+}

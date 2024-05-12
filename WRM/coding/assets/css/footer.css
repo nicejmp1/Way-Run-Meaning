@@ -1,0 +1,175 @@
+#footer {
+    height: auto;
+}
+
+
+#footer hr {
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
+    height: 1px;
+    border-color: var(--mainColor);
+    border-style: solid none none;
+}
+
+#footer p.maile {
+    font-size: 0.875rem;
+    padding-bottom: 30px;
+    color: var(--mainColor);
+}
+
+.footer__lnner {
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__lnner .left {
+    width: 50%;
+}
+
+.footer__lnner .left>ul {
+    display: flex;
+    margin-bottom: 3.25rem;
+}
+
+.footer__lnner .left>ul>li {
+    padding: 0 1.875rem
+}
+
+.footer__lnner .left ul>li>a {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+}
+
+.footer__lnner .left ul>li>ul {
+    text-align: center;
+}
+
+.footer__lnner .left ul>li>ul>li>a {
+    margin: 0.875rem 0;
+    font-size: 0.875rem;
+    color: var(--mainColor);
+}
+
+.footer__lnner .left ul li ul .footer__lnner .right {
+    width: 50%;
+    text-align: right;
+}
+
+.footer__bot p.copy {
+    font-size: 0.875rem;
+    color: var(--mainColor)
+}
+
+.footer__bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__bot .left_bot,
+.footer__bot .right_bot {
+    display: flex;
+    /* 각 컨테이너도 Flexbox로 설정 */
+}
+
+.footer__bot .right_bot>ul {
+    display: flex;
+    /* 오른쪽 부분의 리스트를 가로로 배치 */
+    padding: 0;
+    /* 기본 padding 제거 */
+    list-style: none;
+    /* 리스트 스타일 제거 */
+}
+
+.footer__bot .right_bot>ul>li {
+    margin-right: 0.875rem;
+    /* 리스트 아이템 간의 간격 */
+}
+
+.footer__bot .right_bot>ul>li>a {
+    font-size: 0.875rem;
+    color: var(--mainColor);
+}
+
+.footer__bot .right_bot>ul>li:last-child {
+    margin-right: 0;
+    /* 마지막 리스트 아이템의 마진 제거 */
+}
+
+.footer__lnner .right .sns ul {
+    display: flex;
+    justify-content: right;
+}
+
+.footer__lnner .right .sns li {
+    margin-left: 4px;
+}
+
+.footer__lnner .right .sns li a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    background-image: url(../img/sns-icon/sns-discord.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.footer__lnner .right .sns li:nth-child(2) a {
+    background-image: url(../img/sns-icon/sns-insta.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer__lnner .right .sns li:nth-child(3) a {
+    background-image: url(../img/sns-icon/sns-twitter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer__lnner .right .sns li:nth-child(4) a {
+    background-image: url(../img/sns-icon/sns-youtube.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:500px) {
+    .footer__lnner {
+        padding: 0;
+    }
+
+    .footer__lnner .left>ul>li {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .footer__lnner .left>ul>li>a {
+        display: inline;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .footer__bot .right_bot>ul>li {
+        margin: 0.75rem;
+    }
+
+    .footer__bot .right_bot>ul>li>a {
+        font-size: 0.75rem;
+    }
+
+    .footer__lnner .left ul>li>ul>li>a {
+        margin: 0.625rem;
+    }
+
+    .footer__bot {
+        flex-direction: column;
+    }
+
+    #footer p.maile {
+        text-align: center;
+    }
+}
