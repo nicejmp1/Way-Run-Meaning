@@ -98,24 +98,24 @@ table__bottom - 게시판 하단
 }
 
 .table__top .right input {
-    padding: 1rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--fontN);
     border: 2px solid var(--pointColor);
 }
 
 .table__top .right select {
-    padding: 1rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 5px;
     color: var(--black700);
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--fontN);
     border: 2px solid var(--pointColor);
 }
 
 .table__top .right .btns1 {
-    padding: 1rem 2rem;
+    padding: 0.7rem 2rem;
     border-radius: 5px;
     background-color: var(--mainColor);
     color: var(--white);
@@ -126,7 +126,7 @@ table__bottom - 게시판 하단
 }
 
 .table__top .right .btns2 {
-    padding: 1rem 1.6rem;
+    padding: 0.7rem 1.6rem;
     border-radius: 5px;
     background-color: var(--mainColor);
     color: var(--white);
