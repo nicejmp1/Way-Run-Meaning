@@ -6,7 +6,7 @@ main__info  : 마라톤 카테고리
 main__info_post : 마라톤 메인 포스터
 main__ranking : 인기있는 마라톤
 main__banner
-**/
+*/
 
 #wrap {
     background-color: var(--backgroundColor);
