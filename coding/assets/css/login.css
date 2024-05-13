@@ -51,6 +51,14 @@
     color: var(--mainColor);
 }
 
+#login .mail input::placeholder {
+    color: var(--mainColor);
+}
+
+#login .passwd input::placeholder {
+    color: var(--mainColor);
+}
+
 #login .submit button {
     padding: 10px 20px;
     width: 100%;
