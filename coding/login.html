@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="마라톤, 러닝, 대회일정 한눈에 보기">
+    <meta name="keywords" content="마라톤, 러닝, 대회일정, 러닝크루, 훈련팁, 42km, 랭킹, 풀코스, 하프코스, 10km">
+
+    <meta property="og:title" content="러닝 & 마라톤의 모든 것">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="#">
+    <meta property="og:description" content="WayRunMeaning에서 다양한 마라톤 정보와 일정을 확인하세요!" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="러닝 & 마라톤의 모든 것">
+    <meta name="twitter:url" content="#">
+    <meta name="twitter:image" content="#">
+    <meta name="twitter:description" content="WayRunMeaning에서 다양한 마라톤 정보와 일정을 확인하세요!" />
+
+    <link href="assets/ico/favicon.png" rel="favicon icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>WayRunMeaning : 러닝 & 마라톤</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" role="banner">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <a href="main.html"><img src="./assets/ico/wrm_nav_rogo.svg" alt=""></a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="information.html">대회일정</a>
+                                <ul class="submenu">
+                                    <li><a href="information.html">마라톤</a></li>
+                                    <li><a href="#">러닝</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">커뮤니티</a>
+                                <ul class="submenu">
+                                    <li><a href="#">개인/크루활동</a></li>
+                                    <li><a href="#">개인/크루사진</a></li>
+                                    <li><a href="#">#</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">게시판</a>
+                                <ul class="submenu">
+                                    <li><a href="#">훈련팁</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">#</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">마이페이지</a>
+                                <ul class="submenu">
+                                    <li><a href="#">다이어리</a></li>
+                                    <li><a href="#">메달보관함</a></li>
+                                    <li><a href="#">#</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="member">
+                        <ul>
+                            <li><a href="logsign.html">로그인</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //header__inner -->
+            </div>
+        </header>
+        <!-- //header -->
+
+        <main id="main" role="main">
+            <div class="container">
+                <div class="main__login">
+                    <h1 class="title01">어서와 마라톤 커뮤니티는 처음이지?</h1>
+                    <img src="../assets/img/" alt="캐릭터1">
+                    <p class="title02">
+                        MARATHON<br />
+                        COMMUNITY
+                    </p>
+                </div>
+                <div class="comm__link">
+                    <ul>
+                        <a href="#" class="links 01">
+                            <li>
+                                <span>1. 공지사항</span>
+                                <img src="../assets/img/ch01.png" alt="캐릭터1">
+                            </li>
+                        </a>
+                        <a href="#" class="links 02">
+                            <li>
+                                <span>2. 자유게시판</span>
+                                <img src="../assets/img/ch02.png" alt="캐릭터2">
+                            </li>
+                        </a>
+                        <a href="#" class="links 03">
+                            <li>
+                                <span>3. 크루모집</span>
+                                <img src="../assets/img/ch03.png" alt="캐릭터3">
+                            </li>
+                        </a>
+                        <a href="#" class="links 04">
+                            <li>
+                                <span>4. 마라톤후기</span>
+                                <img src="../assets/img/ch04.png" alt="캐릭터4">
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="comm__table">
+                    <section class="table__top">
+                        <div class="left">
+                            * 총 <em>10</em>건의 게시물이 등록되었습니다.
+                        </div>
+                        <div class="right">
+                            <form action="boardSearch.php" name="table__top" method="get">
+                                <fieldset>
+                                    <legend class="blind">게시판 검색 영역</legend>
+                                    <input type="text" name="searchKeyword" placeholder="검색어를 입력해주세요.">
+                                    <select name="searchOption" id="searchOption">
+                                        <option value="title">제목</option>
+                                        <option value="content">내용</option>
+                                        <option value="name">등록자</option>
+                                    </select>
+                                    <button type="submit" class="btns1">검색</button>
+                                    <button type="submit" class="btns2">글쓰기</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="table__board">
+                        <table>
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>등록자</th>
+                                    <th>등록일</th>
+                                    <th>조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>33</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>785</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>1552</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>77</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>365</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>74</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>425</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>아직 게시판 제목이 없습니다.</td>
+                                    <td>주인장</td>
+                                    <td>2024.05.02</td>
+                                    <td>535</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="table__bottom">
+                        <ul>
+                            <li class="first"><a href="#">처음</a></li>
+                            <li class="prev"><a href="#">이전</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="next"><a href="#">다음</a></li>
+                            <li class="last"><a href="#">마지막</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+        <!--//main -->
+
+        <footer id="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer__lnner">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">멤버가입</a></li>
+                            <li><a href="#">고객센터</a>
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">문의하기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="right">
+                        <div class="sns">
+                            <ul>
+                                <li><a href="#"><span class="blind">페이스북</span></a></li>
+                                <li><a href="#"><span class="blind">트위터</span></a></li>
+                                <li><a href="#"><span class="blind">인스타그램</span></a></li>
+                                <li><a href="#"><span class="blind">유튜브</span></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__bot">
+                    <div class="left_bot">
+                        <p class="copy">COPYRIGHT © WayRunMeaning. All Rights Reserved.</p>
+                    </div>
+                    <div class="right_bot">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">위치 기반 서비스 약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr>
+                <p class="maile">nicejpm@naver.com</p>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>
