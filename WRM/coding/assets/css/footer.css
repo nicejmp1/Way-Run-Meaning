@@ -38,6 +38,7 @@
 
 .footer__lnner .left ul>li>a {
     display: inline-block;
+    padding-bottom: 0.625rem;
     font-size: 1.25rem;
     color: var(--mainColor);
 }
@@ -47,9 +48,9 @@
 }
 
 .footer__lnner .left ul>li>ul>li>a {
-    margin: 0.875rem 0;
     font-size: 0.875rem;
     color: var(--mainColor);
+    padding-bottom: 0;
 }
 
 .footer__lnner .left ul li ul .footer__lnner .right {

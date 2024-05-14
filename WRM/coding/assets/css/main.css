@@ -1,15 +1,10 @@
-/* 
-
-
-*/
-
 #section {
     width: 100%;
     height: 100vh;
 }
 
 #section .title {
-    margin-top: 3.125rem;
+    margin-top: 8.125rem;
     text-align: center;
 
 }
@@ -44,7 +39,7 @@
     }
 
     #section .title {
-        margin-top: 6rem;
+        margin-top: 8rem;
         text-align: center;
     }
 }
@@ -55,7 +50,7 @@
     }
 
     #section .title {
-        margin-top: 6rem;
+        margin-top: 11rem;
         text-align: center;
     }
 
@@ -454,95 +449,167 @@
     align-items: center;
 }
 
-.post {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+#post1,
+#post2,
+#post3 {
+    width: 100%;
+    height: 100%;
     background-color: var(--white);
-    margin-left: 1.25rem;
+    margin-right: 1rem;
     border-radius: 30px;
 }
 
-#post1 img,
-#post2 img,
-#post3 img,
-#post4 img,
-#post5 img,
-#post6 img {
-    width: 283px;
-    height: 348px;
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 2rem 2rem 0 2rem;
-    border-radius: 18px;
+}
+
+#post1 .post img,
+#post2 .post img,
+#post3 .post img {
+    width: 100%;
+    max-height: 345px;
+    min-height: 345px;
+    object-fit: cover;
+    border-radius: 22px;
 }
 
 .post .tit {
+    padding: 0.625rem 0 0 0;
     font-size: 1.25rem;
     color: var(--mainColor);
-    padding-top: 0.625rem;
+    font-family: var(--fontN);
     font-weight: 700;
-    font-family: var(--fontG);
-    padding-left: 2rem;
 }
 
 .post .pic {
+    padding-top: 0.3125rem;
     font-size: 1rem;
-    font-family: var(--fontG);
-    font-weight: 500;
-    padding-left: 2rem;
+    font-family: var(--fontN);
+    font-weight: 700;
 }
 
 .post .day {
+    padding-top: 0.3125rem;
     font-size: 0.875rem;
-    color: var(--black600);
-    padding-left: 2rem;
+    color: var(--black500);
+    font-family: var(--fontN);
+    font-weight: 400;
 }
 
-.post a {
-    display: inline-block;
-    margin-top: 1.25rem;
-    padding: 1.25rem;
+.post__con {
+    width: 100%;
+    padding-top: 1.25rem;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    background-color: var(--pointColor);
-    color: var(--mainColor);
-    font-size: 0.875rem;
-    border-radius: 0 0 2rem 2rem;
-    transition: all 0.3s;
+    border-radius: 0 0 30px 30px;
 }
 
-.post a:hover {
-    color: var(--white);
-    background-color: var(--mainColor);
+.post__con .post__left {
+    width: 50%;
+    background-color: var(--pointColor);
+    border-radius: 0 0 0 30px;
 }
+
+
+.post__con .post__left a {
+    display: inline-block;
+    padding: 20px;
+    color: var(--mainColor);
+}
+
+.post__con .post__left img {
+    width: 10px;
+    height: 10px;
+    padding-top: 6px;
+    padding-left: 2px;
+}
+
+.post__con .post__right {
+    width: 50%;
+    background-color: var(--mainColor);
+    border-radius: 0 0 30px 0;
+}
+
+
+
+
+.post__con .post__right img {
+    width: 10px;
+    height: 10px;
+    padding-top: 6px;
+    padding-left: 2px;
+}
+
+.post__con .post__right a {
+    display: inline-block;
+    padding: 20px;
+    color: var(--white);
+}
+
 
 @media (max-width:1000px) {
     .main__info__post .content1 {
         display: flex;
-        flex-direction: column;
     }
 
     .main__info__post .content2 {
         margin-top: 1rem;
         display: flex;
-        flex-direction: column;
     }
 
     .post {
-        margin-top: 2rem;
-        margin-left: 0;
+        padding: 1.25rem 1.25rem 0 1.25rem;
     }
 
-    #post1 img,
-    #post2 img,
-    #post3 img,
-    #post4 img,
-    #post5 img,
-    #post6 img {
-        width: 283px;
-        height: 348px;
-        padding: 1rem 1rem 0 1rem;
-        border-radius: 18px;
+    .post__con {
+        width: 100%;
+        padding-top: 1.25rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .post__con .post__left {
+        width: 50%;
+        background-color: var(--pointColor);
+        border-radius: 0 0 0 30px;
+    }
+
+    .post__con .post__left a {
+        display: inline-block;
+        padding: 20px;
+        color: var(--mainColor);
+    }
+
+    .post__con .post__left>img {
+        width: 10px;
+        height: 10px;
+        padding-top: 6px;
+        padding-left: 2px;
+    }
+
+    .post__con .post__right {
+        width: 50%;
+        background-color: var(--mainColor);
+        border-radius: 0 0 30px 0;
+    }
+
+    .post__con .post__right img {
+        width: 10px;
+        height: 10px;
+        padding-top: 6px;
+        padding-left: 2px;
+    }
+
+    .post__con .post__right a {
+        display: inline-block;
+        padding: 20px;
+        color: var(--white);
     }
 }
 
@@ -561,6 +628,53 @@
     .post {
         margin-top: 2rem;
         margin-left: 0;
+    }
+
+    .post__con {
+        width: 100%;
+        padding-top: 1.25rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .post__con .post__left {
+        width: 50%;
+        background-color: var(--pointColor);
+        border-radius: 0 0 0 30px;
+    }
+
+    .post__con .post__left a {
+        display: inline-block;
+        padding: 20px;
+        color: var(--mainColor);
+    }
+
+    .post__con .post__left img {
+        width: 10px;
+        height: 10px;
+        padding-top: 6px;
+        padding-left: 2px;
+    }
+
+    .post__con .post__right {
+        width: 50%;
+        background-color: var(--mainColor);
+        border-radius: 0 0 30px 0;
+    }
+
+    .post__con .post__right img {
+        width: 10px;
+        height: 10px;
+        padding-top: 6px;
+        padding-left: 2px;
+    }
+
+    .post__con .post__right a {
+        display: inline-block;
+        padding: 20px;
+        color: var(--white);
     }
 }
 
@@ -788,10 +902,9 @@
     #rank__post1 img,
     #rank__post2 img,
     #rank__post3 img {
-        width: 280px;
-        height: 348px;
+        width: 260px;
+        height: 320px;
         padding: 1rem 1rem 0 1rem;
-        border-radius: 18px;
     }
 }
 
@@ -809,12 +922,16 @@
 
 /* //main__crew */
 
+.main__crew {
+    background-color: var(--pointColor);
+}
+
 .main__crew .container .main__crew__title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10rem;
+    padding-top: 10rem;
     color: var(--mainColor);
 }
 
@@ -891,4 +1008,15 @@
 .crew_rank {
     width: 100%;
     height: 100%;
+}
+
+.cover {
+    width: 100%;
+    height: 200px;
+    margin-top: 160px;
+    background-color: var(--mainColor);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

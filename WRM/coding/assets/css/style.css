@@ -16,9 +16,5 @@
 @import "media.css";
 
 /* 로그인 로그아웃 */
-
-/* 일정 카테고리 */
-@import "information.css";
-
 /* 외부CSS  */
 @import "../plugin/slider.css"
