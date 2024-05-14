@@ -4,6 +4,9 @@ comm__link - 카테고리 링크
 comm__table - 게시판 상단
 table__board - 게시판 보드
 table__bottom - 게시판 하단
+comm__write - 글쓰기
+comm__view - 글보기
+comm__modify - 글수정
 */
 
 #wrap {
@@ -14,16 +17,17 @@ table__bottom - 게시판 하단
 /* main__community - 타이틀 */
 .main__community .title01 {
     text-align: center;
-    margin-top: 100px;
-    font-size: 20px;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
     color: var(--mainColor);
     font-family: var(--fontG);
+    margin-bottom: 2.5rem;
 }
 
 .main__community .title02 {
     text-align: center;
-    margin-top: 10px;
-    font-size: 100px;
+    margin-top: 6.25rem;
+    font-size: 6.25rem;
     color: var(--mainColor);
     font-family: var(--fontO);
     font-weight: bold;
@@ -35,8 +39,8 @@ table__bottom - 게시판 하단
 
 .comm__link ul {
     display: flex;
-    margin-top: 50px;
-    gap: 36px;
+    margin-top: 3.125rem;
+    gap: 2.25rem;
     align-items: center;
     justify-content: center;
 }
@@ -47,10 +51,10 @@ table__bottom - 게시판 하단
 
 .comm__link .links li {
     background-color: var(--pointColor);
-    width: 288px;
-    height: 288px;
-    /* margin-left: 20px; */
-    border-radius: 30px;
+    width: 18rem;
+    height: 18rem;
+    /* margin-left: 1.25rem; */
+    border-radius: 1.875rem;
 }
 
 .comm__link .links li:hover {
@@ -61,8 +65,8 @@ table__bottom - 게시판 하단
     font-family: 'GmarketSans';
     color: var(--mainColor);
     line-height: 5;
-    font-size: 20px;
-    margin-left: 30px;
+    font-size: 1.25rem;
+    margin-left: 1.875rem;
     font-weight: bold;
 }
 
@@ -75,63 +79,63 @@ table__bottom - 게시판 하단
 
 /* comm__table - 게시판 상단 */
 .comm__table {
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 .table__top {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .table__top .left {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--fontN);
 }
 
 .table__top .left em {
     color: var(--mainColor);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--fontN);
     font-weight: bold;
 }
 
 .table__top .right input {
     padding: 0.7rem 1.5rem;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
     font-family: var(--fontN);
     border: 2px solid var(--pointColor);
 }
 
 .table__top .right select {
     padding: 0.6rem 1rem;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     color: var(--black700);
-    font-size: 16px;
+    font-size: 1rem;
     font-family: var(--fontN);
     border: 2px solid var(--pointColor);
 }
 
 .table__top .right .btns1 {
     padding: 0.7rem 2rem;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background-color: var(--mainColor);
     color: var(--white);
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--fontN);
     border: 2px solid var(--mainColor);
 }
 
 .table__top .right .btns2 {
     padding: 0.7rem 1.6rem;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background-color: var(--mainColor);
     color: var(--white);
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--fontN);
     border: 2px solid var(--mainColor);
 }
@@ -139,7 +143,7 @@ table__bottom - 게시판 하단
 /* table__board - 게시판 보드 */
 
 .table__board {
-    border-top: 3px solid var(--mainColor);
+    border-top: 0.1875rem solid var(--mainColor);
 }
 
 .table__board th {
@@ -149,13 +153,13 @@ table__bottom - 게시판 하단
 .table__board th,
 .table__board td {
     border-bottom: 1px solid var(--mainColor);
-    padding: 15px 5px;
+    padding: 0.9375rem 0.3125rem;
     text-align: center;
 }
 
 /* table__bottom - 게시판 하단 */
 .table__bottom {
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .table__bottom ul {
@@ -166,19 +170,19 @@ table__bottom - 게시판 하단
 .table__bottom li a {
     display: inline-block;
     border: 1px solid var(--mainColor);
-    width: 46px;
-    height: 46px;
-    line-height: 46px;
+    width: 2.875rem;
+    height: 2.875rem;
+    line-height: 2.875rem;
     text-align: center;
-    margin-left: -1px;
+    margin-left: -0.0625rem;
     color: var(--mainColor);
-    padding: 0 5px;
+    padding: 0 0.3125rem;
 }
 
 .table__bottom li.first a,
 .table__bottom li.last a {
     width: auto;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
 }
 
 .table__bottom li.active a,
@@ -186,6 +190,135 @@ table__bottom - 게시판 하단
     background-color: var(--mainColor);
     color: var(--white);
     border-color: var(--mainColor);
+}
+
+/* comm__write - 글쓰기 */
+.comm__write label {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
+    display: block;
+    margin-top: 3.75rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+}
+
+.comm__write input {
+    width: 100%;
+    line-height: 3;
+    border: 1px solid var(--mainColor);
+    font-size: 0.9375rem;
+    border-radius: 0.5rem;
+}
+
+.comm__write textarea {
+    width: 100%;
+    resize: none;
+    line-height: 1.7;
+    border: 1px solid var(--mainColor);
+    font-size: 0.9375rem;
+    border-radius: 0.5rem;
+}
+
+.comm__write .btn_01 {
+    text-align: right;
+}
+
+.comm__write .btn_01 button {
+    padding: 0.7rem 1.6rem;
+    border-radius: 0.3125rem;
+    background-color: var(--mainColor);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-family: var(--fontN);
+    border: 2px solid var(--mainColor);
+}
+
+/* comm__view - 글보기 */
+
+.comm__view table {
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+    margin-bottom: 10px;
+}
+
+.comm__view table th {
+    background-color: var(--pointColor);
+}
+
+.comm__view table th,
+.comm__view table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+.comm__view table tr:last-child td {
+    height: 500px;
+    white-space: pre-line;
+    vertical-align: top;
+}
+
+.comm__view .btn_03 {
+    text-align: right;
+    margin-top: 1.875rem;
+}
+
+.comm__view .btn_03 .btn__01,
+.comm__view .btn_03 .btn__02,
+.comm__view .btn_03 .btn__03 {
+    padding: 0.7rem 1.6rem;
+    border-radius: 0.3125rem;
+    background-color: var(--mainColor);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-family: var(--fontN);
+    border: 2px solid var(--mainColor);
+}
+
+/* comm__modify - 글수정 */
+.comm__modify label {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
+    display: block;
+    margin-top: 3.75rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+}
+
+.comm__modify input {
+    width: 100%;
+    line-height: 3;
+    border: 1px solid var(--mainColor);
+    font-size: 0.9375rem;
+    border-radius: 0.5rem;
+}
+
+.comm__modify textarea {
+    width: 100%;
+    resize: none;
+    line-height: 1.7;
+    border: 1px solid var(--mainColor);
+    font-size: 0.9375rem;
+    border-radius: 0.5rem;
+}
+
+.comm__modify .btn_04 {
+    text-align: right;
+    margin-top: 1.875rem;
+}
+
+.comm__modify .btn_04 .btn__04 {
+    padding: 0.7rem 1.6rem;
+    border-radius: 0.3125rem;
+    background-color: var(--mainColor);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-family: var(--fontN);
+    border: 2px solid var(--mainColor);
 }
 
 @media (max-width: 1000px) {

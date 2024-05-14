@@ -13,6 +13,6 @@
     <meta name="twitter:image" content="#">
     <meta name="twitter:description" content="WayRunMeaning에서 다양한 마라톤 정보와 일정을 확인하세요!" />
     <link href="assets/ico/favicon.png" rel="favicon icon">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../coding/assets/css/style.css">
     
    
