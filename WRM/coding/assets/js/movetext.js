@@ -1,7 +1,7 @@
 const pTag1 = document.querySelector('.first-parallel')
 
 
-const textArr1 = 'Way Run meaning Marthon & Running '.split(' ')
+const textArr1 = 'welcome to way run meaning'.split(' ')
 
 
 let count1 = 0
@@ -12,13 +12,18 @@ initTexts(pTag1, textArr1)
 
 function initTexts(element, textArray) {
     textArray.push(...textArray)
+    textArray.push(...textArray)
+    textArray.push(...textArray)
+    textArray.push(...textArray)
+    textArray.push(...textArray)
+    textArray.push(...textArray)
     for (let i = 0; i < textArray.length; i++) {
         element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`
     }
 }
 
 function marqueeText(count, element, direction) {
-    if (count > element.scrollWidth / 2) {
+    if (count > element.scrollWidth / 3) {
         element.style.transform = `translate3d(0, 0, 0)`
         count = 0
     }
@@ -40,5 +45,5 @@ function scrollHandler() {
 
 }
 
-window.addEventListener('scroll', scrollHandler)
+// window.addEventListener('scroll', scrollHandler)
 animate()
