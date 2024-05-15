@@ -1,14 +1,6 @@
 #footer {
-    height: auto;
-}
-
-
-#footer hr {
-    margin-top: 0.625rem;
-    margin-bottom: 1.25rem;
-    height: 1px;
-    border-color: var(--mainColor);
-    border-style: solid none none;
+    min-height: 250px;
+    border-top: 1px solid var(--mainColor);
 }
 
 #footer p.maile {
@@ -24,33 +16,34 @@
 }
 
 .footer__lnner .left {
-    width: 50%;
+    width: 70%;
 }
 
 .footer__lnner .left>ul {
     display: flex;
     margin-bottom: 3.25rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .footer__lnner .left>ul>li {
-    padding: 0 1.875rem
-}
-
-.footer__lnner .left ul>li>a {
-    display: inline-block;
-    padding-bottom: 0.625rem;
-    font-size: 1.25rem;
+    padding: 0 1rem;
+    text-align: left;
     color: var(--mainColor);
+    font-family: var(--fontN);
 }
 
-.footer__lnner .left ul>li>ul {
-    text-align: center;
-}
-
-.footer__lnner .left ul>li>ul>li>a {
+.footer__lnner .left>ul>li>ul {
+    padding: 1rem 0;
+    font-weight: 300;
     font-size: 0.875rem;
+    line-height: 2;
+}
+
+.footer__lnner .left>ul>li>ul>li>a {
+    display: inline-block;
     color: var(--mainColor);
-    padding-bottom: 0;
+    line-height: 2;
 }
 
 .footer__lnner .left ul li ul .footer__lnner .right {
@@ -58,35 +51,32 @@
     text-align: right;
 }
 
-.footer__bot p.copy {
-    font-size: 0.875rem;
-    color: var(--mainColor)
-}
+
 
 .footer__bot {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 1rem;
+}
+
+.footer__bot p.copy {
+    font-size: 0.875rem;
+    color: var(--mainColor)
 }
 
 .footer__bot .left_bot,
 .footer__bot .right_bot {
     display: flex;
-    /* 각 컨테이너도 Flexbox로 설정 */
 }
 
 .footer__bot .right_bot>ul {
     display: flex;
-    /* 오른쪽 부분의 리스트를 가로로 배치 */
     padding: 0;
-    /* 기본 padding 제거 */
-    list-style: none;
-    /* 리스트 스타일 제거 */
 }
 
 .footer__bot .right_bot>ul>li {
     margin-right: 0.875rem;
-    /* 리스트 아이템 간의 간격 */
 }
 
 .footer__bot .right_bot>ul>li>a {
@@ -96,7 +86,6 @@
 
 .footer__bot .right_bot>ul>li:last-child {
     margin-right: 0;
-    /* 마지막 리스트 아이템의 마진 제거 */
 }
 
 .footer__lnner .right .sns ul {
@@ -143,15 +132,33 @@
         padding: 0;
     }
 
-    .footer__lnner .left>ul>li {
-        text-align: center;
-        padding: 0 1rem;
+    .footer__lnner .left>ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3.25rem;
+        font-weight: 500;
+        font-size: 1rem;
     }
 
-    .footer__lnner .left>ul>li>a {
-        display: inline;
-        font-size: 1rem;
-        font-weight: 600;
+    .footer__lnner .left>ul>li {
+        padding: 1rem;
+        text-align: left;
+        color: var(--mainColor);
+        font-family: var(--fontN);
+    }
+
+    .footer__lnner .left>ul>li>ul {
+        padding: 1rem 0;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 2;
+    }
+
+    .footer__lnner .left>ul>li>ul>li>a {
+        display: inline-block;
+        color: var(--mainColor);
+        line-height: 2;
+        margin: 0;
     }
 
     .footer__bot .right_bot>ul>li {
@@ -160,10 +167,6 @@
 
     .footer__bot .right_bot>ul>li>a {
         font-size: 0.75rem;
-    }
-
-    .footer__lnner .left ul>li>ul>li>a {
-        margin: 0.625rem;
     }
 
     .footer__bot {
