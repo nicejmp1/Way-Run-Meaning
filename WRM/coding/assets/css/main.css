@@ -696,6 +696,7 @@
     margin: 5px;
     padding-bottom: 1.875rem;
     padding-left: 2rem;
+    border-radius: 30px;
 }
 
 .crew__rank1>img,
@@ -948,4 +949,24 @@
     padding-top: 2.375rem;
     width: 50%;
     padding-left: 5rem;
+}
+
+/* //main__community */
+
+.main__footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.main__footer .container>span {
+    font-size: 10rem;
+    line-height: 1;
+    font-family: var(--fontO);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--mainColor);
 }
