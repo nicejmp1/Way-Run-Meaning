@@ -8,10 +8,8 @@
     |-- login__wrap : 로그인 내용 입력
 */
 
-<<<<<<< Updated upstream
-
 /* login__container */
-=======>>>>>>>Stashed changes #main .login__container {
+#main .login__container {
     width: 500px;
     height: 800px;
     margin: 0 auto;
