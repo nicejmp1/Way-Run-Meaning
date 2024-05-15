@@ -4,7 +4,11 @@
 
 */
 
+<<<<<<< HEAD
 #main .log__container {
+=======
+#main .login__container {
+>>>>>>> 21984889c8ebed503ad50b429bd0596db2da88dc
     width: 500px;
     height: 800px;
     margin: 0 auto;
