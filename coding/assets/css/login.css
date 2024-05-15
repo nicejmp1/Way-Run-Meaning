@@ -8,7 +8,10 @@
     |-- login__wrap : 로그인 내용 입력
 */
 
-#main .login__container {
+<<<<<<< Updated upstream
+
+/* login__container */
+=======>>>>>>>Stashed changes #main .login__container {
     width: 500px;
     height: 800px;
     margin: 0 auto;
@@ -305,7 +308,14 @@
 .main__signcon img {
     margin-top: 40px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
+
+.main__signcon img:hover {
+    background-image: url(../img/\ login_Congratulations1.svg);
+    background-size: cover;
+}
+
 
 .signCon button {
     width: 100%;
