@@ -8,10 +8,6 @@
     |-- login__wrap : 로그인 내용 입력
 */
 
-<<<<<<< Updated upstream
-/* login__container */
-=======
->>>>>>> Stashed changes
 #main .login__container {
     width: 500px;
     height: 800px;
@@ -19,15 +15,12 @@
 }
 
 /* main__login */
-<<<<<<< Updated upstream
-=======
 .main__login {
     /* width: 500px;
     height: 800px;
     margin: 0 auto; */
 }
 
->>>>>>> Stashed changes
 .main__login .title01 {
     font-size: 1.125rem;
     font-family: var(--fontG);
