@@ -73,8 +73,16 @@ comm__modify - 글수정
 .comm__link .links li img {
     vertical-align: top;
     width: 40%;
-    margin-top: 3%;
+    margin-top: -5%;
     margin-left: 50%;
+}
+
+.comm__link .links li .comm2 {
+    margin-top: 3%;
+}
+
+.comm__link .links li .comm4 {
+    margin-top: 6%;
 }
 
 /* comm__table - 게시판 상단 */

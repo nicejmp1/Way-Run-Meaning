@@ -18,7 +18,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WayRunMeaning : 러닝 & 마라톤 - 공지사항</title>
+    <title>WayRunMeaning : 러닝 & 마라톤 - 커뮤니티</title>
     <?php include "../include/head.php" ?>
 </head>
 
@@ -37,28 +37,28 @@
                 </div>
                 <div class="comm__link">
                     <ul>
-                        <a href="../community/comm_notice.php" class="links 01">
-                            <li>
+                        <a href="../community-N/comm_notice.php" class="links 01">
+                            <li class="active">
                                 <span>자유게시판</span>
-                                <img src="../assets/img/ch01.png" alt="캐릭터1">
+                                <svg class="comm1" width="107" height="151" viewBox="0 0 107 151" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
                             </li>
                         </a>
-                        <a href="#" class="links 02">
+                        <a href="../community-C/comm_crew.php" class="links 02">
                             <li>
                                 <span>크루모집</span>
-                                <img src="../assets/img/ch02.png" alt="캐릭터2">
+                                <svg class="comm2" width="122" height="149" viewBox="0 0 122 149" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
                             </li>
                         </a>
-                        <a href="#" class="links 03">
+                        <a href="../community-M/comm_meet.php" class="links 03">
                             <li>
                                 <span>번개모임</span>
-                                <img src="../assets/img/ch03.png" alt="캐릭터3">
+                                <svg class="comm3" width="107" height="151" viewBox="0 0 107 151" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
                             </li>
                         </a>
-                        <a href="#" class="links 04">
+                        <a href="../community-Q/comm_question.php" class="links 04">
                             <li>
                                 <span>질문있어요</span>
-                                <img src="../assets/img/ch04.png" alt="캐릭터4">
+                                <svg class="comm4" width="122" height="149" viewBox="0 0 122 149" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
                             </li>
                         </a>
                     </ul>
