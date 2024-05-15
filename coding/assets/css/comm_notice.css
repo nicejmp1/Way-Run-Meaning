@@ -57,7 +57,7 @@ comm__modify - 글수정
     border-radius: 1.875rem;
 }
 
-.comm__link .links li:hover {
+.comm__link .links li.active {
     background-color: #ffcb8f;
 }
 
