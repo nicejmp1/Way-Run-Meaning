@@ -70,19 +70,44 @@ comm__modify - 글수정
     font-weight: bold;
 }
 
-.comm__link .links li img {
+.comm__link .links li .comm1 {
     vertical-align: top;
     width: 40%;
-    margin-top: -5%;
+    margin-top: 3%;
     margin-left: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../img/commC1.svg);
+    background-size: contain;
 }
 
 .comm__link .links li .comm2 {
     margin-top: 3%;
+    vertical-align: top;
+    width: 43%;
+    margin-left: 46%;
+    background-repeat: no-repeat;
+    background-image: url(../img/commC2.svg);
+    background-size: contain;
+}
+
+.comm__link .links li .comm3 {
+    vertical-align: top;
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../img/commC3.svg);
+    background-size: contain;
 }
 
 .comm__link .links li .comm4 {
     margin-top: 6%;
+    vertical-align: top;
+    width: 43%;
+    margin-left: 46%;
+    background-repeat: no-repeat;
+    background-image: url(../img/commC4.svg);
+    background-size: contain;
 }
 
 /* comm__table - 게시판 상단 */
@@ -344,9 +369,24 @@ comm__modify - 글수정
         margin-left: 1rem;
     }
 
-    .comm__link .links li img {
-        width: 35%;
+    .comm__link .links li .comm1,
+    .comm__link .links li .comm3 {
+        background-size: contain;
+        margin-top: -0.9375rem;
     }
+
+    .comm__link .links li .comm2 {
+        background-size: contain;
+        /* height: 50%; */
+        margin-top: -0.4375rem;
+    }
+
+    .comm__link .links li .comm4 {
+        background-size: contain;
+        /* height: 50%; */
+        margin-top: -0.0625rem;
+    }
+
 
     .table__top .left,
     .table__top .left em {
@@ -416,7 +456,10 @@ comm__modify - 글수정
         margin-left: 1rem;
     }
 
-    .comm__link .links li img {
+    .comm__link .links li .comm1,
+    .comm__link .links li .comm2,
+    .comm__link .links li .comm3,
+    .comm__link .links li .comm4 {
         display: none;
     }
 
