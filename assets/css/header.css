@@ -1,0 +1,180 @@
+/* 
+header__inner: 네비게이션 및 로그인/회원가입 영역
+header__inner .nav: 네비게이션 메뉴
+header__inner .member: 로그인 / 회원가입 
+*/
+
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--backgroundColor);
+    padding-bottom: 0.625rem;
+}
+
+.header__inner {
+    margin: 0.625rem 0;
+    display: flex;
+}
+
+.header__inner .logo {
+    width: 20%;
+    min-height: 3.125rem;
+    text-align: center;
+}
+
+.header__inner .logo img {
+    width: 100%;
+    height: 3.125rem;
+}
+
+.header__inner .nav {
+    width: 60%;
+    min-height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__inner .nav>ul {
+    display: flex;
+}
+
+.header__inner .nav>ul>li {
+    margin: 0 1.875rem;
+}
+
+.header__inner .nav>ul>li>a {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: var(--fontG);
+    font-weight: 500;
+    color: var(--mainColor);
+    padding: 0.625rem 1.875rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.header__inner .nav>ul>li>a:hover {
+    color: var(--pointColor);
+    background-color: var(--mainColor);
+}
+
+.header__inner .member {
+    width: 20%;
+    min-height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__inner .member>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header__inner .member>ul>li>a {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 0.625rem;
+    color: var(--mainColor);
+    transition: all 0.3s;
+}
+
+.header__inner .member>ul>li>a:hover {
+    background-color: var(--mainColor);
+    color: var(--pointColor);
+}
+
+
+@media (max-width:1200px) {
+    #header {
+        padding-bottom: 0;
+        background-color: var(--backgroundColor);
+        padding-bottom: 0.625rem;
+    }
+
+    .header__inner {
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__inner .nav>ul>li {
+        text-align: center;
+        margin: 0 1rem;
+    }
+
+    .header__inner .nav>ul>li>a {
+        padding: 0.625rem 1.25rem;
+
+    }
+}
+
+@media (max-width:800px) {
+    #header {
+        padding-bottom: 0;
+        background-color: var(--backgroundColor);
+        padding-bottom: 0.625rem;
+    }
+
+    .header__inner {
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__inner .nav>ul>li {
+        text-align: center;
+        margin: 0 1rem;
+    }
+
+    .header__inner .nav>ul>li>a {
+        width: 100%;
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width:500px) {
+    #header {
+        height: auto;
+        background-color: var(--backgroundColor);
+    }
+
+    .header__inner {
+        font-size: 0.875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.625rem;
+    }
+
+    .header__inner .nav {
+        width: 100%;
+        border-bottom: 1px solid var(--mainColor);
+    }
+
+    .header__inner .nav>ul>li {
+        text-align: center;
+        margin: 0 1rem;
+    }
+
+    .header__inner .nav>ul>li>a {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .header__inner .member {
+        width: 100%;
+    }
+
+    .header__inner .member>ul>li>a {
+        font-size: 0.875rem;
+    }
+}
