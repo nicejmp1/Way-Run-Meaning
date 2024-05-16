@@ -22,6 +22,53 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>WayRunMeaning : 러닝 & 마라톤</title>
+
+    <style>
+        .slider-wrap {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./assets/img/titleimg2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .slider-wrap::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: #9b979739;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .slider h1 {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 40px;
+            padding: 30px;
+            color: var(--mainColor);
+            font-size: 60px;
+            line-height: 1.5;
+            font-weight: 800;
+            font-family: var(--fontG);
+        }
+    </style>
 </head>
 
 <body>
@@ -30,43 +77,19 @@
             <div class="container">
                 <div class="header__inner">
                     <div class="logo">
-                        <a href="main.html"><img src="./assets/ico/wrm_nav_rogo.svg" alt=""></a>
+                        <a href="main.html"></a>
                     </div>
                     <nav class="nav">
                         <ul>
-                            <li><a href="information.html">대회일정</a>
-                                <ul class="submenu">
-                                    <li><a href="information.html">마라톤</a></li>
-                                    <li><a href="#">러닝</a></li>
-                                    <li><a href="#">이벤트</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">커뮤니티</a>
-                                <ul class="submenu">
-                                    <li><a href="#">개인/크루활동</a></li>
-                                    <li><a href="#">개인/크루사진</a></li>
-                                    <li><a href="#">#</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">게시판</a>
-                                <ul class="submenu">
-                                    <li><a href="#">훈련팁</a></li>
-                                    <li><a href="#">공지사항</a></li>
-                                    <li><a href="#">#</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">마이페이지</a>
-                                <ul class="submenu">
-                                    <li><a href="#">다이어리</a></li>
-                                    <li><a href="#">메달보관함</a></li>
-                                    <li><a href="#">#</a></li>
-                                </ul>
-                            </li>
+                            <li class="active"><a href="#">대회일정</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                            <li><a href="#">게시판</a></li>
+                            <li><a href="#">마이페이지</a></li>
                         </ul>
                     </nav>
                     <div class="member">
                         <ul>
-                            <li><a href="login_login.html">로그인</a></li>
+                            <li><a href="logsign.html">로그인</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,22 +99,29 @@
         <!-- //header -->
 
         <main id="main" role="main">
-            <div class="login__container">
-                <div class="main__signcon">
-                    <h2 class="title02">닉네임님, <br>가입을 축하합니다!!</h2>
-                    <img src="./assets/img/ login_Congratulations.svg" alt="캐릭터2">
-                    <div class="login__wrap">
-                        <div class="signCon">
-                            <button class="dark" type="submit"><a href="main.html">홈으로</a></button>
-                        </div>
+            <div class="main__banner">
+                <div class="slider-wrap">
+                    <div class="slider">
+                        <h1>MARATHON & RUNNING <br> WAY RUN MEANING</h1>
                     </div>
                 </div>
             </div>
-
+            <div class="main__info">
+                <div class="container">
+                    <span>Marathon InforMation</span>
+                    <ul>
+                        <li><a href="#">전체</a></li>
+                        <li><a href="#">플로깅</a></li>
+                        <li><a href="#">42km</a></li>
+                        <li><a href="#">신선한</a></li>
+                    </ul>
+                </div>
+            </div>
         </main>
         <!--//main -->
 
         <footer id="footer" role="contentinfo">
+            <hr>
             <div class="container">
                 <div class="footer__lnner">
                     <div class="left">
@@ -138,6 +168,25 @@
         </footer>
         <!-- //footer -->
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+    <script>
+        gsap.to(".slider-wrap", {
+            ease: "none",
+            duration: 0.5,
+            scrollTrigger: {
+                trigger: ".slider-wrap",
+                start: "top bottom",
+                end: "bottom top",
+                markers: true,
+                scrub: true
+            }
+        })
+
+    </script>
 </body>
 
 </html>
