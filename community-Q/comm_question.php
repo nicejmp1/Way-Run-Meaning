@@ -38,27 +38,27 @@
                 <div class="comm__link">
                     <ul>
                     <a href="../community-N/comm_notice.php" class="links 01">
-                            <li>
+                    <li>
                                 <span>자유게시판</span>
-                                <svg class="comm1" width="107" height="151" viewBox="0 0 107 151" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+                                <img src="../assets/img/community/comm1" alt="comm1" class="comm1">
                             </li>
                         </a>
                         <a href="../community-C/comm_crew.php" class="links 02">
-                            <li>
+                            <li >
                                 <span>크루모집</span>
-                                <svg class="comm2" width="122" height="149" viewBox="0 0 122 149" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+                                <img src="../assets/img/community/comm2" alt="comm2" class="comm2">
                             </li>
                         </a>
                         <a href="../community-M/comm_meet.php" class="links 03">
                             <li>
                                 <span>번개모임</span>
-                                <svg class="comm3" width="107" height="151" viewBox="0 0 107 151" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+                                <img src="../assets/img/community/comm3" alt="comm3" class="comm3">
                             </li>
                         </a>
                         <a href="../community-Q/comm_question.php" class="links 04">
                             <li class="active">
                                 <span>질문있어요</span>
-                                <svg class="comm4" width="122" height="149" viewBox="0 0 122 149" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+                                <img src="../assets/img/community/comm4" alt="comm4" class="comm4">
                             </li>
                         </a>
                     </ul>
