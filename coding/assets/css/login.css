@@ -15,13 +15,6 @@
     margin: 0 auto;
 }
 
-/* main__login */
-.main__login {
-    /* width: 500px;
-    height: 800px;
-    margin: 0 auto; */
-}
-
 .main__login .title01 {
     font-size: 1.125rem;
     font-family: var(--fontG);
@@ -33,9 +26,6 @@
 .main__login img {
     margin-top: 20px;
 }
-
-/* login__wrap */
-#login .mail {}
 
 /* login .mail */
 #login .mail input {

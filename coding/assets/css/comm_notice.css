@@ -35,7 +35,6 @@ comm__modify - 글수정
 }
 
 /* comm__link - 카테고리 링크 */
-.comm__link {}
 
 .comm__link ul {
     display: flex;
