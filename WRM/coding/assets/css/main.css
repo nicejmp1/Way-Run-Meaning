@@ -1,12 +1,13 @@
 #section {
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #section .title {
-    margin-top: 8.125rem;
-    text-align: center;
-
+    margin-top: 2rem;
 }
 
 #section .title>h1 {
@@ -15,6 +16,7 @@
     font-family: var(--fontO);
     font-weight: 900;
     text-transform: uppercase;
+    text-shadow: 6px 2px 2px var(--black);
     color: var(--mainColor);
 }
 
@@ -34,6 +36,10 @@
 }
 
 @media (max-width:800px) {
+    #section {
+        height: 50vh;
+    }
+
     #section .title>h1 {
         font-size: 12rem;
     }
@@ -44,7 +50,7 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     #section {
         height: 40vh;
     }
@@ -64,6 +70,7 @@
 .main__banner {
     text-align: center;
     height: 100vh;
+    margin-top: 10rem;
 }
 
 .main__banner .container {
@@ -121,21 +128,17 @@
     .main__banner .container>img {
         width: 100%;
         height: 90%;
-        /* 이미지 비율 유지 */
     }
 
     .main__banner .container a {
         padding: 1rem 2rem;
-        /* 모바일에서의 버튼 패딩 줄임 */
         font-size: 0.875rem;
-        /* 모바일에서의 폰트 크기 줄임 */
     }
 }
 
 @media (max-width:800px) {
     .main__banner {
         height: 90vh;
-        /* 높이를 줄입니다 */
     }
 
     .main__banner .container {
@@ -147,21 +150,39 @@
     .main__banner .container>img {
         width: 100%;
         height: 100%;
-        /* 이미지 비율 유지 */
     }
 
     .main__banner .container a {
         padding: 1rem 2rem;
-        /* 모바일에서의 버튼 패딩 줄임 */
         font-size: 0.875rem;
-        /* 모바일에서의 폰트 크기 줄임 */
+    }
+}
+
+@media (max-width:700px) {
+    .main__banner {
+        height: 50vh;
+    }
+
+    .main__banner .container {
+        width: 100%;
+        height: 100%;
+        border-radius: 20rem 20rem 1.875rem 1.875rem;
+    }
+
+    .main__banner .container>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main__banner .container a {
+        padding: 1rem 2rem;
+        font-size: 0.875rem;
     }
 }
 
 @media (max-width:500px) {
     .main__banner {
         height: 40vh;
-        /* 더 작은 화면에서 높이를 더 줄입니다 */
     }
 
     .main__banner .container {
@@ -293,6 +314,8 @@
     border-radius: 22px;
 }
 
+@media(max-width:1000px) {}
+
 @media (max-width:500px) {
 
     #post1,
@@ -324,8 +347,6 @@
     align-items: center;
     color: var(--black500);
 }
-
-@media (max-width:500) {}
 
 .post .day li:nth-child(2) {
     border: 1px solid var(--mainColor);
@@ -969,4 +990,34 @@
     text-transform: uppercase;
     font-weight: 900;
     color: var(--mainColor);
+}
+
+@media (max-width:1250px) {
+    .main__footer .container {
+        padding-bottom: 5rem;
+    }
+
+    .main__footer .container>span {
+        font-size: 7rem;
+    }
+}
+
+@media(max-width:870px) {
+    .main__footer .container {
+        padding-bottom: 5rem;
+    }
+
+    .main__footer .container>span {
+        font-size: 6rem;
+    }
+}
+
+@media(max-width:600px) {
+    .main__footer .container {
+        padding-bottom: 5rem;
+    }
+
+    .main__footer .container>span {
+        font-size: 3.3rem;
+    }
 }

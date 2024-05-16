@@ -176,4 +176,8 @@
     #footer p.maile {
         text-align: center;
     }
+
+    .footer__lnner .right .sns ul {
+        margin-top: 10px;
+    }
 }
