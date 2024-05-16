@@ -563,7 +563,7 @@
     position: absolute;
     top: 0;
     right: -32px;
-    background-image: url(../ico/rank_ico-1.svg);
+    background-image: url(../ico/rank/rank_ico-1.svg);
     background-repeat: no-repeat;
 }
 
@@ -575,7 +575,7 @@
     position: absolute;
     top: 0;
     right: -32px;
-    background-image: url(../ico/rank_ico-2.svg);
+    background-image: url(../ico/rank/rank_ico-2.svg);
     background-repeat: no-repeat;
 }
 
@@ -587,7 +587,7 @@
     position: absolute;
     top: 0;
     right: -32px;
-    background-image: url(../ico/rank_ico-3.svg);
+    background-image: url(../ico/rank/rank_ico-3.svg);
     background-repeat: no-repeat;
 }
 

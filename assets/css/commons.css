@@ -1,6 +1,6 @@
 /* body */
 body {
-    background-color: var(--white);
+    background-color: var(--backgroundColor);
 }
 
 /* wrap */
@@ -35,33 +35,12 @@ body {
     }
 }
 
-/* 
-.line-bot::before {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: var(--mainColor);
-    position: absolute;
-    left: 0;
-    bottom: 50%;
-} */
-
 .line-top {
     width: 100%;
     height: 1px;
     position: relative;
     border-bottom: 1px solid var(--mainColor);
 }
-
-/* .line-top::after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: var(--mainColor);
-    position: absolute;
-    left: 0;
-    bottom: 50%;
-} */
 
 .line-hover:hover {
     text-decoration: underline;

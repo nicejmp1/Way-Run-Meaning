@@ -1,0 +1,492 @@
+/* 
+    |-- login__container : 로그인 컨테이너
+    |-- main__login : 로그인
+    |-- main__IDfind : 아이디 찾기
+    |-- main__PWfind : 비밀번호 찾기
+    |-- main__sign : 회원가입
+    |-- main__signcon : 가입축하
+    |-- login__wrap : 로그인 내용 입력
+*/
+
+/* login__container */
+#main .login__container {
+    width: 500px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.main__login .title01 {
+    font-size: 1.125rem;
+    font-family: var(--fontG);
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 100px;
+}
+
+.main__login img {
+    margin-top: 20px;
+}
+
+/* login .mail */
+#login .mail input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+}
+
+#login .mail input::placeholder {
+    color: var(--mainColor);
+}
+
+/* login .passwd */
+#login .passwd input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+}
+
+#login .passwd input::placeholder {
+    color: var(--mainColor);
+}
+
+/* login .submit */
+#login .submit button {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+}
+
+/* login .checks */
+#login .checks {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#login .checks ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: var(--black300);
+}
+
+#login .checks li {
+    text-align: center;
+}
+
+#login .checks li a {
+    text-decoration: none;
+}
+
+/* main__IDfind */
+.main__IDfind .title01 {
+    font-size: 1.25rem;
+    font-family: var(--fontG);
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.main__IDfind .title02 {
+    font-size: 2.875rem;
+    font-family: var(--fontG);
+    font-weight: 600;
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 100px;
+}
+
+.main__IDfind img {
+    margin-top: 40px;
+    width: 60%;
+    height: auto;
+    margin-left: 88px;
+    margin-bottom: 20px;
+
+}
+
+#IDfind .mail input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+}
+
+#IDfind .mail input::placeholder {
+    color: var(--mainColor);
+}
+
+#IDfind .nickname input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+}
+
+#IDfind .nickname input::placeholder {
+    color: var(--mainColor);
+}
+
+#IDfind .submit button {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+}
+
+#IDfind .checks {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#IDfind .checks ul {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: var(--black300);
+    font-family: var(--fontN);
+    font-size: 12px;
+}
+
+#IDfind .checks li {
+    text-align: center;
+}
+
+#IDfind .checks li a {
+    text-decoration: none;
+}
+
+/* main__PWfind */
+.main__PWfind .title01 {
+    font-size: 1.25rem;
+    font-family: var(--fontG);
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.main__PWfind .title02 {
+    font-size: 2.875rem;
+    font-family: var(--fontG);
+    font-weight: 600;
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 100px;
+}
+
+.main__PWfind img {
+    margin-top: 40px;
+    width: 60%;
+    height: auto;
+    margin-left: 88px;
+    margin-bottom: 20px;
+
+}
+
+#PWfind .mail {
+    width: 100%;
+    display: flex;
+}
+
+#PWfind .mail input {
+    padding: 10px 20px;
+    width: 70%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#PWfind .mail button {
+    width: 30%;
+    height: 60px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    margin-top: 10px;
+    color: var(--backgroundColor);
+
+}
+
+#PWfind .mail input::placeholder {
+    color: var(--mainColor);
+}
+
+#PWfind .password input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+}
+
+#PWfind .password input::placeholder {
+    color: var(--mainColor);
+}
+
+#PWfind .submit button {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+}
+
+#PWfind .checks {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#PWfind .checks ul {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: var(--black300);
+    font-family: var(--fontN);
+    font-size: 12px;
+}
+
+#PWfind .checks li {
+    text-align: center;
+}
+
+#PWfind .checks li a {
+    text-decoration: none;
+}
+
+/* main__signcon */
+.main__signcon .title02 {
+    font-size: 2.875rem;
+    font-family: var(--fontG);
+    font-weight: 600;
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 100px;
+}
+
+.main__signcon img {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.main__signcon img:hover {
+    background-image: url(../img/\ login_Congratulations1.svg);
+    background-size: cover;
+}
+
+
+.signCon button {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: var(--mainColor);
+    border-radius: 10px;
+}
+
+.signCon button a {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--backgroundColor);
+}
+
+.main__sign .title02 {
+    font-size: 2.875rem;
+    font-family: var(--fontG);
+    font-weight: 600;
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 100px;
+}
+
+.main__sign .title01 {
+    font-size: 1.25rem;
+    font-family: var(--fontG);
+    text-align: center;
+    color: var(--mainColor);
+}
+
+/* mail */
+.mail .signname {
+    margin-top: 40px;
+}
+
+.mail .signname span {
+    color: var(--mainColor);
+}
+
+.mail .mail_wrap {
+    display: flex;
+    width: 100%;
+
+}
+
+.mail .mail_wrap input {
+    padding: 10px 20px;
+    width: 70%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.mail .mail_wrap input::placeholder {
+    color: var(--mainColor);
+}
+
+.mail .mail_wrap button {
+    padding: 10px 20px;
+    width: 30%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 8px;
+}
+
+
+/* nickname */
+.nickname .signname {
+    margin-top: 25px;
+}
+
+.nickname .signname span {
+    color: var(--mainColor);
+}
+
+.nickname .nickname_wrap {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+
+.nickname .nickname_wrap input {
+    padding: 10px 20px;
+    width: 70%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.nickname .nickname_wrap input::placeholder {
+    color: var(--mainColor);
+}
+
+.nickname .nickname_wrap button {
+    padding: 10px 20px;
+    width: 30%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 8px;
+}
+
+/* name */
+.name .signname span {
+    color: var(--mainColor);
+}
+
+.name input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.name input::placeholder {
+    color: var(--mainColor);
+}
+
+/* password */
+.password .signname span {
+    color: var(--mainColor);
+}
+
+.password input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.password input::placeholder {
+    color: var(--mainColor);
+}
+
+/* name */
+.name .signname span {
+    color: var(--mainColor);
+}
+
+.name input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.name input::placeholder {
+    color: var(--mainColor);
+}
+
+#sign .submit button {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+    margin-top: 20px;
+}
