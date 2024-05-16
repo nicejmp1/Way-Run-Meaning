@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 <?php
     include "../connect/connect.php";
     include "../connect/session.php";
@@ -18,14 +10,28 @@
     $regTime = time();
     $memberID = $_SESSION['memberID'];
 
-    // echo $boardTitle;
-    // echo $boardContents;
-
     if(empty($boardTitle) || empty($boardContents)){
         echo "<script>alert('제목 또는 내용을 작성해주세요')</script>";
         echo "<script>window.history.back()</script>";
     } else{
-        $sql = "INSERT INTO board(memberID, boardTitle, boardContents, regTime) VALUES('$memberID', '$boardTitle', '$boardContents', '$regTime')";
+        // Find the last boardID
+        $sqlLastID = "SELECT MAX(boardID) AS lastID FROM board";
+        $resultLastID = $connect->query($sqlLastID);
+        $rowLastID = $resultLastID->fetch_assoc();
+        $lastID = $rowLastID['lastID'];
+
+        // Check if there are any deleted posts
+        $sqlDeleted = "SELECT boardID FROM board WHERE boardDelete = 0 ORDER BY boardID DESC LIMIT 1";
+        $resultDeleted = $connect->query($sqlDeleted);
+        $rowDeleted = $resultDeleted->fetch_assoc();
+
+        if ($rowDeleted && $rowDeleted['boardID'] > $lastID) {
+            $boardID = $rowDeleted['boardID'];
+        } else {
+            $boardID = $lastID + 1;
+        }
+
+        $sql = "INSERT INTO board(boardID, memberID, boardTitle, boardContents, regTime) VALUES('$boardID', '$memberID', '$boardTitle', '$boardContents', '$regTime')";
         $result = $connect -> query($sql);
 
         if($result){
@@ -35,5 +41,3 @@
         }
     }   
 ?>
-</body>
-</html>
