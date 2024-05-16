@@ -17,7 +17,7 @@
 
         <main id="main" role="main">
         <div class="container">
-                <div class="main__community">
+                <div class="main__comm">
                     <p class="title02">
                         COMMU<br />
                         RUNNING

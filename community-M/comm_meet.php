@@ -28,7 +28,7 @@
 
         <main id="main" role="main">
             <div class="container">
-                <div class="main__community">
+                <div class="main__comm">
                     <p class="title02">
                         COMMU<br />
                         RUNNING
@@ -40,25 +40,25 @@
                         <a href="../community-N/comm_notice.php" class="links 01">
                                 <li>
                                     <span>자유게시판</span>
-                                    <img src="../assets/img/community/comm1" alt="comm1" class="comm1">
+                                    <img src="../assets/img/community/commC1.svg" alt="comm1" class="comm1">
                                 </li>
                         </a>
                         <a href="../community-C/comm_crew.php" class="links 02">
                                 <li>
                                     <span>크루모집</span>
-                                    <img src="../assets/img/community/comm2" alt="comm2" class="comm2">
+                                    <img src="../assets/img/community/commC2.svg" alt="comm2" class="comm2">
                                 </li>
                         </a>
                         <a href="../community-M/comm_meet.php" class="links 03">
                                 <li class="active">
                                     <span>번개모임</span>
-                                    <img src="../assets/img/community/comm3" alt="comm3" class="comm3">
+                                    <img src="../assets/img/community/commC3.svg" alt="comm3" class="comm3">
                                 </li>
                         </a>
                         <a href="../community-Q/comm_question.php" class="links 04">
                                 <li>
                                     <span>질문있어요</span>
-                                    <img src="../assets/img/community/comm4" alt="comm4" class="comm4">
+                                    <img src="../assets/img/community/commC4.svg" alt="comm4" class="comm4">
                                 </li>
                         </a>
                     </ul>
