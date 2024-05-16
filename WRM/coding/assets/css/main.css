@@ -35,7 +35,7 @@
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:850px) {
     #section {
         height: 50vh;
     }
@@ -50,7 +50,7 @@
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:650px) {
     #section {
         height: 40vh;
     }
@@ -61,7 +61,22 @@
     }
 
     #section .title>h1 {
-        font-size: 7rem;
+        font-size: 10rem;
+    }
+}
+
+@media (max-width:400px) {
+    #section {
+        height: 40vh;
+    }
+
+    #section .title {
+        margin-top: 18rem;
+        text-align: center;
+    }
+
+    #section .title>h1 {
+        font-size: 6rem;
     }
 }
 
