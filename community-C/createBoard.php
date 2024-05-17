@@ -1,9 +1,16 @@
 <?php
-    include "../connect/connect.php";
+ include "../connect/connect.php";
 
-    for($i=1; $i<=300; $i++){
-        $regTime = time();
-        $sql = "INSERT INTO board2(memberID, boardTitle, boardContents, boardView, regTime) VALUES(1, '게시판 제목입니다.${i}', '${i}번째 게시판 내용입니다. 내용입니다. 내용입니다. 애뇽', 1, '$regTime')";
-        $connect -> query($sql);
-    }
+ $sql = "CREATE TABLE board2(";
+ $sql .= "boardID int(10) UNSIGNED AUTO_INCREMENT,";
+ $sql .= "memberID int(10) NOT NULL,";
+ $sql .= "boardTitle varchar(100) NOT NULL,";
+ $sql .= "boardContents longtext NOT NULL,";
+ $sql .= "boardView int(10) DEFAULT 1,";
+ $sql .= "boardDelete int(10) DEFAULT 1,";
+ $sql .= "regTime int(40) NOT NULL,";
+ $sql .= "PRIMARY KEY(boardID)";
+ $sql .= ") DEFAULT CHARSET=utf8";
+
+ $connect -> query($sql);
 ?>
