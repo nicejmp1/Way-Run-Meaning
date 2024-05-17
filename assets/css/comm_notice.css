@@ -221,7 +221,7 @@ comm__modify - 글수정
 }
 
 /* comm__write - 글쓰기 */
-.comm__write label {
+.comm__write .comm_write1 {
     width: 100%;
     font-size: 1.25rem;
     margin-bottom: 0.3125rem;
@@ -229,27 +229,47 @@ comm__modify - 글수정
     margin-top: 3.75rem;
     color: var(--mainColor);
     font-family: var(--fontG);
+    margin-left: 10%;
+}
+
+.comm__write .comm_write2 {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
+    display: block;
+    margin-top: 1.75rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-left: 10%;
 }
 
 .comm__write .comm_input {
-    width: 100%;
+    width: 80%;
     line-height: 3;
     border: 1px solid var(--mainColor);
     font-size: 0.9375rem;
     border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
 }
 
 .comm__write .comm_text {
-    width: 99.5%;
-    resize: none;
-    line-height: 1.7;
+    width: 79.5%;
+    height: 50vh;
+    line-height: 1.5;
     border: 1px solid var(--mainColor);
     font-size: 0.9375rem;
     border-radius: 0.5rem;
+    display: flex;
+    margin: 0 auto;
 }
 
 .comm__write .btn_01 {
     text-align: right;
+    margin-right: 10%;
+    margin-top: 0.3125rem;
 }
 
 .comm__write .btn_01 button {
@@ -306,7 +326,7 @@ comm__modify - 글수정
 }
 
 /* comm__modify - 글수정 */
-.comm__modify label {
+.comm__modify .comm_write1 {
     width: 100%;
     font-size: 1.25rem;
     margin-bottom: 0.3125rem;
@@ -314,27 +334,57 @@ comm__modify - 글수정
     margin-top: 3.75rem;
     color: var(--mainColor);
     font-family: var(--fontG);
+    margin-left: 10%;
+}
+
+.comm__modify .comm_write2 {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
+    display: block;
+    margin-top: 1.75rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-left: 10%;
+}
+
+.comm__modify .comm_write3 {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
+    display: block;
+    margin-top: 1.75rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-left: 10%;
 }
 
 .comm__modify .comm_input {
-    width: 100%;
+    width: 80%;
     line-height: 3;
     border: 1px solid var(--mainColor);
     font-size: 0.9375rem;
     border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
 }
 
 .comm__modify .comm_text {
-    width: 99.5%;
-    resize: none;
-    line-height: 1.7;
+    width: 79.5%;
+    height: 50vh;
+    line-height: 1.5;
     border: 1px solid var(--mainColor);
     font-size: 0.9375rem;
     border-radius: 0.5rem;
+    display: flex;
+    margin: 0 auto;
 }
 
 .comm__modify .btn_04 {
     text-align: right;
+    margin-right: 10%;
     margin-top: 0.3125rem;
 }
 
