@@ -5,3 +5,4 @@
 <script src="../assets/js/movetext.js"></script>
 <script src="../assets/js/posthover.js"></script>
 <script src="../assets/js/gsap.js"></script>
+<script src="../assets/js/modal.js"></script>

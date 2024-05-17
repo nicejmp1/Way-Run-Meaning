@@ -1,3 +1,8 @@
+<?php
+    include "connect/connect.php";
+    include "connect/session.php";
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -387,22 +392,22 @@
                         <div class="crew__rank1">
                             <p class="crew-tit">인천</p>
                             <p class="crew-day">썬데이 인천</p>
-                            <img src="assets/ico/crew-ico-1.svg" alt="rank1">
+                            <img src="assets/ico/crew/crew-ico-1.svg" alt="rank1">
                         </div>
                         <div class="crew__rank2">
                             <p class="crew-tit">서울</p>
                             <p class="crew-day">썬데이 서울</p>
-                            <img src="assets/ico/crew-ico-2.svg" alt="rank1">
+                            <img src="assets/ico/crew/crew-ico-2.svg" alt="rank2">
                         </div>
                         <div class="crew__rank3">
                             <p class="crew-tit">경기</p>
                             <p class="crew-day">썬데이 경기</p>
-                            <img src="assets/ico/crew-ico-3.svg" alt="rank1">
+                            <img src="assets/ico/crew/crew-ico-3.svg" alt="rank3">
                         </div>
                         <div class="crew__rank4">
                             <p class="crew-tit">강원</p>
                             <p class="crew-day">썬데이 강원</p>
-                            <img src="assets/ico/crew-ico-4.svg" alt="rank1">
+                            <img src="assets/ico/crew/crew-ico-4.svg" alt="rank4">
                         </div>
                     </div>
                 </div>

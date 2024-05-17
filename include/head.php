@@ -1,4 +1,4 @@
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="마라톤, 러닝, 대회일정 한눈에 보기">
     <meta name="keywords" content="마라톤, 러닝, 대회일정, 러닝크루, 훈련팁, 42km, 랭킹, 풀코스, 하프코스, 10km">
 
