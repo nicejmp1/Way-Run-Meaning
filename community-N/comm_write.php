@@ -35,36 +35,8 @@
                     </p>
                     <h1 class="title01">마라톤 커뮤니티</h1>
                 </div>
-                <!-- <div class="comm__link">
-                    <ul>
-                        <a href="../community/comm_notice.php" class="links 01">
-                            <li>
-                                <span>자유게시판</span>
-                                <img src="../assets/img/ch01.png" alt="캐릭터1">
-                            </li>
-                        </a>
-                        <a href="#" class="links 02">
-                            <li>
-                                <span>크루모집</span>
-                                <img src="../assets/img/ch02.png" alt="캐릭터2">
-                            </li>
-                        </a>
-                        <a href="#" class="links 03">
-                            <li>
-                                <span>번개모임</span>
-                                <img src="../assets/img/ch03.png" alt="캐릭터3">
-                            </li>
-                        </a>
-                        <a href="#" class="links 04">
-                            <li>
-                                <span>질문있어요</span>
-                                <img src="../assets/img/ch04.png" alt="캐릭터4">
-                            </li>
-                        </a>
-                    </ul>
-                </div> -->
-                <!-- //comm__link -->
-
+                <!-- //main__comm -->
+                
                 <div class="comm__inner">
                     <div class="comm__write">
                         <form action="comm_writeSave.php" name="comm_writeSave" method="post">

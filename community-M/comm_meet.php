@@ -70,14 +70,14 @@
                             * 총 <em><?=$boardTotalCount?></em>개 게시물이 등록되어 있습니다.
                         </div>
                         <div class="right">
-                            <form action="boardSearch.php" name="table__top" method="get">
+                            <form action="comm_search.php" name="table__top" method="get">
                                 <fieldset>
                                     <legend class="blind">게시판 검색 영역</legend>
                                     <input type="text" name="searchKeyword" placeholder="검색어를 입력해주세요.">
                                     <select name="searchOption" id="searchOption">
                                         <option value="title">제목</option>
                                         <option value="content">내용</option>
-                                        <option value="name">등록자</option>
+                                        <option value="nickname">등록자</option>
                                     </select>
                                     <button type="submit" class="btns1">검색</button>
                                     <button type="submit" class="btns2" formaction="comm_write.php">글쓰기</button>
