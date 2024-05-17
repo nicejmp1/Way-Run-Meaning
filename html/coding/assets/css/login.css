@@ -10,8 +10,8 @@
 
 /* login__container */
 #main .login__container {
-    width: 500px;
-    height: 800px;
+    width: 31.25rem;
+    height: 50rem;
     margin: 0 auto;
 }
 
@@ -20,22 +20,22 @@
     font-family: var(--fontG);
     text-align: center;
     color: var(--mainColor);
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .main__login img {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 /* login .mail */
 #login .mail input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
-    margin-top: 40px;
+    height: 3.75rem;
+    margin-top: 2.5rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #login .mail input::placeholder {
@@ -44,13 +44,13 @@
 
 /* login .passwd */
 #login .passwd input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
-    margin-top: 10px;
+    height: 3.75rem;
+    margin-top: 0.625rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #login .passwd input::placeholder {
@@ -59,13 +59,13 @@
 
 /* login .submit */
 #login .submit button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
-    margin-top: 20px;
+    height: 3.75rem;
+    margin-top: 0.625rem;
     background-color: var(--mainColor);
     color: var(--backgroundColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 /* login .checks */
@@ -79,7 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     color: var(--black300);
 }
 
@@ -105,26 +105,26 @@
     font-weight: 600;
     text-align: center;
     color: var(--mainColor);
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .main__IDfind img {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     width: 60%;
     height: auto;
-    margin-left: 88px;
-    margin-bottom: 20px;
+    margin-left: 5.5rem;
+    margin-bottom: 1.25rem;
 
 }
 
 #IDfind .mail input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
-    margin-top: 10px;
+    height: 3.75rem;
+    margin-top: 0.625rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #IDfind .mail input::placeholder {
@@ -132,13 +132,13 @@
 }
 
 #IDfind .nickname input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
-    margin-top: 10px;
+    height: 3.75rem;
+    margin-top: 0.625rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #IDfind .nickname input::placeholder {
@@ -146,13 +146,13 @@
 }
 
 #IDfind .submit button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
-    margin-top: 20px;
+    height: 3.75rem;
+    margin-top: 0.625rem;
     background-color: var(--mainColor);
     color: var(--backgroundColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #IDfind .checks {
@@ -167,7 +167,7 @@
     margin-top: 10px;
     color: var(--black300);
     font-family: var(--fontN);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 #IDfind .checks li {
@@ -192,15 +192,15 @@
     font-weight: 600;
     text-align: center;
     color: var(--mainColor);
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .main__PWfind img {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     width: 60%;
     height: auto;
-    margin-left: 88px;
-    margin-bottom: 20px;
+    margin-left: 5.5rem;
+    margin-bottom: 1.25rem;
 
 }
 
@@ -210,24 +210,24 @@
 }
 
 #PWfind .mail input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 70%;
-    height: 60px;
-    margin-top: 10px;
+    height: 3.75rem;
+    margin-top: 0.625rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 10px;
-    margin-right: 10px;
+    border-radius: 0.625rem;
+    margin-right: 0.625rem;
 }
 
 #PWfind .mail button {
     width: 30%;
-    height: 60px;
+    height: 3.75rem;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color: var(--mainColor);
-    border-radius: 10px;
-    margin-top: 10px;
+    border-radius: 0.625rem;
+    margin-top: 0.625rem;
     color: var(--backgroundColor);
 
 }
@@ -237,13 +237,13 @@
 }
 
 #PWfind .password input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
-    margin-top: 10px;
+    height: 3.75rem;
+    margin-top: 0.625rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #PWfind .password input::placeholder {
@@ -251,13 +251,13 @@
 }
 
 #PWfind .submit button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
-    margin-top: 20px;
+    height: 3.75rem;
+    margin-top: 0.625rem;
     background-color: var(--mainColor);
     color: var(--backgroundColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #PWfind .checks {
@@ -269,10 +269,10 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     color: var(--black300);
     font-family: var(--fontN);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 #PWfind .checks li {
@@ -290,12 +290,12 @@
     font-weight: 600;
     text-align: center;
     color: var(--mainColor);
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .main__signcon img {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
     transition: transform 0.3s ease;
 }
 
@@ -307,19 +307,19 @@
 
 .signCon button {
     width: 100%;
-    height: 60px;
-    margin-top: 20px;
+    height: 3.75rem;
+    margin-top: 2.5rem;
     background-color: var(--mainColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .signCon button a {
     width: 100%;
-    height: 60px;
-    margin-top: 20px;
+    height: 3.75rem;
+    margin-top: 1.25rem;
     background-color: var(--mainColor);
-    border-radius: 10px;
-    padding: 10px 20px;
+    border-radius: 0.625rem;
+    padding: 0.625rem 1.25rem;
     color: var(--backgroundColor);
 }
 
@@ -329,7 +329,7 @@
     font-weight: 600;
     text-align: center;
     color: var(--mainColor);
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .main__sign .title01 {
@@ -341,7 +341,7 @@
 
 /* mail */
 .mail .signname {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .mail .signname span {
@@ -355,14 +355,14 @@
 }
 
 .mail .mail_wrap input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 70%;
-    height: 50px;
-    margin-top: 5px;
+    height: 3.125rem;
+    margin-top: 0.3125rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 8px;
-    margin-right: 10px;
+    border-radius: 0.5rem;
+    margin-right: 0.625rem;
 }
 
 .mail .mail_wrap input::placeholder {
@@ -370,19 +370,19 @@
 }
 
 .mail .mail_wrap button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 30%;
-    height: 50px;
-    margin-top: 5px;
+    height: 3.125rem;
+    margin-top: 0.3125rem;
     background-color: var(--mainColor);
     color: var(--backgroundColor);
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 
 /* nickname */
 .nickname .signname {
-    margin-top: 25px;
+    margin-top: 1.5625rem;
 }
 
 .nickname .signname span {
@@ -392,19 +392,19 @@
 .nickname .nickname_wrap {
     display: flex;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 
 }
 
 .nickname .nickname_wrap input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 70%;
-    height: 50px;
-    margin-top: 5px;
+    height: 3.125rem;
+    margin-top: 0.3125rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 8px;
-    margin-right: 10px;
+    border-radius: 0.5rem;
+    margin-right: 0.625rem;
 }
 
 .nickname .nickname_wrap input::placeholder {
@@ -412,13 +412,13 @@
 }
 
 .nickname .nickname_wrap button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 30%;
-    height: 50px;
-    margin-top: 5px;
+    height: 3.125rem;
+    margin-top: 0.3125rem;
     background-color: var(--mainColor);
     color: var(--backgroundColor);
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 /* name */
@@ -427,14 +427,14 @@
 }
 
 .name input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 50px;
-    margin-top: 5px;
+    height: 3.125rem;
+    margin-top: 0.3125rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 8px;
-    margin-bottom: 25px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5625rem;
 }
 
 .name input::placeholder {
@@ -447,14 +447,14 @@
 }
 
 .password input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 50px;
-    margin-top: 5px;
+    height: 3.125rem;
+    margin-top: 0.3125rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 8px;
-    margin-bottom: 25px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5625rem;
 }
 
 .password input::placeholder {
@@ -467,14 +467,14 @@
 }
 
 .name input {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 50px;
-    margin-top: 5px;
+    height: 3.125rem;
+    margin-top: 0.3125rem;
     background-color: var(--pointColor);
     color: var(--mainColor);
-    border-radius: 8px;
-    margin-bottom: 25px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5625rem;
 }
 
 .name input::placeholder {
@@ -482,11 +482,11 @@
 }
 
 #sign .submit button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     background-color: var(--mainColor);
     color: var(--backgroundColor);
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: 0.625rem;
+    margin-top: 1.25rem;
 }
