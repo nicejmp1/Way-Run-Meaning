@@ -65,61 +65,52 @@ gsap.from(".crew__rank1",
     {
         duration: 1,
         autoAlpha: 0,
-        x: innerWidth * 1,
-        y: -600,
-        rotation: 360,
+        y: 100,
 
         scrollTrigger: {
             trigger: ".main__crew__rank",
-            markers: true,
-            start: "top 50%",
+            markers: false,
+            start: "top 80%",
         }
     })
 
 
 gsap.from(".crew__rank2",
     {
-        duration: 2,
+        duration: 1,
         autoAlpha: 0,
-        x: innerWidth * 1,
-        y: -600,
-        rotation: 360,
+        y: 200,
 
         scrollTrigger: {
             trigger: ".main__crew__rank",
-            markers: true,
-            start: "top 50%",
+            markers: false,
+            start: "top 80%",
         }
     })
 
 
 gsap.from(".crew__rank3",
     {
-        duration: 3,
+        duration: 1,
         autoAlpha: 0,
-        x: innerWidth * 1,
-        y: -600,
-        rotation: 360,
+        y: 300,
 
         scrollTrigger: {
             trigger: ".main__crew__rank",
-            markers: true,
-            start: "top 50%",
+            markers: false,
+            start: "top 80%",
         }
     })
 
 
 gsap.from(".crew__rank4",
     {
-        duration: 4,
+        duration: 1,
         autoAlpha: 0,
-        x: innerWidth * 1,
-        y: -600,
-        rotation: 360,
-
+        y: 400,
         scrollTrigger: {
             trigger: ".main__crew__rank",
-            markers: true,
-            start: "top 50%",
+            markers: false,
+            start: "top 80%",
         }
     })

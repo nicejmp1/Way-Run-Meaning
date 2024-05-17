@@ -20,7 +20,7 @@
     font-family: var(--fontG);
     text-align: center;
     color: var(--mainColor);
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .main__login img {
@@ -284,209 +284,125 @@
 }
 
 /* main__signcon */
-.main__signcon .title02 {
+
+.main__signup__title {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainColor);
+    padding-bottom: 3.75rem;
+}
+
+.main__signup__title h1 {
     font-size: 2.875rem;
     font-family: var(--fontG);
-    font-weight: 600;
-    text-align: center;
-    color: var(--mainColor);
-    margin-top: 100px;
+    font-weight: bold;
 }
 
-.main__signcon img {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+#main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.main__signcon img:hover {
-    background-image: url(../img/\ login_Congratulations1.svg);
-    background-size: cover;
+.signup__img {
+    width: 50%;
 }
 
-
-.signCon button {
+.member__insert {
+    max-width: 500px;
     width: 100%;
-    height: 60px;
-    margin-top: 20px;
-    background-color: var(--mainColor);
-    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
 }
 
-.signCon button a {
-    width: 100%;
-    height: 60px;
-    margin-top: 20px;
-    background-color: var(--mainColor);
-    border-radius: 10px;
-    padding: 10px 20px;
-    color: var(--backgroundColor);
-}
-
-.main__sign .title02 {
-    font-size: 2.875rem;
-    font-family: var(--fontG);
-    font-weight: 600;
-    text-align: center;
-    color: var(--mainColor);
-    margin-top: 100px;
-}
-
-.main__sign .title01 {
+.member__insert div label {
+    display: block;
     font-size: 1.25rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: var(--black);
     font-family: var(--fontG);
+    font-weight: 400;
+}
+
+.member__insert div .check {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.member__insert div input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.member__insert div .check input {
+    width: 69%;
+}
+
+.member__insert div .check .btn {
+    width: 30%;
+    background-color: var(--mainColor);
+    color: var(--white);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.member__insert div .msg {
+    color: var(--mainColor);
+    margin-bottom: 2rem;
+}
+
+.member__insert .center {
     text-align: center;
-    color: var(--mainColor);
 }
 
-/* mail */
-.mail .signname {
-    margin-top: 40px;
+.member__insert .insert__btn {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--mainColor);
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.mail .signname span {
-    color: var(--mainColor);
-}
-
-.mail .mail_wrap {
+.login__wrap .btn {
     display: flex;
-    width: 100%;
-
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
 }
 
-.mail .mail_wrap input {
-    padding: 10px 20px;
-    width: 70%;
-    height: 50px;
-    margin-top: 5px;
-    background-color: var(--pointColor);
-    color: var(--mainColor);
-    border-radius: 8px;
-    margin-right: 10px;
-}
-
-.mail .mail_wrap input::placeholder {
-    color: var(--mainColor);
-}
-
-.mail .mail_wrap button {
-    padding: 10px 20px;
-    width: 30%;
-    height: 50px;
-    margin-top: 5px;
+.login__wrap .btn a {
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.25rem;
     background-color: var(--mainColor);
-    color: var(--backgroundColor);
-    border-radius: 8px;
+    color: var(--white);
+    display: inline-block;
 }
 
+@media (max-width: 600px) {
 
-/* nickname */
-.nickname .signname {
-    margin-top: 25px;
-}
+    .member__insert div .check {
+        flex-direction: column;
+    }
 
-.nickname .signname span {
-    color: var(--mainColor);
-}
+    .member__insert div .check input {
+        width: 100%;
+    }
 
-.nickname .nickname_wrap {
-    display: flex;
-    width: 100%;
-    margin-bottom: 25px;
-
-}
-
-.nickname .nickname_wrap input {
-    padding: 10px 20px;
-    width: 70%;
-    height: 50px;
-    margin-top: 5px;
-    background-color: var(--pointColor);
-    color: var(--mainColor);
-    border-radius: 8px;
-    margin-right: 10px;
-}
-
-.nickname .nickname_wrap input::placeholder {
-    color: var(--mainColor);
-}
-
-.nickname .nickname_wrap button {
-    padding: 10px 20px;
-    width: 30%;
-    height: 50px;
-    margin-top: 5px;
-    background-color: var(--mainColor);
-    color: var(--backgroundColor);
-    border-radius: 8px;
-}
-
-/* name */
-.name .signname span {
-    color: var(--mainColor);
-}
-
-.name input {
-    padding: 10px 20px;
-    width: 100%;
-    height: 50px;
-    margin-top: 5px;
-    background-color: var(--pointColor);
-    color: var(--mainColor);
-    border-radius: 8px;
-    margin-bottom: 25px;
-}
-
-.name input::placeholder {
-    color: var(--mainColor);
-}
-
-/* password */
-.password .signname span {
-    color: var(--mainColor);
-}
-
-.password input {
-    padding: 10px 20px;
-    width: 100%;
-    height: 50px;
-    margin-top: 5px;
-    background-color: var(--pointColor);
-    color: var(--mainColor);
-    border-radius: 8px;
-    margin-bottom: 25px;
-}
-
-.password input::placeholder {
-    color: var(--mainColor);
-}
-
-/* name */
-.name .signname span {
-    color: var(--mainColor);
-}
-
-.name input {
-    padding: 10px 20px;
-    width: 100%;
-    height: 50px;
-    margin-top: 5px;
-    background-color: var(--pointColor);
-    color: var(--mainColor);
-    border-radius: 8px;
-    margin-bottom: 25px;
-}
-
-.name input::placeholder {
-    color: var(--mainColor);
-}
-
-#sign .submit button {
-    padding: 10px 20px;
-    width: 100%;
-    height: 60px;
-    background-color: var(--mainColor);
-    color: var(--backgroundColor);
-    border-radius: 10px;
-    margin-top: 20px;
+    .member__insert div .check .btn {
+        width: 100%;
+    }
 }
