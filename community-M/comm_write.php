@@ -73,12 +73,12 @@
                                 <legend class="blind">게시글 작성하기</legend>
                                 <div>
                                     <label for="boardTitle">제목</label>
-                                    <input type="text" id="boardTitle" name="boardTitle" class="input-style">
+                                    <input type="text" id="boardTitle" name="boardTitle" class="comm_input">
                                 </div>
                                 <div>
                                     <label for="boardContents">내용</label>
                                     <textarea name="boardContents" id="boardContents" rows="40"
-                                        class="input-style"></textarea>
+                                        class="comm_text"></textarea>
                                 </div>
                                 <div class="btn_01">
                                     <button type="submit">저장하기</button>

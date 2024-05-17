@@ -231,7 +231,7 @@ comm__modify - 글수정
     font-family: var(--fontG);
 }
 
-.comm__write input {
+.comm__write .comm_input {
     width: 100%;
     line-height: 3;
     border: 1px solid var(--mainColor);
@@ -239,8 +239,8 @@ comm__modify - 글수정
     border-radius: 0.5rem;
 }
 
-.comm__write textarea {
-    width: 100%;
+.comm__write .comm_text {
+    width: 99.5%;
     resize: none;
     line-height: 1.7;
     border: 1px solid var(--mainColor);
@@ -316,7 +316,7 @@ comm__modify - 글수정
     font-family: var(--fontG);
 }
 
-.comm__modify input {
+.comm__modify .comm_input {
     width: 100%;
     line-height: 3;
     border: 1px solid var(--mainColor);
@@ -324,8 +324,8 @@ comm__modify - 글수정
     border-radius: 0.5rem;
 }
 
-.comm__modify textarea {
-    width: 100%;
+.comm__modify .comm_text {
+    width: 99.5%;
     resize: none;
     line-height: 1.7;
     border: 1px solid var(--mainColor);
@@ -335,7 +335,7 @@ comm__modify - 글수정
 
 .comm__modify .btn_04 {
     text-align: right;
-    margin-top: 1.875rem;
+    margin-top: 0.3125rem;
 }
 
 .comm__modify .btn_04 .btn__04 {
