@@ -16,6 +16,7 @@
     font-family: var(--fontO);
     font-weight: 900;
     text-transform: uppercase;
+    text-shadow: 6px 2px 2px var(--black);
     color: var(--mainColor);
 }
 

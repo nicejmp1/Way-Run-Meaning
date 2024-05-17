@@ -1,5 +1,5 @@
 /*
-main__community - 타이틀
+main__comm - 타이틀
 comm__link - 카테고리 링크
 comm__table - 게시판 상단
 table__board - 게시판 보드
@@ -14,7 +14,7 @@ comm__modify - 글수정
     overflow: hidden
 }
 
-/* main__community - 타이틀 */
+/* main__comm - 타이틀 */
 .main__comm .title01 {
     text-align: center;
     margin-top: 0.625rem;
@@ -26,7 +26,7 @@ comm__modify - 글수정
 
 .main__comm .title02 {
     text-align: center;
-    margin-top: 6.25rem;
+    margin-top: 10rem;
     font-size: 6.25rem;
     color: var(--mainColor);
     font-family: var(--fontO);
@@ -350,7 +350,7 @@ comm__modify - 글수정
 }
 
 @media (max-width: 1000px) {
-    .main__community {
+    .main__comm {
         width: 100%;
     }
 
@@ -429,11 +429,11 @@ comm__modify - 글수정
 }
 
 @media (max-width: 500px) {
-    .main__community .title01 {
+    .main__comm .title01 {
         font-size: 0.875rem;
     }
 
-    .main__community .title02 {
+    .main__comm .title02 {
         font-size: 4.375rem;
     }
 
