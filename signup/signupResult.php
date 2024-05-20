@@ -5,13 +5,14 @@
     $youNickName = mysqli_real_escape_string($connect, $_POST['youNickName']);
     $youName = mysqli_real_escape_string($connect, $_POST['youName']);
     $youPass = mysqli_real_escape_string($connect, $_POST['youPass']);
+    $youQuiz = mysqli_real_escape_string($connect, $_POST['youQuiz']);
     $youRegTime = time();
 
     // 비밀번호 해싱
     $hashedPass = password_hash($youPass, PASSWORD_DEFAULT);
 
     // 쿼리
-    $sql = "INSERT INTO members(youEmail, youNickName, youName, youPass, youRegTime, youDelete) VALUES('$youEmail', '$youNickName', '$youName', '$hashedPass', '$youRegTime','1')"; 
+    $sql = "INSERT INTO members(youEmail, youNickName, youName, youPass, youQuiz, youRegTime, youDelete) VALUES('$youEmail', '$youNickName', '$youName', '$hashedPass', '$youQuiz', '$youRegTime','1')"; 
     $result = $connect -> query($sql);
 
     // 결과

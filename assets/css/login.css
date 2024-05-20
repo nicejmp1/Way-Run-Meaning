@@ -1,8 +1,9 @@
 /* 
     |-- login__container : 로그인 컨테이너
     |-- main__login : 로그인
-    |-- main__IDfind : 아이디 찾기
-    |-- main__PWfind : 비밀번호 찾기
+    |-- main__search_id : 아이디 찾기
+    |-- main__search_pass : 비밀번호 찾기
+    |-- main__passCC : 비밀번호 재설정
     |-- main__sign : 회원가입
     |-- main__signcon : 가입축하
     |-- login__wrap : 로그인 내용 입력
@@ -36,6 +37,7 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
+    font-size: 1rem;
 }
 
 #login .mail input::placeholder {
@@ -51,6 +53,7 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
+    font-size: 1rem;
 }
 
 #login .passwd input::placeholder {
@@ -80,12 +83,12 @@
     text-decoration: none;
 }
 
-/* main__IDfind */
+/* main__search_id */
 .main__search_id .ID_title01 {
     font-size: 2.875rem;
     font-family: var(--fontG);
     font-weight: bold;
-    margin-top: 15rem;
+    margin-top: 10rem;
     text-align: center;
     color: var(--mainColor);
 }
@@ -116,6 +119,7 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
+    font-size: 1rem;
 }
 
 #search_id .secrch_mail input::placeholder {
@@ -130,22 +134,12 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
+    font-size: 1rem;
 }
 
 #search_id .secrch_name input::placeholder {
     color: var(--mainColor);
 }
-
-#search_id .submit .button {
-    padding: 10px 20px;
-    width: 100%;
-    height: 60px;
-    margin-top: 20px;
-    background-color: var(--mainColor);
-    color: var(--backgroundColor);
-    border-radius: 10px;
-}
-
 
 #search_id .submit .searchID_btn {
     width: 100%;
@@ -182,65 +176,40 @@
     font-size: 1rem;
 }
 
-/* main__PWfind */
-.main__PWfind .title01 {
-    font-size: 1.25rem;
-    font-family: var(--fontG);
-    text-align: center;
-    color: var(--mainColor);
-}
-
-.main__PWfind .title02 {
+/* main__search_pass */
+.main__search_pass .Pass_title01 {
     font-size: 2.875rem;
     font-family: var(--fontG);
-    font-weight: 600;
+    font-weight: bold;
+    margin-top: 10rem;
     text-align: center;
     color: var(--mainColor);
-    margin-top: 100px;
 }
 
-.main__PWfind img {
-    margin-top: 40px;
-    width: 60%;
-    height: auto;
-    margin-left: 88px;
-    margin-bottom: 20px;
-
+.main__search_pass .Pass_title02 {
+    font-size: 1.125rem;
+    font-family: var(--fontG);
+    text-align: center;
+    color: var(--mainColor);
 }
 
-#PWfind .mail {
+.main__search_pass .secrch_img {
     width: 100%;
+    height: 31vh;
+    justify-content: center;
     display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-#PWfind .mail input {
-    padding: 10px 20px;
-    width: 70%;
-    height: 60px;
-    margin-top: 10px;
-    background-color: var(--pointColor);
-    color: var(--mainColor);
-    border-radius: 10px;
-    margin-right: 10px;
+#search_pass .secrch_pass {
+    display: flex;
+    gap: 0.5rem;
 }
 
-#PWfind .mail button {
-    width: 30%;
-    height: 60px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--mainColor);
-    border-radius: 10px;
-    margin-top: 10px;
-    color: var(--backgroundColor);
-
-}
-
-#PWfind .mail input::placeholder {
-    color: var(--mainColor);
-}
-
-#PWfind .password input {
+#search_pass .secrch_pass input {
     padding: 10px 20px;
     width: 100%;
     height: 60px;
@@ -248,28 +217,70 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
+    font-size: 1rem;
 }
 
-#PWfind .password input::placeholder {
+#search_pass .secrch_pass input::placeholder {
     color: var(--mainColor);
 }
 
-#PWfind .submit button {
+#search_pass .secrch_pass .secrch_pass_btn {
+    width: 40%;
+    background-color: var(--mainColor);
+    color: var(--white);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.secrch_quiz {
     padding: 10px 20px;
     width: 100%;
     height: 60px;
-    margin-top: 20px;
-    background-color: var(--mainColor);
-    color: var(--backgroundColor);
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
     border-radius: 10px;
+    border: 1px solid var(--pointColor);
+    font-size: 1rem;
 }
 
-#PWfind .checks {
+#search_pass .secrch_quizA {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#search_pass .secrch_quizA::placeholder {
+    color: var(--mainColor);
+}
+
+#search_pass .submit .searchPass_btn {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--mainColor);
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#search_pass .secrch_checks {
     width: 80%;
     margin: 0 auto;
 }
 
-#PWfind .checks ul {
+#search_pass .secrch_checks ul {
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -279,12 +290,110 @@
     font-size: 12px;
 }
 
-#PWfind .checks li {
+#search_pass .secrch_checks li {
     text-align: center;
 }
 
-#PWfind .checks li a {
+#search_pass .secrch_checks li a {
     text-decoration: none;
+    font-size: 1rem;
+}
+
+/* main__passCC */
+.main__passCC .passCC_title01 {
+    font-size: 2.875rem;
+    font-family: var(--fontG);
+    font-weight: bold;
+    margin-top: 10rem;
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.main__passCC .passCC_title02 {
+    font-size: 1.125rem;
+    font-family: var(--fontG);
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.main__passCC .secrch_img {
+    width: 100%;
+    height: 31vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#pass_CCheck .secrch_passC input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#pass_CCheck .secrch_passC input::placeholder {
+    color: var(--mainColor);
+}
+
+#pass_CCheck .secrch_passCC input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#pass_CCheck .secrch_passCC input::placeholder {
+    color: var(--mainColor);
+}
+
+#pass_CCheck .submit .passC_btn {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--mainColor);
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#pass_CCheck .passC_checks {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#pass_CCheck .passC_checks ul {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: var(--black300);
+    font-family: var(--fontN);
+    font-size: 12px;
+}
+
+#pass_CCheck .passC_checks li {
+    text-align: center;
+}
+
+#pass_CCheck .passC_checks li a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#pass_CCheck .msg {
+    color: var(--mainColor);
 }
 
 /* main__signcon */
@@ -305,15 +414,9 @@
     font-weight: bold;
 }
 
-.login__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .signup__img {
     width: 50%;
+    margin: 0 auto;
 }
 
 .member__insert {
@@ -337,6 +440,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.secrch_Quiz {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--white);
+    color: var(--black700);
+    border-radius: 5px;
+    border: 1px solid var(--backgroundColor);
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .member__insert div input {
