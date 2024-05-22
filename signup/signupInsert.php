@@ -12,7 +12,7 @@
         <?php include "../include/header.php" ?>
         <!-- //header -->
         <main id="main" role="main">
-            <div class="container">
+            <div class="sign__container">
                 <div class="main__signup__title">
                     <h1>회원가입</h1>
                     <p>웨이런미닝과 함께 달릴 준비 되셨나요??</p>
@@ -27,7 +27,7 @@
                                 <div class="check">
                                     <input type="email" name="youEmail" id="youEmail" placeholder="이메일을 적어주세요!!"  
                                     autocomplete="off" class="input-style" >
-                                    <div class="btn" onclick="emailChecking()">이메일 중복검사
+                                    <div class="btn" onclick="emailChecking()">이메일 중복검사</div>
                                 </div>
                                 <p class="msg" id="youEmailComment"></p>
                             </div>
@@ -53,6 +53,19 @@
                                 <label for="youPassC" class="required">비밀번호</label>
                                 <input type="password" name="youPassC" id="youPassC" placeholder="다시 한번 비밀번호를 입력해주세요!!" autocomplete="off" class="input-style">
                                 <p class="msg" id="youPassCComment"></p>
+                            </div>
+                            <div>
+                                <label for="youQuiz" class="required">비밀번호 찾기</label>
+                                <select class="secrch_Quiz">
+                                    <option>질문을 선택해주세요.</option>
+                                    <option value="1">당신이 태어난 나라는?</option>
+                                    <option value="2">가장 좋아하는 색은?</option>
+                                    <option value="3">가장 좋아하는 음식은?</option>
+                                    <option value="4">당신이 졸업한 고등학교는?</option>
+                                    <option value="5">최근 관심이 생긴 취미는?</option>
+                                </select>
+                                <input type="text" name="youQuiz" id="youQuiz" placeholder="답변을 적어주세요!!" autocomplete="off" class="input-style">
+                                <p class="msg" id="youQuizComment"></p>
                             </div>
                             <div class="center">
                                 <button type="submit" class="insert__btn" id="signupButton">회원가입</button>
@@ -197,6 +210,21 @@
                 $("#youPassCComment").text("➟ 비밀번호가 일치하지 않습니다.");
                 $("#youPass").focus();
                 return false;
+            }
+
+            let youQuiz = $("#youQuiz").val();
+            if(youQuiz == null || youQuiz == '') {
+                $("#youQuizComment").text("➟ 답변을 입력해주세요!");
+                $("#youQuiz").focus();
+                return false;
+            } else {
+                let getyouQuiz = RegExp(/^[가-힣]{1,10}$/);
+                if(!getyouQuiz.test($("#youQuiz").val())){
+                    $("#youQuizComment").text("➟ 답변은 한글(1~10글자)만 사용할 수 있습니다.");
+                    $("#youQuiz").val('');
+                    $("#youQuiz").focus();
+                    return false;
+                }
             }
              
             if(!isnicknameCheck || !isEmailCheck) {
