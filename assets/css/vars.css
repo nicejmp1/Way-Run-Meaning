@@ -35,11 +35,12 @@
     /* 아이폰 가로 모드에서 글씨 확대 금지 */
     -webkit-text-size-adjust: 100%;
 
-    /* 모든 이미지
-    --snsInsta: url(../img/sns-instar.svg);
-    --snsGit: url(../img/sns-git.svg);
-    --snsYoutube: url(../img/sns-youtube.svg);
-    --snsAsk: url(../img/sns-spek.svg); */
+    /* svg 아이콘 */
+    --arror: url(../svg/arrow.svg);
+    --logout: url(../svg/log-out.svg);
+    --heart: url(../svg/heart.svg);
+    --heartRed: url(../svg/heart-red.svg);
+    --eye: url(../svg/eye.svg)
 }
 
 @media (max-width: 800px) {

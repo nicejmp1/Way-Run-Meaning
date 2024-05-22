@@ -32,7 +32,7 @@
                             </div>
                             <div class="secrch_checks">
                                 <ul>
-                                    <li><a href="../search/search_pass.php" class="line-under">혹시 비밀번호를 잊으셨나요?</a></li>
+                                    <li><a href="../find/find__pass.php" class="line-under">혹시 비밀번호를 잊으셨나요?</a></li>
                                 </ul>
                             </div>
                         </fieldset>

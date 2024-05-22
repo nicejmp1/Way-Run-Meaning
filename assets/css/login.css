@@ -1,27 +1,90 @@
 /* 
-    |-- login__container : 로그인 컨테이너
-    |-- main__login : 로그인
-    |-- main__search_id : 아이디 찾기
-    |-- main__search_pass : 비밀번호 찾기
-    |-- main__passCC : 비밀번호 재설정
-    |-- main__sign : 회원가입
-    |-- main__signcon : 가입축하
-    |-- login__wrap : 로그인 내용 입력
+==========================================================================
+CSS 구조 개요
+==========================================================================
+- #main .login__container: 로그인 컨테이너
+- .main__login: 로그인 섹션
+  |-- .title01: 로그인 제목 스타일
+  |-- img: 로그인 이미지 스타일
+- #login: 로그인 폼
+  |-- .mail input: 이메일 입력 필드
+  |-- .passwd input: 비밀번호 입력 필드
+  |-- .checks: 체크박스 영역
+    |-- ul: 체크박스 목록
+      |-- li: 체크박스 항목
+        |-- a: 체크박스 링크
+- .main__search_id: 아이디 찾기 섹션
+  |-- .ID_title01: 아이디 찾기 제목1
+  |-- .ID_title02: 아이디 찾기 제목2
+  |-- .secrch_img: 이미지 스타일
+  |-- .secrch_mail input: 이메일 입력 필드
+  |-- .secrch_name input: 이름 입력 필드
+  |-- .submit .button: 제출 버튼
+  |-- .submit .searchID_btn: 아이디 찾기 버튼
+  |-- .secrch_checks: 체크박스 영역
+    |-- ul: 체크박스 목록
+      |-- li: 체크박스 항목
+        |-- a: 체크박스 링크
+- .main__search_pass: 비밀번호 찾기 섹션
+  |-- .Pass_title01: 비밀번호 찾기 제목1
+  |-- .Pass_title02: 비밀번호 찾기 제목2
+  |-- .secrch_img: 이미지 스타일
+  |-- .secrch_pass: 비밀번호 찾기 필드 그룹
+    |-- input: 비밀번호 찾기 입력 필드
+    |-- .secrch_pass_btn: 비밀번호 찾기 버튼
+  |-- .secrch_quiz: 퀴즈 입력 필드
+  |-- .secrch_quizA: 퀴즈 답변 입력 필드
+  |-- .searchPass_btn: 비밀번호 찾기 제출 버튼
+  |-- .secrch_checks: 체크박스 영역
+    |-- ul: 체크박스 목록
+      |-- li: 체크박스 항목
+        |-- a: 체크박스 링크
+- .main__passCC: 비밀번호 변경 섹션
+  |-- .passCC_title01: 비밀번호 변경 제목1
+  |-- .passCC_title02: 비밀번호 변경 제목2
+  |-- .secrch_img: 이미지 스타일
+  |-- .secrch_passC input: 새 비밀번호 입력 필드
+  |-- .secrch_passCC input: 비밀번호 확인 입력 필드
+  |-- .submit .passC_btn: 비밀번호 변경 버튼
+  |-- .passC_checks: 체크박스 영역
+    |-- ul: 체크박스 목록
+      |-- li: 체크박스 항목
+        |-- a: 체크박스 링크
+  |-- .msg: 메시지 스타일
+- .main__signup__title: 회원가입 섹션
+  |-- h1: 회원가입 제목
+- .signup__img: 회원가입 이미지 스타일
+- .member__insert: 회원가입 입력 섹션
+  |-- div label: 입력 필드 레이블
+  |-- div .check: 체크박스 그룹
+    |-- input: 입력 필드
+    |-- .btn: 체크박스 버튼
+  |-- .msg: 메시지 스타일
+  |-- .center: 중앙 정렬
+  |-- .insert__btn: 제출 버튼
+- .login__wrap: 로그인 랩
+  |-- .btn: 버튼 스타일
+    |-- a: 버튼 링크
+- 모달 스타일
+  |-- .modal-pw: 비밀번호 모달
+    |-- .modal-content: 모달 내용
+      |-- .close: 닫기 버튼
+      |-- .hidden: 숨김 스타일
+==========================================================================
 */
 
-/* login__container */
 #main .login__container {
-    width: 500px;
+    max-width: 500px;
     height: 800px;
     margin: 0 auto;
 }
 
 .main__login .title01 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-family: var(--fontG);
     text-align: center;
     color: var(--mainColor);
-    margin-top: 10rem;
+    margin-top: 14rem;
 }
 
 .main__login img {
@@ -37,7 +100,6 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
-    font-size: 1rem;
 }
 
 #login .mail input::placeholder {
@@ -53,7 +115,6 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
-    font-size: 1rem;
 }
 
 #login .passwd input::placeholder {
@@ -70,8 +131,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: space-around;
+    margin-top: 1rem;
     color: var(--black300);
 }
 
@@ -83,12 +144,12 @@
     text-decoration: none;
 }
 
-/* main__search_id */
+/* main__IDfind */
 .main__search_id .ID_title01 {
     font-size: 2.875rem;
     font-family: var(--fontG);
     font-weight: bold;
-    margin-top: 10rem;
+    margin-top: 14rem;
     text-align: center;
     color: var(--mainColor);
 }
@@ -119,7 +180,6 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
-    font-size: 1rem;
 }
 
 #search_id .secrch_mail input::placeholder {
@@ -134,12 +194,22 @@
     background-color: var(--pointColor);
     color: var(--mainColor);
     border-radius: 10px;
-    font-size: 1rem;
 }
 
 #search_id .secrch_name input::placeholder {
     color: var(--mainColor);
 }
+
+#search_id .submit .button {
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+}
+
 
 #search_id .submit .searchID_btn {
     width: 100%;
@@ -204,12 +274,12 @@
     margin-bottom: 1.5rem;
 }
 
-#search_pass .secrch_pass {
+.secrch_pass {
     display: flex;
     gap: 0.5rem;
 }
 
-#search_pass .secrch_pass input {
+.secrch_pass input {
     padding: 10px 20px;
     width: 100%;
     height: 60px;
@@ -220,11 +290,11 @@
     font-size: 1rem;
 }
 
-#search_pass .secrch_pass input::placeholder {
+.secrch_pass input::placeholder {
     color: var(--mainColor);
 }
 
-#search_pass .secrch_pass .secrch_pass_btn {
+.secrch_pass .secrch_pass_btn {
     width: 40%;
     background-color: var(--mainColor);
     color: var(--white);
@@ -264,7 +334,7 @@
     color: var(--mainColor);
 }
 
-#search_pass .submit .searchPass_btn {
+.searchPass_btn {
     width: 100%;
     color: var(--white);
     background-color: var(--mainColor);
@@ -399,7 +469,7 @@
 /* main__signcon */
 
 .main__signup__title {
-    margin-top: 10rem;
+    margin-top: 14rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -414,10 +484,21 @@
     font-weight: bold;
 }
 
-.signup__img {
-    width: 50%;
-    margin: 0 auto;
+@media (max-width:600px) {
+    .main__signup__title {
+        margin-top: 14rem;
+    }
+
+    .main__signup__title h1 {
+        font-size: 2rem;
+    }
+
 }
+
+.signup__img {
+    width: 100%;
+}
+
 
 .member__insert {
     max-width: 500px;
@@ -440,18 +521,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.secrch_Quiz {
-    padding: 10px 20px;
-    width: 100%;
-    height: 60px;
-    background-color: var(--white);
-    color: var(--black700);
-    border-radius: 5px;
-    border: 1px solid var(--backgroundColor);
-    font-size: 1rem;
-    margin-bottom: 10px;
 }
 
 .member__insert div input {
@@ -510,6 +579,57 @@
     background-color: var(--mainColor);
     color: var(--white);
     display: inline-block;
+}
+
+/* 모달 스타일 */
+#main {
+    position: relative;
+}
+
+.modal-pw {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 150vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 600px) {

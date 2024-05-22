@@ -1,18 +1,29 @@
-/*
-main__comm - 타이틀
-comm__link - 카테고리 링크
-comm__table - 게시판 상단
-table__board - 게시판 보드
-table__bottom - 게시판 하단
-comm__write - 글쓰기
-comm__view - 글보기
-comm__modify - 글수정
-*/
-
-#wrap {
-    background-color: var(--backgroundColor);
-    overflow: hidden
-}
+/* 
+==========================================================================
+CSS 구조 개요
+==========================================================================
+- .main__comm: 커뮤니티 메인 타이틀 섹션
+  |-- .title01: 첫 번째 제목 스타일
+  |-- .title02: 두 번째 제목 스타일 (더 큰 텍스트)
+- .comm__link: 카테고리 링크 섹션
+  |-- ul: 링크 목록
+    |-- .links: 개별 링크 스타일링 및 상태 (활성/비활성)
+- .comm__table: 게시판 상단 레이아웃
+  |-- .table__top: 상단 텍스트 입력 및 버튼
+  |-- .table__board: 게시판의 메인 보드
+  |-- .table__bottom: 게시판 페이지 네비게이션
+- .comm__write: 글쓰기 페이지 구성
+  |-- .comm_write1, .comm_write2: 글쓰기 입력 폼
+  |-- .comm_input, .comm_text: 입력 필드와 텍스트 영역
+  |-- .btn_01: 글쓰기 버튼
+- .comm__view: 글 보기 페이지 구성
+  |-- table: 글 내용을 보여주는 테이블
+  |-- .btn_03: 글 관련 작업 버튼 (수정, 삭제 등)
+- .comm__modify: 글 수정 페이지 구성
+  |-- .comm_write1, .comm_write2, .comm_write3: 수정을 위한 입력 폼
+  |-- .comm_input, .comm_text: 입력 필드와 텍스트 영역
+  |-- .btn_04: 수정 완료 버튼
+========================================================================== */
 
 /* main__comm - 타이틀 */
 .main__comm .title01 {
