@@ -1,0 +1,107 @@
+/* 
+main__myinfo - 타이틀
+my__info - 내정보_정보수정
+
+*/
+.mypage__container {}
+
+.mypage__title {
+    margin-top: 10rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.mypage__title .mypage__title01 {
+    text-align: center;
+    margin-top: 6.25rem;
+    font-size: 6.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontO);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.mypage__title .mypage__text02 {
+    text-align: center;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 2.5rem;
+}
+
+/* mypage__information */
+.mypage__information {
+    width: 100%;
+    height: 43rem;
+}
+
+.mypage__information__aside {
+    width: 21.875rem;
+    height: 29.6875rem;
+    position: relative;
+
+}
+
+.mypage__information__aside .mypage__title02 {
+    font-family: var(--fontG);
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--mainColor);
+    line-height: 3;
+}
+
+.mypage__information__aside .mypage__nickname {
+    background-color: var(--pointColor);
+    height: 475px;
+    display: flex;
+    border-radius: 1.25rem;
+}
+
+.mypage__information__aside .mypage__nickname img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.mypage__information__aside .mypage__nickname .my__name {
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    text-align: center;
+    margin: 3rem;
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__nik {
+    font-family: var(--fontG);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__info {
+    display: inline-block;
+    position: absolute;
+    right: -160px;
+    width: 6.875rem;
+    height: 2.0625rem;
+    background-color: var(--backgroundColor);
+    border-radius: 1.25rem;
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__info>a {
+    font-size: 0.75rem;
+    padding: 1.5px;
+    display: inline-block;
+}
+
+.mypage__information__aside .mypage__nickname .my__email {}
+
+
+
+
+.mypage__information__aside .mypage__nickname .my__name .my__info a {}
+
+.mypage__information__aside .mypage__nickname .my__name .my__info a {}
