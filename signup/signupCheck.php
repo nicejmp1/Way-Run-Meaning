@@ -1,25 +1,48 @@
+
 <?php
-    include "../connect/connect.php";
-    
-    $type = $_POST['type'];
-    $jsonResult = "bad";
+include "../connect/connect.php"; // 데이터베이스 연결 파일
+header('Content-Type: application/json');
 
-    if( $type =="isnicknameCheck") {
-        $youNickName = $connect -> real_escape_string(trim($_POST['youNickName']));
-        $sql = "SELECT youNickName FROM members WHERE youNickName = '{$youNickName}'";
-    }
+$type = $_POST['type'] ?? '';
+// $youID = $_POST['youID'] ?? '';  
+$youEmail = $_POST['youEmail'] ?? '';
+$youNickName = $_POST['youNickName'] ?? '';
+$jsonResult = "bad";
 
-    if( $type =="isEmailCheck") {
-        $youEmail = $connect -> real_escape_string(trim($_POST['youEmail']));
-        $sql = "SELECT youEmail FROM members WHERE youEmail = '{$youEmail}'";
-    }
+// if ($type == "isIDCheck" && !empty($youID)) {
+//     $stmt = $connect->prepare("SELECT youID FROM members WHERE youID = ?");
+//     $stmt->bind_param("s", $youID);
+//     $stmt->execute();
+//     $result = $stmt->get_result();
+//     if ($result->num_rows == 0) {
+//         $jsonResult = "good";
+//     }
+//     $stmt->close();
+// }
 
-    $result = $connect -> query($sql);
-
-    if($result -> num_rows == 0) {
+if ($type == "isEmailCheck" && !empty($youEmail)) {
+    $stmt = $connect->prepare("SELECT youEmail FROM members WHERE youEmail = ?");
+    $stmt->bind_param("s", $youEmail);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if ($result->num_rows == 0) {
         $jsonResult = "good";
     }
+    $stmt->close();
+}
 
-    echo json_encode(array("result" => $jsonResult));
+if ($type == "isNicknameCheck" && !empty($youNickName)) {
+    $stmt = $connect->prepare("SELECT youNickName FROM members WHERE youNickName = ?");
+    $stmt->bind_param("s", $youNickName);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if ($result->num_rows == 0) {
+        $jsonResult = "good";
+    }
+    $stmt->close();
+}
+
+echo json_encode(array("result" => $jsonResult));
 
 ?>
+

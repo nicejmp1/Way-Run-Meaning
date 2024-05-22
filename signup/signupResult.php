@@ -1,18 +1,18 @@
 <?php
     include "../connect/connect.php";
     include "../connect/session.php";
+    // $youID = mysqli_real_escape_string($connect, $_POST['youID']);
     $youEmail = mysqli_real_escape_string($connect, $_POST['youEmail']);
     $youNickName = mysqli_real_escape_string($connect, $_POST['youNickName']);
     $youName = mysqli_real_escape_string($connect, $_POST['youName']);
     $youPass = mysqli_real_escape_string($connect, $_POST['youPass']);
-    $youQuiz = mysqli_real_escape_string($connect, $_POST['youQuiz']);
     $youRegTime = time();
 
     // 비밀번호 해싱
     $hashedPass = password_hash($youPass, PASSWORD_DEFAULT);
 
     // 쿼리
-    $sql = "INSERT INTO members(youEmail, youNickName, youName, youPass, youQuiz, youRegTime, youDelete) VALUES('$youEmail', '$youNickName', '$youName', '$hashedPass', '$youQuiz', '$youRegTime','1')"; 
+    $sql = "INSERT INTO members(youEmail, youNickName, youName, youPass, youRegTime, youDelete) VALUES('$youEmail', '$youNickName', '$youName', '$hashedPass', '$youRegTime','1')"; 
     $result = $connect -> query($sql);
 
     // 결과
@@ -39,13 +39,13 @@
         <!-- //header -->
 
         <main id="main" role="main">
-            <div class="container">
+            <div class="login__container">
                 <div class="main__signup__title">
                         <h1>
 <?php  
-    echo ($youNickName).("님"); 
+    echo ($youNickName).("님") ; 
 ?>  
-                가입을 축하합니다!</h1>
+               <br>가입을 축하합니다!</h1>
                 </div>
                 <div class="signup__img">
                     <img src="../assets/img/login/login_Congratulations.svg" alt="">
@@ -65,8 +65,6 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
-    <?php include "../include/script.php" ?>
-
 </body>
 
 </html>

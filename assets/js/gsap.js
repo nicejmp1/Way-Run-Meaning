@@ -6,20 +6,20 @@ targets.forEach((target) => {
     let words = SplitClient.words;
     let chars = SplitClient.chars;
 
-    gsap.from(chars, {
+    gsap.from(words, {
         xPercent: -200,
         autoAlpha: 0,
         duration: 2,
         ease: "Elastic.easeInOut",
         stagger: {
             amount: 2,
-            from: "chars"
+            from: "words"
         }
     })
 })
 
 
-gsap.from("#rank__post1",
+gsap.from(".post.rank1",
     {
         duration: 1,
         autoAlpha: 0,
@@ -27,13 +27,13 @@ gsap.from("#rank__post1",
         borderRadius: 100,
 
         scrollTrigger: {
-            trigger: ".main__rank__post",
+            trigger: ".main__info__post.rank",
             markers: false,
             start: "top 50%",
         }
     })
 
-gsap.from("#rank__post2",
+gsap.from(".post.rank2",
     {
         duration: 2,
         autoAlpha: 0,
@@ -41,13 +41,13 @@ gsap.from("#rank__post2",
         borderRadius: 100,
 
         scrollTrigger: {
-            trigger: ".main__rank__post",
+            trigger: ".main__info__post.rank",
             markers: false,
             start: "top 50%"
         }
     })
 
-gsap.from("#rank__post3",
+gsap.from(".post.rank3",
     {
         duration: 3,
         autoAlpha: 0,
@@ -55,7 +55,7 @@ gsap.from("#rank__post3",
         borderRadius: 100,
 
         scrollTrigger: {
-            trigger: ".main__rank__post",
+            trigger: ".main__info__post.rank",
             markers: false,
             start: "top 50%"
         }
