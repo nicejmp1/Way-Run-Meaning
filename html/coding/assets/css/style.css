@@ -13,11 +13,9 @@
 @import "notice.css";
 @import "main.css";
 @import "comm_notice.css";
-<<<<<<< HEAD
 @import "myinfo.css";
-=======
 @import "about.css";
->>>>>>> 7689f678413766149eaf130a73a3a2b7b9cd7788
+@import "feed.css";
 
 /* 로그인 로그아웃 */
 /* 외부CSS  */

@@ -1,0 +1,66 @@
+/* 
+feed__title -타이틀
+feed__info -피드메뉴
+ */
+
+
+
+/* feed__title -타이틀 */
+.feed__title .title01 {
+    text-align: center;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 4.5rem;
+}
+
+.feed__title .title02 {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 6.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontO);
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* feed__info -피드메뉴 */
+.feed__info {
+    width: 100%;
+
+}
+
+.feed__info .feed__menu {
+    display: flex;
+}
+
+.feed__info .feed__menu a {
+    font-family: 'GmarketSans';
+    color: var(--mainColor);
+    line-height: 5;
+    font-size: 1.25rem;
+    margin-left: 1.875rem;
+    font-weight: bold;
+    display: inline-block;
+    width: 33.333%;
+    height: 5.625rem;
+    background-color: var(--pointColor);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.feed__info .feed__menu a:hover {
+    font-family: 'GmarketSans';
+    color: var(--pointColor);
+    line-height: 5;
+    font-size: 1.25rem;
+    margin-left: 1.875rem;
+    font-weight: bold;
+    display: inline-block;
+    width: 33.333%;
+    height: 5.625rem;
+    background-color: var(--mainColor);
+    text-align: center;
+    border-radius: 1rem;
+}
