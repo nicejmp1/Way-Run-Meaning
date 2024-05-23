@@ -31,21 +31,21 @@
                         <form action="comm_modifySave.php" name="comm_modifySave" method="post">
                             <fieldset>
                             <legend class="blind">게시글 수정하기</legend>
-<?php
-    $boardID = $_GET['boardID'];
+                            <?php
+                                $boardID = $_GET['boardID'];
 
-    $sql = "SELECT * FROM board2 WHERE boardID = {$boardID}";
-    $result = $connect -> query($sql);
+                                $sql = "SELECT * FROM board2 WHERE boardID = {$boardID}";
+                                $result = $connect -> query($sql);
 
-    if($result){
-        $info = $result -> fetch_array(MYSQLI_ASSOC);
+                                if($result){
+                                    $info = $result -> fetch_array(MYSQLI_ASSOC);
 
-        echo "<div style='display:none'><label for='boardID'>번호</label><input type='text' id='boardID' name='boardID' class='input-style' value ='".$info['boardID']."'></div>";
-        echo "<div><label class='comm_write1' for='boardTitle'>제목</label><input type='text' id='boardTitle' name='boardTitle' class='comm_input' value ='".$info['boardTitle']."'></div>";
-        echo "<div><label class='comm_write2' for='boardContents'>내용</label><textarea name='boardContents' id='boardContents' rows='20' class='comm_text'>".$info['boardContents']."</textarea></div>";
-        echo "<div><label class='comm_write2' for='boardPass' class='mt50'>비밀번호</label><input type='password' id='boardPass' name='boardPass' class='comm_input mb10' autocomplete='off' placeholder='글을 수정하려면 로그인 비밀번호를 입력하셔야 합니다.' required></div>";
-    }
-?>
+                                    echo "<div style='display:none'><label for='boardID'>번호</label><input type='text' id='boardID' name='boardID' class='input-style' value ='".$info['boardID']."'></div>";
+                                    echo "<div><label class='comm_write1' for='boardTitle'>제목</label><input type='text' id='boardTitle' name='boardTitle' class='comm_input' value ='".$info['boardTitle']."'></div>";
+                                    echo "<div><label class='comm_write2' for='boardContents'>내용</label><textarea name='boardContents' id='boardContents' rows='40' class='comm_text'>".$info['boardContents']."</textarea></div>";
+                                    echo "<div><label class='comm_write2' for='boardPass' class='mt50'>비밀번호</label><input type='password' id='boardPass' name='boardPass' class='comm_input mb10' autocomplete='off' placeholder='글을 수정하려면 로그인 비밀번호를 입력하셔야 합니다.' required></div>";
+                                }
+                            ?>
                             <div class="btn_04">
                                 <button type="submit" class="btn__04">수정하기</button>
                             </div>

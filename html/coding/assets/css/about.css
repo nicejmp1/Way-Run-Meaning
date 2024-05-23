@@ -1,7 +1,9 @@
 /* 
     |--about__title : 어바웃 페이지 상단 타이틀&이미지
+    |--about__banner1 : 어바웃 페이지 첫번째 배너
 */
 
+/* about__title */
 .about__title {}
 
 .about__title .aboutT__h1 {
@@ -24,20 +26,27 @@
     margin-top: 50px;
 }
 
-.about__banner {
+/* about__banner1 */
+.about__banner1 {
     margin-top: 10rem;
     background-color: var(--mainColor);
+    height: 500px;
 }
 
-.about__banner .about__banner1-1 p {
-    width: 30%;
+.about__banner1 .about__banner1-1 {
+    margin-left: 8%;
+    padding-top: 50px;
+}
+
+.about__banner1 .about__banner1-1 p {
+    width: 23%;
     background-color: var(--pointColor);
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-family: var(--fontM);
     color: var(--mainColor);
     font-weight: bold;
     border-radius: 10px;
 }
 
-.about__banner .about__banner1-2 {}
+.about__banner1 .about__banner1-2 {}
