@@ -264,6 +264,7 @@ CSS 구조 개요
     align-items: center;
     display: flex;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .comm__write .comm_text {
@@ -275,6 +276,8 @@ CSS 구조 개요
     border-radius: 0.5rem;
     display: flex;
     margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .comm__write .btn_01 {
@@ -380,6 +383,7 @@ CSS 구조 개요
     align-items: center;
     display: flex;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 
 .comm__modify .comm_text {
@@ -391,6 +395,8 @@ CSS 구조 개요
     border-radius: 0.5rem;
     display: flex;
     margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .comm__modify .btn_04 {
