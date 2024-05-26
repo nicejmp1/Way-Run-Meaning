@@ -101,6 +101,7 @@
     /* 자식 요소들을 세로로 정렬 */
     gap: 1.75rem;
     /* 자식 요소 간의 간격을 설정 */
+    margin-bottom: 3rem;
 }
 
 /* mypage__contents1 */
@@ -169,7 +170,7 @@
 .mypage__contents2 .contents2__wrap {
     width: 100%;
     height: calc(50% - 0.875rem);
-    border-width: 38.5ㄱ드;
+    border-width: 38.5rem;
     padding: 2rem 2rem;
     /* 기존 패딩 설정 */
     border-top: 1px solid black;
@@ -179,3 +180,37 @@
 }
 
 .mypage__contents2 .contents2__wrap .mypage__level {}
+
+/* mypage__check */
+
+.mypage__text03 {
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    font-weight: 600;
+}
+
+.mypage__check {
+    width: 100%;
+    height: 14rem;
+    background-color: var(--pointColor);
+    margin-top: 2rem;
+    border-radius: 1.25rem;
+}
+
+.mypage__check .check__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.mypage__check .check__wrap .mypage__sticker {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
