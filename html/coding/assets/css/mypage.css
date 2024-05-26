@@ -1,0 +1,181 @@
+/* 
+
+*/
+
+
+.mypage__title {
+    margin-top: 10rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.mypage__title .mypage__title01 {
+    text-align: center;
+    margin-top: 6.25rem;
+    font-size: 6.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontO);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.mypage__title .mypage__text02 {
+    text-align: center;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 2.5rem;
+}
+
+.mypage__information .mypage__text03 {
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.mypage__information__wrap {
+    display: flex;
+    gap: 1.75rem;
+}
+
+/* mypage__information__aside */
+.mypage__information__aside {
+    width: 30%;
+    height: 480px;
+    background-color: var(--pointColor);
+    border-radius: 1.25rem;
+}
+
+.mypage__information__aside .mypage__nickname {
+    padding: 60px 40px;
+}
+
+.mypage__information__aside .mypage__nickname img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.mypage__information__aside .mypage__nickname .my__name {}
+
+.mypage__information__aside .mypage__nickname .my__name .my__nik {
+    margin-top: 0.625rem;
+    font-size: 1.2rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 2.5rem;
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__info {
+    justify-content: right;
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__info a {
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    background-color: #fff;
+    color: var(--mainColor);
+}
+
+.mypage__information__aside .mypage__nickname .my__email {}
+
+.mypage__information__aside .mypage__nickname .my__email a {}
+
+/* mypage__information__contents */
+.mypage__information__contents {
+    width: 70%;
+    height: 480px;
+    border-radius: 1.25rem;
+    gap: 1.75rem;
+    display: flex;
+    /* flex 레이아웃을 사용 */
+    flex-direction: column;
+    /* 자식 요소들을 세로로 정렬 */
+    gap: 1.75rem;
+    /* 자식 요소 간의 간격을 설정 */
+}
+
+/* mypage__contents1 */
+.mypage__contents1 {
+    width: 100%;
+    height: calc(50% - 0.875rem);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mypage__contents1 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* li 요소들을 가로로 정렬 */
+    flex-direction: row;
+    /* li 요소들을 가로로 정렬 */
+    gap: 1.25rem;
+    /* li 요소들 사이의 간격 */
+}
+
+.mypage__contents1 ul li {
+    width: 33.333%;
+    height: 100%;
+    background-color: var(--pointColor);
+    border-radius: 1.25rem;
+    padding: 1.7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 3ms;
+}
+
+.mypage__contents1 ul li:hover {
+    opacity: 0.8;
+}
+
+.mypage__contents1 ul li a {
+    margin-top: 0.625rem;
+    font-size: 1.2rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 2rem;
+}
+
+
+.mypage__contents1 ul li img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 2.3rem;
+    right: 2rem;
+}
+
+/* mypage__contents2 */
+.mypage__contents2 {
+    width: 100%;
+    height: calc(50% - 0.875rem);
+    /* gap 크기를 고려한 높이 조정 */
+    background-color: var(--mainColor);
+    border-radius: 1.25rem;
+}
+
+.mypage__contents2 .contents2__wrap {
+    width: 100%;
+    height: calc(50% - 0.875rem);
+    border-width: 38.5ㄱ드;
+    padding: 2rem 2rem;
+    /* 기존 패딩 설정 */
+    border-top: 1px solid black;
+    /* 상단 보더 */
+    border-bottom: 1px solid black;
+    /* 하단 보더 */
+}
+
+.mypage__contents2 .contents2__wrap .mypage__level {}
