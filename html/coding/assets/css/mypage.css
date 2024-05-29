@@ -4,7 +4,7 @@
 
 
 .mypage__title {
-    margin-top: 10rem;
+    margin-top: 7rem;
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -63,14 +63,16 @@
     margin-bottom: 2rem;
 }
 
-.mypage__information__aside .mypage__nickname .my__name {}
+.mypage__information__aside .mypage__nickname .my__name {
+    display: flex;
+    justify-content: space-between;
+}
 
 .mypage__information__aside .mypage__nickname .my__name .my__nik {
-    margin-top: 0.625rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--mainColor);
     font-family: var(--fontG);
-    margin-bottom: 2.5rem;
+    font-weight: 800;
 }
 
 .mypage__information__aside .mypage__nickname .my__name .my__info {
@@ -78,16 +80,37 @@
 }
 
 .mypage__information__aside .mypage__nickname .my__name .my__info a {
-    padding: 5px 15px;
+    padding: 8px 15px;
     border-radius: 30px;
     font-size: 12px;
     background-color: #fff;
     color: var(--mainColor);
 }
 
-.mypage__information__aside .mypage__nickname .my__email {}
+.mypage__information__aside .mypage__nickname .my__name .my__info a:hover {
+    opacity: 0.8;
+}
 
-.mypage__information__aside .mypage__nickname .my__email a {}
+.mypage__information__aside .mypage__nickname .my__email {
+    color: var(--black500);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.mypage__information__aside .mypage__nickname a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 114px;
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: var(--backgroundColor);
+}
+
+.mypage__information__aside .mypage__nickname a:hover {
+    opacity: 0.9;
+}
 
 /* mypage__information__contents */
 .mypage__information__contents {
@@ -160,31 +183,74 @@
 
 /* mypage__contents2 */
 .mypage__contents2 {
-    width: 100%;
-    height: calc(50% - 0.875rem);
-    /* gap 크기를 고려한 높이 조정 */
     background-color: var(--mainColor);
-    border-radius: 1.25rem;
+    color: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--fontN);
 }
 
-.mypage__contents2 .contents2__wrap {
-    width: 100%;
-    height: calc(50% - 0.875rem);
-    border-width: 38.5rem;
-    padding: 2rem 2rem;
-    /* 기존 패딩 설정 */
-    border-top: 1px solid black;
-    /* 상단 보더 */
-    border-bottom: 1px solid black;
-    /* 하단 보더 */
+.mypage__contents2 div {
+    flex: 1;
 }
 
-.mypage__contents2 .contents2__wrap .mypage__level {}
+.mypage__contents2 div:first-child {
+    border-right: 1px solid #FF8A50;
+}
+
+.mypage__contents2 div:last-child {
+    border-left: 1px solid #FF8A50;
+}
+
+.mypage__contents2 p {
+    position: relative;
+    /* 부모 요소를 기준으로 위치 설정 */
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    /* 텍스트 아래에 공간 추가 */
+}
+
+.mypage__contents2 p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    /* 부모 요소의 하단에 위치 */
+    border-bottom: 1px solid #FF8A50;
+    /* border-bottom 설정 */
+}
+
+.mypage__contents2 span {
+    position: relative;
+    /* 부모 요소를 기준으로 위치 설정 */
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+    display: block;
+    /* 텍스트 아래에 공간 추가 */
+}
+
+.mypage__contents2 span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    /* 부모 요소의 하단에 위치 */
+    border-top: 1px solid #FF8A50;
+    /* border-bottom 설정 */
+}
 
 /* mypage__check */
-
 .mypage__text03 {
-    margin-top: 0.625rem;
+    margin-top: 2rem;
     font-size: 1.25rem;
     color: var(--mainColor);
     font-family: var(--fontG);
@@ -200,6 +266,8 @@
 }
 
 .mypage__check .check__wrap {
+    width: 100%;
+    height: 14rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,4 +281,79 @@
     background-color: #fff;
     border-radius: 50%;
 
+}
+
+.mypage__check .check__wrap .mypage__sticker:first-child {
+    background-image: url(../img/mypage/my_info_check.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* calendar */
+.calendar__wrap {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFCCBC;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.calendar {
+    margin-right: 20px;
+}
+
+.calendar .calendar__title {
+    color: #FF5722;
+}
+
+.calendar .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar__nav {
+    cursor: pointer;
+    font-size: 20px;
+    color: #FF5722;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #FF8A50;
+    color: #FF5722;
+}
+
+th {
+    background-color: #FF5722;
+    color: white;
+}
+
+.event-list {
+    background-color: #FFE0B2;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.event-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.event-list li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
 }
