@@ -128,11 +128,8 @@ mydiary - 마이다이어리
     border-radius: 1.25rem;
     gap: 1.75rem;
     display: flex;
-    /* flex 레이아웃을 사용 */
     flex-direction: column;
-    /* 자식 요소들을 세로로 정렬 */
     gap: 1.75rem;
-    /* 자식 요소 간의 간격을 설정 */
     margin-bottom: 3rem;
 }
 
@@ -188,6 +185,16 @@ mydiary - 마이다이어리
     position: absolute;
     bottom: 2.3rem;
     right: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.mypage__contents1 ul li img:hover {
+    transform: rotate(-10deg);
+}
+
+.mypage__contents1 ul li img:active {
+    transform: translateX(10px);
+    /* 클릭 시 오른쪽으로 10px 이동 */
 }
 
 /* mypage__contents2 */
@@ -448,6 +455,7 @@ th {
     color: var(--mainColor);
     font-family: var(--fontG);
     font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 .mydiary .mydiary__wrap {
@@ -458,6 +466,22 @@ th {
 .mydiary .mydiary__wrap .mydiary1 {
     width: 100%;
     height: 400px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 15px;
+}
+
+.mydiary .mydiary__wrap .mydiary1 .mydiary1-1 {
+    width: 50%;
+    height: 400px;
+    background-color: var(--pointColor);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.mydiary .mydiary__wrap .mydiary1 .mydiary1-2 {
+    width: 50%;
+    height: 400px;
     background-color: var(--pointColor);
     padding: 30px;
     border-radius: 30px;
@@ -465,6 +489,30 @@ th {
 
 .mydiary .mydiary__wrap .mydiary2 {
     width: 100%;
+    height: 350px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.mydiary .mydiary__wrap .mydiary2 .mydiary2-1 {
+    width: 33.333%;
+    height: 350px;
+    background-color: var(--pointColor);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.mydiary .mydiary__wrap .mydiary2 .mydiary2-2 {
+    width: 33.333%;
+    height: 350px;
+    background-color: var(--pointColor);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.mydiary .mydiary__wrap .mydiary2 .mydiary2-3 {
+    width: 33.333%;
     height: 350px;
     background-color: var(--pointColor);
     padding: 30px;
@@ -474,7 +522,39 @@ th {
 .mydiary .mydiary__wrap .mydiary3 {
     width: 100%;
     height: 250px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.mydiary .mydiary__wrap .mydiary3 .mydiary3-1 {
+    width: 50%;
+    height: 250px;
     background-color: var(--pointColor);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.mydiary .mydiary__wrap .mydiary3 .mydiary3-2 {
+    width: 50%;
+    height: 250px;
+    background-color: var(--pointColor);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.mydiary .mydiary__wrap .mydiary4 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.mydiary .mydiary__wrap .mydiary4 .mydiary4-1 {
+    width: 100%;
+    height: 400px;
+    background-color: var(--mainColor);
     padding: 30px;
     border-radius: 30px;
 }
