@@ -1,8 +1,12 @@
 /* 
-
+mypage__title - 마이페이지 타이틀
+mypage__information - 내정보
+mypage__check - 출석체크
+calendar__wrap - 캘린더
+mydiary - 마이다이어리
 */
 
-
+/* mypage__title */
 .mypage__title {
     margin-top: 7rem;
     text-align: center;
@@ -61,6 +65,11 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 2rem;
+    transition: transform 0.3s ease
+}
+
+.mypage__information__aside .mypage__nickname img:hover {
+    transform: rotate(-10deg);
 }
 
 .mypage__information__aside .mypage__nickname .my__name {
@@ -207,12 +216,10 @@
 
 .mypage__contents2 p {
     position: relative;
-    /* 부모 요소를 기준으로 위치 설정 */
     margin: 5px 0;
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 20px;
-    /* 텍스트 아래에 공간 추가 */
 }
 
 .mypage__contents2 p::after {
@@ -221,20 +228,16 @@
     left: 0;
     right: 0;
     bottom: -20px;
-    /* 부모 요소의 하단에 위치 */
     border-bottom: 1px solid #FF8A50;
-    /* border-bottom 설정 */
 }
 
 .mypage__contents2 span {
     position: relative;
-    /* 부모 요소를 기준으로 위치 설정 */
     margin: 5px 0;
     font-size: 14px;
     font-weight: bold;
     padding-top: 20px;
     display: block;
-    /* 텍스트 아래에 공간 추가 */
 }
 
 .mypage__contents2 span::after {
@@ -243,9 +246,7 @@
     left: 0;
     right: 0;
     top: -20px;
-    /* 부모 요소의 하단에 위치 */
     border-top: 1px solid #FF8A50;
-    /* border-bottom 설정 */
 }
 
 /* mypage__check */
@@ -280,28 +281,88 @@
     height: 7.5rem;
     background-color: #fff;
     border-radius: 50%;
-
+    transition: transform 0.3s ease;
 }
 
 .mypage__check .check__wrap .mypage__sticker:first-child {
     background-image: url(../img/mypage/my_info_check.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80%;
     background-position: center;
 }
 
-/* calendar */
-.calendar__wrap {
-    display: flex;
-    flex-direction: row;
-    background-color: #FFCCBC;
-    border-radius: 20px;
-    padding: 20px;
+.mypage__check .check__wrap .mypage__sticker:first-child:hover {
+    transform: rotate(10deg);
 }
 
-.calendar {
-    margin-right: 20px;
+.mypage__check .check__wrap .mypage__sticker:nth-child(5) {
+    background-image: url(../img/mypage/my_info_check.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
+
+.mypage__check .check__wrap .mypage__sticker:nth-child(5):hover {
+    transform: rotate(10deg);
+}
+
+/* calendar */
+.calendar__text03 {
+    margin-top: 5rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    font-weight: 600;
+}
+
+.calendar__wrap {
+    width: 100%;
+    height: 42rem;
+    background-color: var(--pointColor);
+    margin-top: 2rem;
+    border-radius: 1.25rem;
+}
+
+.calendar__wrap .calendar__textwrap {
+    display: flex;
+    padding: 60px 60px 10px 60px;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.calendar__wrap .calendar__textwrap .calendar__title {
+    font-size: 1.5625rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+}
+
+.calendar__wrap .calendar__textwrap .calendar__textwrap2 {}
+
+.calendar__wrap .calendar__textwrap .calendar__textwrap2 .calendar__nav {
+    display: inline-block;
+    padding: 1px 10px;
+    background-color: #fff;
+    border-radius: 200px;
+    font-weight: 600;
+}
+
+.calendar__wrap .calendar__textwrap .calendar__textwrap2 .calendar__nav:hover {
+    opacity: 0.8;
+}
+
+.calendar__cont {
+    display: flex;
+    width: 100%;
+    margin-left: 60px;
+    gap: 10px;
+}
+
+.calendar__cont .calendar__cont1 {
+    width: 60%;
+    height: 480px;
+    background-color: var(--backgroundColor)
+}
+
 
 .calendar .calendar__title {
     color: #FF5722;
@@ -324,14 +385,24 @@ table {
     border-collapse: collapse;
 }
 
-th,
-td {
+thead {
     width: 40px;
     height: 40px;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     border: 1px solid #FF8A50;
     color: #FF5722;
+}
+
+th,
+td {
+    width: 40px;
+    height: 80px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #FF8A50;
+    color: #FF5722;
+    padding: 10px;
 }
 
 th {
@@ -340,10 +411,10 @@ th {
 }
 
 .event-list {
-    background-color: #FFE0B2;
+    background-color: var(--backgroundColor);
     border-radius: 10px;
-    padding: 10px;
-    width: 200px;
+    padding: 30px;
+    width: 30%;
 }
 
 .event-list ul {
@@ -354,6 +425,56 @@ th {
 .event-list li {
     margin: 5px 0;
     padding: 5px;
-    background-color: white;
     border-radius: 5px;
+    display: flex;
+
+}
+
+.event-list a {}
+
+.event-list a:hover {
+    text-decoration: underline;
+}
+
+.event-list span {
+    margin-left: 50px;
+}
+
+.mydiary {}
+
+.mydiary .mydiary__title {
+    margin-top: 5rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    font-weight: 600;
+}
+
+.mydiary .mydiary__wrap {
+    width: 100%;
+
+}
+
+.mydiary .mydiary__wrap .mydiary1 {
+    width: 100%;
+    height: 400px;
+    background-color: var(--pointColor);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.mydiary .mydiary__wrap .mydiary2 {
+    width: 100%;
+    height: 350px;
+    background-color: var(--pointColor);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.mydiary .mydiary__wrap .mydiary3 {
+    width: 100%;
+    height: 250px;
+    background-color: var(--pointColor);
+    padding: 30px;
+    border-radius: 30px;
 }
