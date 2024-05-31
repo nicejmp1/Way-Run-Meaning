@@ -1,0 +1,124 @@
+/* 
+detail - 상세페이지 제목
+detail2 - 상세페이지 내용
+
+ */
+
+.detailwrap {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.detail {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+}
+
+.detail>img {
+    width: 50%;
+    border-radius: 30px;
+    height: 200px;
+}
+
+.detail .detail__tittle {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--mainColor);
+}
+
+
+.detail .detail__tittle .detail__h3 {
+    font-size: 36px;
+    font-family: var(--fontG);
+    display: inline-block;
+    width: 80%;
+    color: var(--mainColor);
+    font-weight: 700;
+    position: relative;
+}
+
+.detail .detail__tittle .detail__heart img {
+    width: 32px;
+    margin-top: 9px;
+}
+
+.detail .detail__tittle .detail__heart img:hover {
+    opacity: 0.8;
+}
+
+.detail .detail__tittle .detail__share img {
+    width: 30px;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.detail .detail__tittle .detail__share img:hover {
+    opacity: 0.8;
+}
+
+/* detail__text */
+.detail__text {
+    position: absolute;
+    top: 200px;
+    left: 885px;
+    width: 35%;
+
+}
+
+.detail__text .detail__info {
+    border-bottom: 1px dashed var(--mainColor);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.detail__text .detail__info:last-of-type {
+    border-bottom: none;
+}
+
+.detail__text .detail__info .detail__cont {
+    line-height: 1.8;
+    width: 30%;
+    color: var(--mainColor);
+    font-weight: 600;
+}
+
+.detail__text .detail__info .detail__cont1 {
+    line-height: 1.8;
+}
+
+.detail__text .detail__info ul {
+    margin-bottom: 4px;
+}
+
+.detail__text .detail__info li {
+    line-height: 2;
+}
+
+/* detail__btn */
+.detail__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail__btn a {
+    width: 100%;
+    height: 80px;
+    padding: 26px 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: var(--pointColor);
+}
+
+.detail__btn a:hover {
+    opacity: 0.9;
+}
