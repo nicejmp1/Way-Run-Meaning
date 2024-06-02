@@ -1,7 +1,12 @@
 /* 
     |--about__title : 어바웃 페이지 상단 타이틀&이미지
-    |--about__banner : 어바웃 페이지 컨텐츠 시작
-    |--about__title : 어바웃 페이지 상단 타이틀&이미지
+    |--about__banner : 어바웃 페이지 our service
+    |--about__tape : 어바웃 테이프 배너 이미지
+    |--motto : 모토
+    |--motto__title : 모토 타이틀
+    |--motto__flex : 모토 상단 콘텐츠
+    |--moto__welcome : 모토 환영 멘트
+    |--moto__info : 모토 정보 콘텐츠
 
 */
 
@@ -29,13 +34,13 @@
 }
 
 /* about__banner */
-
 .about__banner {
     width: 100%;
     height: 470px;
     background-color: var(--mainColor);
 }
 
+/* about__container */
 .about__container {
     display: flex;
     justify-content: center;
@@ -91,4 +96,280 @@
 .about__banner .about__banner1-2 span {
     color: var(--pointColor);
     line-height: 1.6;
+}
+
+/* about__tape */
+.about__tape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__tape {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: var(--backgroudColor);
+}
+
+/* motto */
+.motto {
+    width: 100%;
+    height: 2330px;
+    background-color: var(--mainColor);
+}
+
+/* motto__container */
+.motto__container {
+    margin: 0 auto;
+}
+
+.motto__container .motto__title {
+    padding-top: 8rem;
+    font-size: 7rem;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    text-align: center;
+    font-family: var(--fontO);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 4rem;
+}
+
+/* motto__flex */
+.motto__flex {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    gap: 1.75rem;
+}
+
+.motto__flex .motto__cont1 {
+    width: 40%;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.motto__flex .motto__cont1 .motto__text1 {
+    width: 100%;
+    background-color: var(--backgroundColor);
+    height: 40%;
+    border-radius: 20px;
+    font-size: 2.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    text-align: center;
+    font-weight: 800;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.motto__flex .motto__cont1 .motto__logo {
+    width: 100%;
+    background-color: var(--backgroundColor);
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.motto__flex .motto__cont1 .motto__logo img {
+    width: 70%;
+    height: auto;
+}
+
+.motto__flex .motto__cont2 {
+    width: 60%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.motto__flex .motto__cont2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* moto__welcome */
+.moto__welcome {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    gap: 1.75rem;
+    margin-top: 1rem;
+}
+
+.moto__welcome .welcom1 {
+    width: 40%;
+}
+
+.moto__welcome .welcom2 {
+    width: 60%;
+    display: flex;
+}
+
+.moto__welcome .welcom2 .welcom2__num {
+    width: 40%;
+    color: var(--backgroundColor);
+}
+
+.moto__welcome .welcom2 .welcom2__text {
+    width: 60%;
+    color: var(--backgroundColor);
+}
+
+/* moto__info */
+.moto__info {
+    width: 100%;
+    display: flex;
+    height: 960px;
+    gap: 1.75rem;
+}
+
+.moto__info .moto__info1 {
+    width: 33.333%;
+    height: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* 이미지가 부모 요소를 넘치지 않도록 설정 */
+}
+
+.moto__info .moto__info1 img {
+    border-radius: 20px;
+    max-width: 100%;
+    /* 부모 요소의 최대 너비를 100%로 설정 */
+    max-height: 500px;
+    /* 최대 높이를 400px로 설정 */
+    height: auto;
+    /* 가로세로 비율을 유지 */
+}
+
+.moto__info .moto__info1 .moto__textwrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+
+}
+
+.moto__info .moto__info1 .moto__textwrap .m__num {
+    display: inline-block;
+    width: 30%;
+    color: var(--backgroundColor);
+}
+
+.moto__info .moto__info1 .moto__textwrap .m__text {
+    display: inline-block;
+    width: 60%;
+    color: var(--backgroundColor);
+}
+
+.moto__info .moto__info2 {
+    margin-top: 150px;
+    width: 33.333%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.moto__info .moto__info2 img {
+    border-radius: 20px;
+}
+
+.moto__info .moto__info2 .moto__textwrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+
+}
+
+.moto__info .moto__info2 .moto__textwrap .m__num {
+    display: inline-block;
+    width: 30%;
+    color: var(--backgroundColor);
+}
+
+.moto__info .moto__info2 .moto__textwrap .m__text {
+    display: inline-block;
+    width: 70%;
+    color: var(--backgroundColor);
+    text-align: right;
+}
+
+.moto__info .moto__info3 {
+    width: 33.333%;
+    height: 300px;
+    margin-top: 300px;
+}
+
+.moto__info .moto__info3 img {
+    border-radius: 20px;
+}
+
+.moto__info .moto__info3 .moto__textwrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+
+}
+
+.moto__info .moto__info3 .moto__textwrap .m__num {
+    display: inline-block;
+    width: 20%;
+    color: var(--backgroundColor);
+}
+
+.moto__info .moto__info3 .moto__textwrap .m__text {
+    display: inline-block;
+    width: 80%;
+    color: var(--backgroundColor);
+    text-align: right;
+}
+
+/* moto__chracter */
+.moto__chracter {
+    width: 40%;
+
+}
+
+.moto__chracter .moto__chracterImg {
+    width: 100%;
+    height: 300px;
+    background-color: var(--backgroundColor);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.moto__chracter .moto__chracterImg img {
+    width: 70%;
+}
+
+.moto__chracter .moto__textwrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+
+}
+
+.moto__chracter .moto__textwrap .m__num {
+    display: inline-block;
+    width: 20%;
+    color: var(--backgroundColor);
+}
+
+.moto__chracter .moto__textwrap .m__text {
+    display: inline-block;
+    width: 80%;
+    color: var(--backgroundColor);
+    text-align: right;
 }
