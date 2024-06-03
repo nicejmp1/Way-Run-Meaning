@@ -1,8 +1,9 @@
-/* 
-detail - 상세페이지 제목
-detail2 - 상세페이지 내용
-
- */
+/* |--detail - 상세페이지 워랩
+|--img - 상세페이지 포스터
+|--detailcontents - 상세페이지 설명
+|--detail__tittle - 상세타이틀
+|--detail__text - 상세설명
+|--detail__btn - 웹사이트 바로가기 */
 
 .detailwrap {
     margin-top: 8rem;
@@ -10,28 +11,34 @@ detail2 - 상세페이지 내용
     justify-content: center;
 }
 
+/* detail */
 .detail {
     width: 100%;
     display: flex;
     gap: 80px;
 }
 
+/* img */
 .detail>img {
     width: 50%;
     border-radius: 30px;
-    height: 200px;
 }
 
-.detail .detail__tittle {
-    width: 50%;
-    height: 60px;
+/* detailcontents */
+.detail .detailcontents {
+    width: 100%;
+}
+
+/* detail__tittle */
+.detail__tittle {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid var(--mainColor);
 }
 
 
-.detail .detail__tittle .detail__h3 {
+.detail__tittle .detail__h3 {
     font-size: 36px;
     font-family: var(--fontG);
     display: inline-block;
@@ -41,31 +48,28 @@ detail2 - 상세페이지 내용
     position: relative;
 }
 
-.detail .detail__tittle .detail__heart img {
+.detail__tittle .detail__heart img {
     width: 32px;
     margin-top: 9px;
 }
 
-.detail .detail__tittle .detail__heart img:hover {
+.detail__tittle .detail__heart img:hover {
     opacity: 0.8;
 }
 
-.detail .detail__tittle .detail__share img {
+.detail__tittle .detail__share img {
     width: 30px;
     margin-top: 8px;
     margin-right: 10px;
 }
 
-.detail .detail__tittle .detail__share img:hover {
+.detail__tittle .detail__share img:hover {
     opacity: 0.8;
 }
 
 /* detail__text */
 .detail__text {
-    position: absolute;
-    top: 200px;
-    left: 885px;
-    width: 35%;
+    width: 100%;
 
 }
 
@@ -77,7 +81,7 @@ detail2 - 상세페이지 내용
     display: flex;
 }
 
-.detail__text .detail__info:last-of-type {
+.detail__text .detail__info:last-child {
     border-bottom: none;
 }
 
@@ -113,12 +117,14 @@ detail2 - 상세페이지 내용
     padding: 26px 20px;
     display: inline-block;
     text-align: center;
-    background-color: var(--mainColor);
+    background-color: var(--pointColor);
     border-radius: 20px;
     box-sizing: border-box;
-    color: var(--pointColor);
+    color: var(--mainColor);
+    transition: all 0.3s;
 }
 
 .detail__btn a:hover {
-    opacity: 0.9;
+    background-color: var(--mainColor);
+    color: var(--pointColor);
 }

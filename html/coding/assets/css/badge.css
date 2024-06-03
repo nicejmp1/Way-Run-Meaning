@@ -1,0 +1,142 @@
+/* 
+|-- badge__container - 뱃지 컨테이너
+|-- badge__title - 뱃지 타이틀
+|-- badge__contents - 뱃지 이미지
+*/
+
+/* badge__container */
+.badge__container {
+    width: 85%;
+    height: 2500px;
+    margin: 0 auto;
+}
+
+/* badge__title */
+.badge__title {
+    margin-top: 180px;
+}
+
+.badge__title .title02 {
+    font-size: 2.875rem;
+    font-family: var(--fontG);
+    font-weight: 600;
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 10rem;
+    margin-bottom: 80px;
+}
+
+/* badge__contents */
+.badge__contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a img {
+    display: block;
+    width: 220px;
+    transition: transform 0.3s ease
+}
+
+a img:hover {
+    opacity: 0.9;
+    transform: rotate(-10deg);
+}
+
+a .badge__text {
+    display: inline-block;
+    padding: 20px 20px;
+    text-align: center;
+    color: var(--mainColor);
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+a .badge__text:hover {
+    text-decoration: underline;
+}
+
+/* badge__popup */
+.badge__popup {
+    width: 500px;
+    height: 700px;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* badge__popup1 */
+.badge__popup .badge__popup1 {
+    width: 400px;
+    height: 530px;
+    background-color: var(--backgroundColor);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 5px;
+    box-sizing: border-box;
+}
+
+.badge__popup img {
+    width: 50%;
+    display: inline-block;
+}
+
+.badge__popup .badge__popup__tittle {
+    padding: 24px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: var(--mainColor);
+    font-weight: bold;
+    font-family: var(--fontG);
+}
+
+.badge__popup .badge__popup__text {
+    text-align: center;
+    padding-top: 24px;
+    line-height: 1.6;
+    border-top: 1px solid var(--mainColor);
+    width: 300px;
+}
+
+.badge__popup .badge__popup__date {
+    text-align: center;
+    padding-bottom: 24px;
+    line-height: 1.6;
+    border-bottom: 1px solid var(--mainColor);
+    width: 300px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* badge__popup2 */
+.badge__popup2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.badge__popup2 img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.badge__popup2 a {
+    color: var(--backgroundColor);
+}
