@@ -20,7 +20,8 @@
     <link href="../assets/ico/favicon.svg" rel="favicon icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Way Run Menaing : 러닝 & 마라톤</title>
+
+    <title>WayRunMeaning : 러닝 & 마라톤</title>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                             <li><a href="main.html">대회일정</a></li>
                             <li><a href="#">커뮤러닝</a></li>
                             <li><a href="#">런피드</a></li>
-                            <li><a href="about.html">런뉴스</a></li>
+                            <li><a href="#">런뉴스</a></li>
                         </ul>
                     </nav>
                     <div class="member">
@@ -48,46 +49,81 @@
                 </div>
             </div>
         </header>
-        <!-- //header -->
 
         <main id="main" role="main">
-            <div class="container">
-                <div class="about__title">
-                    <h1 class="aboutT__h1">
-                        Let's Run with<br>
-                        Way Run MEANING
-                    </h1>
-                    <div class="aboutT__img">
-                        <img src="../assets/img/about/mainabout.svg" alt="이미지">
+            <div class="edit__container">
+                <div class="edit">
+                    <h2 class="title02">회원 정보 수정</h2>
+
+                    <div class="profile">
+                        <div class="profile1">
+                            <img src="/html/coding/assets/img/editmember/profile.svg" alt="profile">
+                        </div>
+                        <div class="profile2">
+                            <ul>
+                                <li><a href="#">이미지 변경</a></li>
+                                <li><a href="#">삭제</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- profile -->
+
+
+                    <div class="login__wrap">
+                        <form id="sign">
+                            <div class="name">
+                                <p class="signname">이름<span>*</span></p>
+                                <input type="text" name="네임" placeholder="이름을 입력해주세요!">
+                                <label></label>
+                            </div>
+
+                            <div class="nickname">
+                                <p class="signname">닉네임<span>*</span></p>
+                                <div class="nickname_wrap">
+                                    <input type="text" name="닉네임" placeholder="닉네임을 입력해주세요!">
+                                    <label></label>
+                                    <button type="submit">중복검사</button>
+                                </div>
+                            </div>
+
+                            <div class="intro">
+                                <p class="signname">소개<span>*</span></p>
+                                <textarea name="intro" placeholder="나를 소개해보세요!"></textarea>
+                            </div>
+
+                            <div class="gender">
+                                <p class="signname">성별<span>*</span></p>
+                                <div class="nickname_wrap">
+                                    <input type="radio" id="male" name="gender" value="남자">
+                                    <label for="male">남자</label>
+                                    <input type="radio" id="female" name="gender" value="여자">
+                                    <label for="female">여자</label>
+                                </div>
+                            </div>
+
+                            <div class="running-style">
+                                <p class="signname">러닝 스타일<span>*</span></p>
+                                <input type="checkbox" id="5km" name="running_style" value="5km">
+                                <label for="5km">5km</label>
+                                <input type="checkbox" id="10km" name="running_style" value="10km">
+                                <label for="10km">10km</label>
+                                <input type="checkbox" id="42km" name="running_style" value="42km">
+                                <label for="42km">42km</label>
+                                <input type="checkbox" id="100km" name="running_style" value="100km">
+                                <label for="100km">100km</label>
+                            </div>
+
+
+                            <div class="submit">
+                                <button class="dark" type="submit">저장하기</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- //about__title -->
 
-            <div class="about__banner1">
-                <div class="about__banner1-1">
-                    <p>Our Services</p>
-                    <span>
-                        마이페이지를 이용한 일정관리,<br>
-                        양한 대회 일정을 한눈에 파악하고,<br>
-                        훈련 커뮤니티로 실력을 향상 시켜보세요!!
-                    </span>
-                </div>
-                <!-- <div class="about__banner1-2">
-                    <img src="../assets/img/about/banner1-2.svg" alt="로고1">
-                    <span>
-                        You "Welcome to our marathon community!<br>
-                        We're a passionate group of runners<br>
-                        dedicated to sharing our love for long-distance racing.<br>
-                        Whether you're a seasoned marathoner<br>
-                        or just starting out, join us for support, advice, and camaraderie<br>
-                        as we strive towards our goals together.
-                    </span>
-                </div> -->
-            </div>
-            <!-- //about__banner1 -->
         </main>
-        <!-- //main -->
+        <!--//main -->
 
         <footer id="footer" role="contentinfo">
             <div class="container">
@@ -119,7 +155,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="right">
                         <div class="sns">
                             <ul>
@@ -149,7 +184,6 @@
         </footer>
         <!-- //footer -->
     </div>
-    <!-- //wrap -->
 </body>
 
 </html>

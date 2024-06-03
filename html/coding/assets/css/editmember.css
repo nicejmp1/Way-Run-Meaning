@@ -1,0 +1,156 @@
+.edit__container {
+    width: 31.25rem;
+    height: 2000px;
+    margin: 0 auto;
+}
+
+.edit__container .edit {
+    margin-top: 180px;
+}
+
+/* title02 */
+.edit__container .edit .title02 {
+    font-size: 2.875rem;
+    font-family: var(--fontG);
+    font-weight: 600;
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 10rem;
+    margin-bottom: 50px;
+}
+
+/* profile */
+.profile {}
+
+.profile {}
+
+.profile .profile1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.profile .profile1 img {
+    width: 30%;
+}
+
+.profile .profile2 {}
+
+.profile .profile2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 80px;
+}
+
+.profile .profile2 li {}
+
+.profile .profile2 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--pointColor);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.profile .profile2 a:hover {
+    color: var(--mainColor);
+}
+
+
+.name,
+.nickname,
+.intro,
+.gender,
+.running-style,
+.submit {
+    margin-bottom: 20px;
+}
+
+.signname {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 60px;
+}
+
+.nickname_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.nickname_wrap input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #ff6f3d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"].dark {
+    width: 100%;
+}
+
+.gender label {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--pointColor);
+    margin-right: 10px;
+}
+
+.running-style label {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gender input[type="radio"],
+.running-style input[type="checkbox"] {
+    display: none;
+}
+
+.gender input[type="radio"]:checked+label,
+.running-style input[type="checkbox"]:checked+label {
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border: none;
+}
+
+.star {
+    color: var(--mainColor);
+}
+
+.intro span {
+    color: var(--mainColor);
+}
+
+.gender span {
+    color: var(--mainColor);
+}
+
+.running-style span {
+    color: var(--mainColor);
+}
