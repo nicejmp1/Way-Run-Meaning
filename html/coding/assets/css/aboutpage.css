@@ -3,10 +3,8 @@
     |--about__banner : 어바웃 페이지 our service
     |--about__tape : 어바웃 테이프 배너 이미지
     |--motto : 모토
-    |--motto__title : 모토 타이틀
-    |--motto__flex : 모토 상단 콘텐츠
-    |--moto__welcome : 모토 환영 멘트
-    |--moto__info : 모토 정보 콘텐츠
+    |--goal : 목표
+    |--mystory : 마라톤 스토리
 
 */
 
@@ -377,6 +375,177 @@
 /* goal */
 .goal {}
 
-.goal .goal__title {}
+/* goal__title */
+.goal .goal__title {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.goal {}
+.goal .goal__title .goal__title01 {
+    text-transform: uppercase;
+    font-family: var(--fontO);
+    letter-spacing: -1px;
+    font-size: 2.875rem;
+    font-weight: 900;
+    color: var(--mainColor);
+}
+
+.goal .goal__title .goal__title02 {
+    font-size: 1.25rem;
+    font-family: var(--fontN);
+    font-weight: 500;
+    color: var(--mainColor);
+    margin-bottom: 60px;
+}
+
+/* goal__contents */
+.goal__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.75rem;
+    margin-bottom: 120px;
+}
+
+.goal__contents .goal__content1 {
+    width: 33.333%;
+    height: 445px;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    padding: 3rem;
+    position: relative;
+}
+
+.goal__contents .goal__content1:hover {
+    opacity: 0.9;
+}
+
+.goal__contents .goal__content1 .goal__text01 {
+
+    color: var(--backgroundColor);
+    font-size: 1.625rem;
+    font-family: var(--fontG);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.goal__contents .goal__content1 .goal__text02 {
+    color: var(--backgroundColor);
+}
+
+.goal__contents .goal__content1 img {
+    width: 40%;
+    position: absolute;
+    right: 40px;
+    top: 230px;
+}
+
+.goal__contents .goal__content2 {
+    width: 33.333%;
+    height: 445px;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    padding: 3rem;
+    position: relative;
+}
+
+.goal__contents .goal__content2:hover {
+    opacity: 0.9;
+}
+
+.goal__contents .goal__content2 .goal__text01 {
+
+    color: var(--backgroundColor);
+    font-size: 1.625rem;
+    font-family: var(--fontG);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.goal__contents .goal__content2 .goal__text02 {
+    color: var(--backgroundColor);
+}
+
+.goal__contents .goal__content2 img {
+    width: 40%;
+    position: absolute;
+    right: 40px;
+    top: 230px;
+}
+
+.goal__contents .goal__content3 {
+    width: 33.333%;
+    height: 445px;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    padding: 3rem;
+    position: relative;
+}
+
+.goal__contents .goal__content3:hover {
+    opacity: 0.9;
+}
+
+.goal__contents .goal__content3 .goal__text01 {
+    color: var(--backgroundColor);
+    font-size: 1.625rem;
+    font-family: var(--fontG);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.goal__contents .goal__content3 .goal__text02 {
+    color: var(--backgroundColor);
+}
+
+.goal__contents .goal__content3 img {
+    width: 40%;
+    position: absolute;
+    right: 40px;
+    top: 230px;
+}
+
+/* mystory */
+.mystory {
+    width: 100%;
+    height: 750px;
+    background-color: #F7E1CD;
+}
+
+.mystory__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mystory__wrap .story__title {
+    margin-top: 120px;
+    text-align: center;
+    color: var(--mainColor);
+    font-size: 2rem;
+    font-family: var(--fontG);
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.mystory__wrap img {
+    width: 60%;
+}
+
+.mystory__wrap a {
+    display: inline-block;
+    padding: 16px 46px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 100px;
+}
+
+.mystory__wrap a:hover {
+    background-color: var(--backgroundColor);
+    color: var(--mainColor);
+}
