@@ -7,7 +7,7 @@
 /* badge__container */
 .badge__container {
     width: 85%;
-    height: 1600px;
+    height: 1260px;
     margin: 0 auto;
 }
 
@@ -79,7 +79,7 @@ a .badge__text:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* display: none; */
+    display: none;
 }
 
 /* badge__popup1 */
