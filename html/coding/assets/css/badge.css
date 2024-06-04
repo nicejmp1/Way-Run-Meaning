@@ -75,10 +75,10 @@ a .badge__text:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 50%;
-    left: 35%;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     /* display: none; */
 }
 
