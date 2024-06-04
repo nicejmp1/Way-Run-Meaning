@@ -1,0 +1,359 @@
+/* 
+==========================================================================
+CSS 구조 개요
+==========================================================================
+- .feed__title - 타이틀
+- .feed__info - 런피드메뉴
+- .feed__write - 런피드 글쓰기
+========================================================================== */
+
+/* feed__title - 타이틀 */
+.feed__title .title01 {
+    text-align: center;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 2.5rem;
+}
+
+.feed__title .title02 {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 6.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontO);
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* feed__info - 피드메뉴 */
+.feed__info {
+    width: 100%;
+}
+
+.feed__info .feed__menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.feed__info .feed__menu ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.feed__info .feed__menu li a {
+    font-family: 'GmarketSans';
+    color: var(--mainColor);
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 25rem;
+    height: 4.625rem;
+    background-color: var(--pointColor);
+    border-radius: 1rem;
+    margin-bottom: 4.3rem;
+    transition: all 0.3s;
+}
+
+.feed__info .feed__menu li a:hover {
+    font-family: 'GmarketSans';
+    color: var(--pointColor);
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 25rem;
+    height: 4.625rem;
+    background-color: var(--mainColor);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.feed__info .feed__menu .write {
+    position: absolute;
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 6px 19px;
+    margin-top: 6rem;
+    margin-left: 1.5rem;
+}
+
+/* feed__write */
+.feed__write select {
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: var(--black500);
+    font-size: 1rem;
+}
+
+.feed__write input {
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--black500);
+    margin-bottom: 5px;
+}
+
+.feed__write textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--black500);
+    box-sizing: border-box;
+    min-height: 600px;
+}
+
+.feed__write .file input {
+    padding: 1.2rem;
+    border: 1px solid var(--white400);
+}
+
+.feed__write .file p {
+    color: var(--black500);
+    font-size: 14px;
+}
+
+.feed__write .btn {
+    text-align: right;
+}
+
+.ck-editor__editable {
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+/* feed__inner */
+.feed__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed__inner>.left {
+    width: calc(100% - 320px);
+    padding: 80px 0;
+}
+
+.feed__inner>.right {
+    width: 300px;
+    min-height: 1000px;
+    background-color: var(--white200);
+}
+
+/* feed__view */
+.feed__view h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-family: var(--fontN);
+}
+
+.feed__view .info {
+    border-top: 1px solid var(--mainColor);
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.feed__view .info>div>span>a {
+    background-color: var(--mainColor);
+    color: var(--white);
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-family: var(--fontN);
+}
+
+.feed__view p {
+    color: var(--black300);
+    line-height: 1.5;
+}
+
+/* feed__next */
+.feed__next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 100px;
+    border-top: 1px solid var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
+    padding: 10px 0;
+}
+
+.feed__next a {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.feed__next i {
+    font-style: normal;
+    display: block;
+    color: var(--mainColor);
+    font-size: 16px;
+}
+
+.feed__next a {
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    width: 49%;
+    color: var(--black300);
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.feed__next a span {
+    font-size: 16px;
+    font-family: var(--fontN);
+    font-weight: bold;
+}
+
+.feed__next a:hover {
+    background-color: var(--white200);
+}
+
+.feed__next .prev {
+    padding-left: 46px;
+    background-image: var(--arrowLeft);
+    background-position: 10px center;
+}
+
+.feed__next .next {
+    padding-right: 46px;
+    background-image: var(--arrowRight);
+    background-position: right 10px center;
+    text-align: right;
+}
+
+/* feed__related */
+.feed__related h4 {
+    width: 100%;
+    border-top: 2px solid var(--black);
+    border-bottom: 1px dashed var(--black);
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.feed__related .card__style {
+    padding: 0;
+}
+
+.feed__related .card__style img {
+    border-radius: 5px 5px 0 0;
+}
+
+.feed__related .card__style .card .card__info {
+    padding: 0.8rem;
+    border-radius: 0 0 5px 5px;
+}
+
+.feed__related .card__style .card .card__info .title a {
+    display: block;
+    line-height: 1;
+}
+
+.feed__related .card__style .card .card__info .title h3 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.feed__related .card__style .card {
+    margin-bottom: 0;
+}
+
+.feed__like {
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.feed__like a {
+    border: 1px solid var(--white500);
+    padding: 0.3rem 0.5rem;
+    border-radius: 30px;
+}
+
+.feed__like a .like {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-image: var(--heartRed);
+    background-size: cover;
+    vertical-align: -5px;
+}
+
+/* .feed__like a.on .like {
+    background-image: var(--heartOn);
+} */
+
+/* .feed__like a .like {
+    font-size: 14px;
+    color: var(--black500);
+    padding-left: 2px;
+} */
+
+.feed__like a .add {
+    position: absolute;
+    left: 50%;
+    top: -45px;
+    transform: translate(-50%);
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1px 20px;
+    border-radius: 30px;
+    font-style: normal;
+    transition: all 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.feed__like a .add::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    border-top: 8px solid var(--black);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.feed__like a:hover .add {
+    top: -40px;
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .feed__info .feed__menu li a {
+        width: 11rem;
+    }
+
+    .feed__info .feed__menu li a:hover {
+        width: 11rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .feed__info .feed__menu li a {
+        width: 6.5rem;
+    }
+
+    .feed__info .feed__menu li a:hover {
+        width: 6.5rem;
+    }
+}
