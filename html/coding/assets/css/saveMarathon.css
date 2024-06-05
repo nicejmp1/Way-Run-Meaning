@@ -1,7 +1,17 @@
+/* 
+|--save__container - 찜한 마라톤 컨테이너
+|--save__title - 타이틀
+|--save__contents - 컨텐츠 워랩
+|--save__wrap - 포스터 워랩
+|--save__con1 - 마라톤 정보
+|--save__con2 - 상세정보
+ */
+
+
 /* save__container */
 .save__container {
     width: 85%;
-    height: 78.75rem;
+    height: 100rem;
     margin: 0 auto;
 }
 
@@ -16,8 +26,8 @@
     font-weight: 600;
     text-align: center;
     color: var(--mainColor);
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 4.5rem;
 }
 
 /* save__contents */
@@ -26,31 +36,139 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 400px;
-    background-color: #222;
+    height: 25rem;
+    /* 400px */
+    gap: 1.25rem;
+    /* 20px */
+    margin-bottom: 4.0625rem;
+    /* 65px */
 }
 
 /* save__wrap */
-.save__wrap1 {
-    width: 33.333%;
-    height: 400px;
-    background-color: #222;
+.save__wrap {
+    width: 25%;
+    height: 25.625rem;
+    /* 410px */
+    border-radius: 1.25rem;
+    /* 20px */
 }
 
-.save__wrap2 {
-    width: 33.333%;
-    height: 400px;
+/* save__con1 */
+.save__con1 {
+    width: 100%;
+    height: 88%;
     background-color: var(--white);
+    border-radius: 1.25rem 1.25rem 0 0;
+    /* 20px 20px 0 0 */
+    padding: 1.625rem 1.6875rem;
+    /* 26px 27px */
 }
 
-.save__wrap3 {
-    width: 33.333%;
-    height: 400px;
-    background-color: var(--white);
+.save__con1 .img__poster {
+    background-image: url(/html/coding/assets/img/saveMarathon/poster1.png);
+    width: 100%;
+    height: 15rem;
+    /* 240px */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.0625rem;
+    /* 17px */
+    margin-bottom: 0.75rem;
+    /* 12px */
 }
 
-.save__wrap4 {
-    width: 33.333%;
-    height: 400px;
-    background-color: var(--white);
+.save__con1 .Stittle {
+    font-size: 0.9375rem;
+    /* 15px */
+    color: var(--mainColor);
+    font-weight: 800;
+    margin-top: 0.625rem;
+    /* 10px */
+    margin-bottom: 0.1875rem;
+    /* 3px */
+}
+
+.save__con1 .save__conwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save__con1 .save__conwrap .save__textwrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.save__con1 .save__conwrap .save__textwrap .Stext {
+    font-size: 0.875rem;
+    /* 14px */
+    font-weight: 700;
+}
+
+.save__con1 .save__conwrap .save__textwrap .Sdate {
+    font-size: 0.75rem;
+    /* 12px */
+}
+
+.save__con1 .save__conwrap .img__save svg {
+    margin-top: 0.625rem;
+    /* 10px */
+}
+
+.save__con1 .save__conwrap .img__save {
+    width: 1.5625rem;
+    /* 25px */
+    height: 1.5625rem;
+    /* 25px */
+    cursor: pointer;
+}
+
+/* 클릭 시 색상이 주황색으로 변경된 상태 */
+.save__con1 .save__conwrap .img__save svg path.active {
+    fill: #FF4409;
+}
+
+/* save__con2 */
+.save__con2 {
+    width: 100%;
+    height: 12%;
+    background-color: var(--pointColor);
+    border-radius: 0 0 1.25rem 1.25rem;
+    /* 20px 20px */
+    display: flex;
+    padding: 0.625rem 0.9375rem;
+    /* 10px 15px */
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.save__con2 .save__detail {
+    font-size: 0.75rem;
+    /* 12px */
+    color: var(--mainColor);
+    font-weight: 600;
+}
+
+.save__con2>svg {
+    width: 0.625rem;
+    /* 10px */
+    height: 0.625rem;
+    /* 10px */
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    /* 8px 0 8px 8px */
+}
+
+/* hover */
+.save__con2:hover {
+    background-color: var(--mainColor);
+    color: var(--pointColor);
+}
+
+.save__con2:hover .save__detail {
+    color: var(--pointColor);
+}
+
+.save__con2:hover svg path {
+    fill: var(--pointColor);
 }
