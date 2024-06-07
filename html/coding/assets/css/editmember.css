@@ -40,7 +40,7 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .profile .profile2 li {}
@@ -57,11 +57,20 @@
     color: var(--mainColor);
 }
 
+/* sign */
+#sign {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
 
 .name,
+.password,
+.new-password,
+.confirm-password,
 .nickname,
-.intro,
-.gender,
 .running-style,
 .submit {
     margin-bottom: 20px;
@@ -72,15 +81,15 @@
     font-weight: bold;
 }
 
-input[type="text"],
-textarea {
+input[type="text"].input-text,
+input[type="password"].input-text,
+textarea.input-textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-textarea {
+textarea.input-textarea {
     height: 60px;
 }
 
@@ -89,35 +98,26 @@ textarea {
     align-items: center;
 }
 
-.nickname_wrap input[type="text"] {
+.nickname_wrap input[type="text"].input-text {
     flex: 1;
     margin-right: 10px;
 }
 
-button[type="submit"] {
+button[type="button"] {
     background-color: #ff6f3d;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 5px 0 25px;
 }
 
 button[type="submit"].dark {
     width: 100%;
 }
 
-.gender label {
-    flex: 1;
-    text-align: center;
-    padding: 10px 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: var(--pointColor);
-    margin-right: 10px;
-}
-
+.gender label,
 .running-style label {
     flex: 1;
     text-align: center;
@@ -125,32 +125,22 @@ button[type="submit"].dark {
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
+    background-color: var(--pointColor);
+    margin-right: 10px;
 }
 
-.gender input[type="radio"],
-.running-style input[type="checkbox"] {
+.gender input[type="radio"].input-radio,
+.running-style input[type="checkbox"].input-checkbox {
     display: none;
 }
 
-.gender input[type="radio"]:checked+label,
-.running-style input[type="checkbox"]:checked+label {
+.gender input[type="radio"].input-radio:checked+label,
+.running-style input[type="checkbox"].input-checkbox:checked+label {
     background-color: var(--pointColor);
     color: var(--mainColor);
     border: none;
 }
 
 .star {
-    color: var(--mainColor);
-}
-
-.intro span {
-    color: var(--mainColor);
-}
-
-.gender span {
-    color: var(--mainColor);
-}
-
-.running-style span {
     color: var(--mainColor);
 }
