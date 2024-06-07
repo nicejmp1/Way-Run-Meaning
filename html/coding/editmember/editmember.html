@@ -70,55 +70,58 @@
 
 
                     <div class="login__wrap">
-                        <form id="sign">
-                            <div class="name">
+                        <form id="edit">
+                            <div class="edit__name">
                                 <p class="signname">러닝크루<span class="star">*</span></p>
                                 <input type="text" name="runningCrew" placeholder="내가 속한 러닝크루를 입력해주세요!"
                                     class="input-text">
                             </div>
 
-                            <div class="password">
+                            <div class="edit__password">
                                 <p class="signname">현재 비밀번호<span class="star">*</span></p>
                                 <div class="nickname_wrap">
-                                    <input type="password" name="currentPassword" placeholder="현재 비밀번호를 입력해주세요"
-                                        class="input-text">
-                                    <button type="button">비밀번호 확인</button>
+                                    <input class="input-text" type="password" name="currentPassword"
+                                        placeholder="현재 비밀번호를 입력해주세요">
+                                    <button class="button-text" type="button">비밀번호 확인</button>
                                 </div>
                             </div>
 
-                            <div class="new-password">
+                            <div class="edit__new-password">
                                 <p class="signname">새 비밀번호<span class="star">*</span></p>
                                 <input type="password" name="newPassword" placeholder="새 비밀번호를 입력해주세요!"
                                     class="input-text">
                             </div>
 
-                            <div class="confirm-password">
+                            <div class="edit__confirm-password">
                                 <p class="signname">새 비밀번호 확인<span class="star">*</span></p>
                                 <input type="password" name="confirmPassword" placeholder="새 비밀번호를 다시 입력해 주세요!"
                                     class="input-text">
                             </div>
 
-                            <div class="nickname">
+                            <div class="edit__nickname">
                                 <p class="signname">닉네임<span class="star">*</span></p>
                                 <div class="nickname_wrap">
                                     <input type="text" name="nickname" placeholder="닉네임을 입력해주세요!" class="input-text">
-                                    <button type="button">닉네임 중복검사</button>
+                                    <button class="button-text" type="button">닉네임 중복검사</button>
                                 </div>
                             </div>
 
-                            <div class="running-style">
+                            <div class="edit__running-style">
                                 <p class="signname">러닝 스타일<span class="star">*</span></p>
-                                <input type="checkbox" id="5km" name="running_style" value="5km" class="input-checkbox">
-                                <label for="5km">5km</label>
-                                <input type="checkbox" id="10km" name="running_style" value="10km"
-                                    class="input-checkbox">
-                                <label for="10km">10km</label>
-                                <input type="checkbox" id="42km" name="running_style" value="42km"
-                                    class="input-checkbox">
-                                <label for="42km">42km</label>
-                                <input type="checkbox" id="100km" name="running_style" value="100km"
-                                    class="input-checkbox">
-                                <label for="100km">100km</label>
+                                <div class="runwrap">
+                                    <input type="checkbox" id="5km" name="running_style" value="5km"
+                                        class="input-checkbox">
+                                    <label for="5km">5km</label>
+                                    <input type="checkbox" id="10km" name="running_style" value="10km"
+                                        class="input-checkbox">
+                                    <label for="10km">10km</label>
+                                    <input type="checkbox" id="42km" name="running_style" value="42km"
+                                        class="input-checkbox">
+                                    <label for="42km">42km</label>
+                                    <input type="checkbox" id="100km" name="running_style" value="100km"
+                                        class="input-checkbox">
+                                    <label for="100km">100km</label>
+                                </div>
                             </div>
 
                             <div class="submit">
