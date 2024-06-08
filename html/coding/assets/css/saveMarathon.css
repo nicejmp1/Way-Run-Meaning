@@ -48,9 +48,7 @@
 .save__wrap {
     width: 25%;
     height: 25.625rem;
-    /* 410px */
     border-radius: 1.25rem;
-    /* 20px */
 }
 
 /* save__con1 */
@@ -59,34 +57,26 @@
     height: 88%;
     background-color: var(--white);
     border-radius: 1.25rem 1.25rem 0 0;
-    /* 20px 20px 0 0 */
     padding: 1.625rem 1.6875rem;
-    /* 26px 27px */
 }
 
 .save__con1 .img__poster {
     background-image: url(/html/coding/assets/img/saveMarathon/poster1.png);
     width: 100%;
     height: 15rem;
-    /* 240px */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1.0625rem;
-    /* 17px */
     margin-bottom: 0.75rem;
-    /* 12px */
 }
 
 .save__con1 .Stittle {
     font-size: 0.9375rem;
-    /* 15px */
     color: var(--mainColor);
     font-weight: 800;
     margin-top: 0.625rem;
-    /* 10px */
     margin-bottom: 0.1875rem;
-    /* 3px */
 }
 
 .save__con1 .save__conwrap {
@@ -102,25 +92,20 @@
 
 .save__con1 .save__conwrap .save__textwrap .Stext {
     font-size: 0.875rem;
-    /* 14px */
     font-weight: 700;
 }
 
 .save__con1 .save__conwrap .save__textwrap .Sdate {
     font-size: 0.75rem;
-    /* 12px */
 }
 
 .save__con1 .save__conwrap .img__save svg {
     margin-top: 0.625rem;
-    /* 10px */
 }
 
 .save__con1 .save__conwrap .img__save {
     width: 1.5625rem;
-    /* 25px */
     height: 1.5625rem;
-    /* 25px */
     cursor: pointer;
 }
 
@@ -171,4 +156,13 @@
 
 .save__con2:hover svg path {
     fill: var(--pointColor);
+}
+
+/* modal */
+.modal {}
+
+.modal__text {
+    width: 500px;
+    height: 700px;
+    background-color: antiquewhite;
 }
