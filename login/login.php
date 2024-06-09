@@ -20,11 +20,11 @@
                             <fieldset>
                             <legend class="blind">로그인 영역</legend>
                                 <div class="mail">
-                                    <input type="text" id="youEmail" name="youEmail" placeholder="이메일" autocomplete="off" required>
+                                    <input type="text" id="youEmail" name="youEmail" placeholder="이메일" autocomplete="off">
                                     <label for="youEmail" class="blind">이메일</label>
                                 </div>
                                 <div class="passwd">
-                                    <input type="password" name="youPass" id="youPass" placeholder="비밀번호" autocomplete="off" required>
+                                    <input type="password" name="youPass" id="youPass" placeholder="비밀번호" autocomplete="off">
                                     <label for="youPass" class="blind">패스워드</label>
                                 </div>
                                 <div class="submit">
@@ -32,11 +32,12 @@
                                 </div>
                                 <div class="checks">
                                     <ul>
-                                        <li><a href="../signup/signupInsert.php" class="line-under">회원가입</a></li>
+                                        <li>
+                                            <a href="../signup/signupInsert.php" class="line-under">회원가입</a></li>
                                         <p class="login__li">|</p>
-                                        <li><a href="../html/coding/login/login_IDfind.html" class="line-under">아이디 찾기</a></li>
+                                        <li><a href="../search/search_id.php" class="line-under">아이디 찾기</a></li>
                                         <p class="login__li">|</p>
-                                        <li><a href="../html/coding/login/login_PWfind.html" class="line-under">비밀번호 찾기</a></li>
+                                        <li><a href="../find/find__pass.php" class="line-under">비밀번호 찾기</a></li>
                                     </ul>
                                 </div>
                             </fieldset>
@@ -69,7 +70,6 @@
     })
     .catch(error => console.error('Error:', error));
 });
-
     </script>
 </body>
 </html>

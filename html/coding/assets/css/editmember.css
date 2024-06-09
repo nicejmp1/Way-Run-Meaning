@@ -1,0 +1,182 @@
+.edit__container {
+    width: 31.25rem;
+    height: 2000px;
+    margin: 0 auto;
+}
+
+.edit__container .edit {
+    margin-top: 180px;
+}
+
+/* title02 */
+.edit__container .edit .title02 {
+    font-size: 2.875rem;
+    font-family: var(--fontG);
+    font-weight: 600;
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 10rem;
+    margin-bottom: 50px;
+}
+
+/* profile */
+.profile {}
+
+.profile {}
+
+.profile .profile1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.profile .profile1 img {
+    width: 30%;
+}
+
+.profile .profile2 {}
+
+.profile .profile2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.profile .profile2 li {}
+
+.profile .profile2 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--pointColor);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.profile .profile2 a:hover {
+    color: var(--mainColor);
+}
+
+/* edit */
+form#edit {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--backgroundColor);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* edit__name */
+.edit__name {
+    margin-bottom: 30px;
+}
+
+.star {
+    color: var(--mainColor);
+}
+
+.input-text {
+    padding: 0.625rem 1.25rem;
+    width: 100%;
+    height: 3.125rem;
+    background-color: var(--pointColor);
+    color: var(--mainColor);
+    border-radius: 0.5rem;
+}
+
+.signname {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* edit__password */
+.edit__password {
+    margin-bottom: 30px;
+}
+
+.nickname_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.nickname_wrap .input-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.button-text {
+    padding: 0.625rem 1.25rem;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 0.5rem;
+    height: 3.125rem;
+}
+
+/* edit__new-password */
+.edit__new-password {
+    margin-bottom: 30px;
+}
+
+.button-text:hover {
+    background-color: #e64a19;
+}
+
+/* edit__confirm-password */
+.edit__confirm-password {
+    margin-bottom: 30px;
+}
+
+/* edit__nickname */
+.edit__nickname {
+    margin-bottom: 30px;
+}
+
+.edit__running-style {}
+
+.runwrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.edit__running-style input[type="checkbox"] {
+    display: none;
+    border-radius: 0.5rem;
+    color: #878787;
+}
+
+.edit__running-style label {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--pointColor);
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.edit__running-style label:last-child {
+    margin-right: 0;
+}
+
+.edit__running-style input[type="checkbox"]:checked+label {
+    background-color: var(--mainColor);
+    color: #fff;
+}
+
+button.dark {
+    padding: 0.625rem 1.25rem;
+    width: 100%;
+    height: 3.75rem;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+button.dark:hover {
+    background-color: #e64a19;
+}

@@ -1,0 +1,365 @@
+/* 
+mypage__title - 마이페이지 타이틀
+mypage__information - 내정보
+mypage__check - 출석체크
+calendar__wrap - 캘린더
+mydiary - 마이다이어리
+*/
+
+/* mypage__title */
+.mypage__title {
+    margin-top: 7rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.mypage__title .mypage__title01 {
+    text-align: center;
+    margin-top: 6.25rem;
+    font-size: 6.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontO);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.mypage__title .mypage__text02 {
+    text-align: center;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 2.5rem;
+}
+
+.mypage__information .mypage__text03 {
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.mypage__information__wrap {
+    display: flex;
+    gap: 1.75rem;
+}
+
+/* mypage__information__aside */
+.mypage__information__aside {
+    width: 30%;
+    height: 480px;
+    background-color: var(--pointColor);
+    border-radius: 1.25rem;
+}
+
+.mypage__information__aside .mypage__nickname {
+    padding: 60px 40px;
+}
+
+.mypage__information__aside .mypage__nickname img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease
+}
+
+.mypage__information__aside .mypage__nickname img:hover {
+    transform: rotate(-10deg);
+}
+
+.mypage__information__aside .mypage__nickname .my__name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__nik {
+    font-size: 1.3rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    font-weight: 800;
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__info {
+    justify-content: right;
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__info a {
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    background-color: #fff;
+    color: var(--mainColor);
+}
+
+.mypage__information__aside .mypage__nickname .my__name .my__info a:hover {
+    opacity: 0.8;
+}
+
+.mypage__information__aside .mypage__nickname .my__email {
+    color: var(--black500);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.mypage__information__aside .mypage__nickname a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 114px;
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: var(--backgroundColor);
+}
+
+.mypage__information__aside .mypage__nickname a:hover {
+    opacity: 0.9;
+}
+
+/* mypage__information__contents */
+.mypage__information__contents {
+    width: 70%;
+    height: 480px;
+    border-radius: 1.25rem;
+    gap: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+/* mypage__contents1 */
+.mypage__contents1 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    gap: 1.75rem;
+}
+
+.mypage__contents1 .mypage__contents1-1 {
+    width: 50%;
+    height: 100%;
+    border-radius: 1.25rem;
+    background-color: var(--pointColor);
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mypage__contents1 .mypage__contents1-2 {
+    width: 50%;
+    height: 100%;
+    border-radius: 1.25rem;
+    background-color: var(--pointColor);
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mp__tt {
+    color: var(--mainColor);
+    font-family: var(--fontN);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mp__text {
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: right;
+    transition: all 0.3ms;
+}
+
+.mp__text:hover {
+    opacity: 0.8;
+}
+
+/* mypage__contents2 */
+.mypage__contents2 {
+    width: 100%;
+    height: 40%;
+    border-radius: 1.25rem;
+    background-color: var(--pointColor);
+    padding: 60px;
+}
+
+.mypage__contents2 .mp__wr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/* calendar */
+.calendar__text03 {
+    margin-top: 5rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    font-weight: 600;
+}
+
+.calendar__wrap {
+    width: 100%;
+    height: 42rem;
+    background-color: var(--pointColor);
+    margin-top: 2rem;
+    border-radius: 1.25rem;
+}
+
+.calendar__wrap .calendar__textwrap {
+    display: flex;
+    padding: 60px 60px 10px 60px;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.calendar__wrap .calendar__textwrap .calendar__title {
+    font-size: 1.5625rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+}
+
+.calendar__wrap .calendar__textwrap .calendar__textwrap2 {
+    display: flex;
+}
+
+.calendar__wrap .calendar__textwrap .calendar__textwrap2 .calendar__nav {
+    display: inline-block;
+    padding: 1px 10px;
+    background-color: #fff;
+    border-radius: 200px;
+    font-weight: 600;
+}
+
+.calendar__wrap .calendar__textwrap .calendar__textwrap2 .calendar__nav:hover {
+    opacity: 0.8;
+}
+
+.calendar__cont {
+    display: flex;
+    width: 100%;
+    margin-left: 60px;
+    gap: 10px;
+}
+
+.calendar__cont .calendar__cont1 {
+    width: 60%;
+    height: 480px;
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+table.c__table {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.calendar .calendar__title {
+    color: #FF5722;
+}
+
+.calendar__nav {
+    cursor: pointer;
+    font-size: 20px;
+    color: #FF5722;
+}
+
+thead.c__thead {
+    width: 40px;
+    height: 40px;
+    text-align: left;
+    vertical-align: middle;
+    color: #FF5722;
+    border-radius: 10px;
+}
+
+tr.thead {}
+
+.thead>th {
+    width: 40px;
+    height: 80px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #FF8A50;
+    color: white;
+    padding: 10px;
+    background-color: #FF5722;
+}
+
+
+.tbody>td {
+    width: 40px;
+    height: 80px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #FF8A50;
+    color: #FF5722;
+    padding: 10px;
+}
+
+/* th,
+td {
+    width: 40px;
+    height: 80px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #FF8A50;
+    color: #FF5722;
+    padding: 10px;
+} */
+
+.event-list {
+    background-color: var(--backgroundColor);
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+}
+
+.event-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.event-list li {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.event-list a {}
+
+.event-list a:hover {
+    text-decoration: underline;
+}
+
+.event-list span {
+    margin-left: 50px;
+}
+
+/* save__text03 */
+.save__text03 {
+    margin-top: 5rem;
+    font-size: 1.25rem;
+    color: var(--mainColor);
+    font-family: var(--fontG);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}

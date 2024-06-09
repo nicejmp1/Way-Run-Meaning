@@ -13,8 +13,12 @@
 @import "main.css";
 @import "comm_notice.css";
 @import "feed.css";
+<<<<<<< HEAD
 /* @import "card.css";
 @import "editmember.css"; */
+=======
+@import "card.css";
+>>>>>>> 1d1bd09c9a0ee7597ee5787e72f2d32a90788782
 
 /* 로그인 로그아웃 */
 /* 외부CSS  */

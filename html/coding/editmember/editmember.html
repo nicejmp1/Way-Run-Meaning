@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="마라톤, 러닝, 대회일정 한눈에 보기">
+    <meta name="keywords" content="마라톤, 러닝, 대회일정, 러닝크루, 훈련팁, 42km, 랭킹, 풀코스, 하프코스, 10km">
+
+    <meta property="og:title" content="러닝 & 마라톤의 모든 것">
+    <meta property="og:url" content="http:nicejmp.dothome.co.kr">
+    <meta property="og:image" content="#">
+    <meta property="og:description" content="WayRunMeaning에서 다양한 마라톤 정보와 일정을 확인하세요!" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="러닝 & 마라톤의 모든 것">
+    <meta name="twitter:url" content="http:nicejmp.dothome.co.kr">
+    <meta name="twitter:image" content="#">
+    <meta name="twitter:description" content="WayRunMeaning에서 다양한 마라톤 정보와 일정을 확인하세요!" />
+    <link href="../assets/ico/favicon.svg" rel="favicon icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>WayRunMeaning : 러닝 & 마라톤</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="line-bot" role="banner">
+            <div class="container">
+                <div class="header__inner">
+                    <h1 class="logo">
+                        <a href="main.html"><img src="../assets/ico/logo/logo.svg" alt="logo"></a>
+                    </h1>
+                    <nav class="nav" role="navigation">
+                        <ul>
+                            <li><a href="main.html">대회일정</a></li>
+                            <li><a href="#">커뮤러닝</a></li>
+                            <li><a href="#">런피드</a></li>
+                            <li><a href="#">런뉴스</a></li>
+                        </ul>
+                    </nav>
+                    <div class="member">
+                        <ul>
+                            <li><a href="signin/signin.html">로그인</a>
+                            <li><a href="signup/signup.html">회원가입</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" role="main">
+            <div class="edit__container">
+                <div class="edit">
+                    <h2 class="title02">회원 정보 수정</h2>
+
+                    <div class="profile">
+                        <div class="profile1">
+                            <img src="/html/coding/assets/img/editmember/profile.svg" alt="profile">
+                        </div>
+                        <div class="profile2">
+                            <ul>
+                                <li><a href="#">이미지 변경</a></li>
+                                <li><a href="#">삭제</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- profile -->
+
+
+                    <div class="login__wrap">
+                        <form id="edit">
+                            <div class="edit__name">
+                                <p class="signname">러닝크루<span class="star">*</span></p>
+                                <input type="text" name="runningCrew" placeholder="내가 속한 러닝크루를 입력해주세요!"
+                                    class="input-text">
+                            </div>
+
+                            <div class="edit__password">
+                                <p class="signname">현재 비밀번호<span class="star">*</span></p>
+                                <div class="nickname_wrap">
+                                    <input class="input-text" type="password" name="currentPassword"
+                                        placeholder="현재 비밀번호를 입력해주세요">
+                                    <button class="button-text" type="button">비밀번호 확인</button>
+                                </div>
+                            </div>
+
+                            <div class="edit__new-password">
+                                <p class="signname">새 비밀번호<span class="star">*</span></p>
+                                <input type="password" name="newPassword" placeholder="새 비밀번호를 입력해주세요!"
+                                    class="input-text">
+                            </div>
+
+                            <div class="edit__confirm-password">
+                                <p class="signname">새 비밀번호 확인<span class="star">*</span></p>
+                                <input type="password" name="confirmPassword" placeholder="새 비밀번호를 다시 입력해 주세요!"
+                                    class="input-text">
+                            </div>
+
+                            <div class="edit__nickname">
+                                <p class="signname">닉네임<span class="star">*</span></p>
+                                <div class="nickname_wrap">
+                                    <input type="text" name="nickname" placeholder="닉네임을 입력해주세요!" class="input-text">
+                                    <button class="button-text" type="button">닉네임 중복검사</button>
+                                </div>
+                            </div>
+
+                            <div class="edit__running-style">
+                                <p class="signname">러닝 스타일<span class="star">*</span></p>
+                                <div class="runwrap">
+                                    <input type="checkbox" id="5km" name="running_style" value="5km"
+                                        class="input-checkbox">
+                                    <label for="5km">5km</label>
+                                    <input type="checkbox" id="10km" name="running_style" value="10km"
+                                        class="input-checkbox">
+                                    <label for="10km">10km</label>
+                                    <input type="checkbox" id="42km" name="running_style" value="42km"
+                                        class="input-checkbox">
+                                    <label for="42km">42km</label>
+                                    <input type="checkbox" id="100km" name="running_style" value="100km"
+                                        class="input-checkbox">
+                                    <label for="100km">100km</label>
+                                </div>
+                            </div>
+
+                            <div class="submit">
+                                <button class="dark" type="submit">저장하기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!--//main -->
+
+        <footer id="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer__lnner">
+                    <div class="left">
+                        <ul>
+                            <li>멤버가입</li>
+                            <li>
+                                고객센터
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">문의하기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                팀원
+                                <ul>
+                                    <li>박정민</li>
+                                    <li>황인지</li>
+                                    <li>안지은</li>
+                                    <li>박소현</li>
+                                </ul>
+                            </li>
+                            <li>
+                                문의 이메일
+                                <ul>
+                                    <li><a href="mailto:nicejpm@naver.com">nicejpm@naver.com</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="sns">
+                            <ul>
+                                <li><a href="#"><span class="blind">페이스북</span></a></li>
+                                <li><a href="#"><span class="blind">트위터</span></a></li>
+                                <li><a href="#"><span class="blind">인스타그램</span></a></li>
+                                <li><a href="#"><span class="blind">유튜브</span></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__bot">
+                    <div class="left_bot">
+                        <p class="copy">COPYRIGHT © WayRunMeaning. All Rights Reserved.</p>
+                    </div>
+                    <div class="right_bot">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">위치 기반 서비스 약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>

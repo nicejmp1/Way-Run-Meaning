@@ -33,7 +33,6 @@
                         }else {
                     ?>
                         <li><a href="../login/login.php">로그인</a>
-                        <li><a href="signup/signup.html">회원가입</a>
                     <?php
                         }
                     ?>
@@ -42,4 +41,4 @@
         </div>
     </div>
 </header>
-
+<script src="../assets/js/modal.js"></script>

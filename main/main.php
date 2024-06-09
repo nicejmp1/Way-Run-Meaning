@@ -526,7 +526,6 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
-    <?php include "../include/script.php" ?>
 
 </body>
 
