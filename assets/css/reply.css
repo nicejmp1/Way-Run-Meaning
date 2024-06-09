@@ -1,0 +1,131 @@
+/* blog__comment */
+.board__reply {
+    margin-top: 2rem;
+    border-top: 1px dashed var(--mainColor);
+}
+
+.board__reply h4 {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 1rem;
+    margin-bottom: -0.3rem;
+    font-family: var(--fontG);
+    font-size: 20px;
+    color: var(--mainColor);
+}
+
+.comment__view {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.comment__view:nth-child(even) .text {
+    text-align: right;
+}
+
+.comment__view .text>p {
+    border-radius: 10px 0 10px 10px;
+    text-align: left;
+    color: var(--black700);
+    font-size: 16px;
+    font-family: var(--fontN);
+}
+
+.comment__view .text {
+    width: 100%;
+    height: 6rem;
+    background-color: var(--white);
+    border: 1px solid var(--mainColor);
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.comment__view .text .reple {
+    background-color: var(--pointColor);
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    display: inline-block;
+}
+
+.comment__view .text .reple input {
+    padding: 0.4rem;
+    background-color: transparent;
+    outline: none;
+    min-width: 200px;
+}
+
+.comment__view .text .reple button {
+    background-color: var(--black);
+    color: var(--white);
+    margin: 1px;
+    cursor: pointer;
+}
+
+.comment__view .text>span {
+    color: var(--black400);
+    font-size: 14px;
+    display: block;
+}
+
+.comment__view .text>span .author {
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.comment__view .text>span .update {
+    color: var(--black700);
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.comment__view .text>span .update:hover {
+    color: var(--black);
+}
+
+.comment__view .text>span .delete {
+    color: var(--black700);
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.comment__view .text>span .delete:hover {
+    color: var(--black);
+}
+
+.comment__item {
+    position: relative;
+}
+
+.comment__view:last-child {
+    border-bottom: 3px solid #000;
+}
+
+.comment__input {
+    margin-bottom: 100px;
+}
+
+.comment__input input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.comment__input form input {
+    width: 100%;
+    border: 1px solid var(--mainColor);
+}
+
+.comment__input .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.comment__input .btn button {
+    border-radius: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
