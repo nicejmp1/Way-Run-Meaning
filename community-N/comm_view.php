@@ -139,7 +139,7 @@
 
             let formData = new FormData(this);
             let xhr = new XMLHttpRequest();
-            xhr.open('POST', '../boardReply/commentSave.php', true);
+            xhr.open('POST', '../boardReply-N/commentSave.php', true);
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     try {
@@ -172,7 +172,7 @@
                     formData.append('commentID', commentID);
 
                     let xhr = new XMLHttpRequest();
-                    xhr.open('POST', '../boardReply/commentDelete.php', true);
+                    xhr.open('POST', '../boardReply-N/commentDelete.php', true);
                     xhr.onload = function() {
                         if (xhr.status === 200) {
                             try {
@@ -227,7 +227,7 @@
                         formData.append('commentText', updateText);
 
                         let xhr = new XMLHttpRequest();
-                        xhr.open('POST', '../boardReply/commentUpdate.php', true);
+                        xhr.open('POST', '../boardReply-N/commentUpdate.php', true);
                         xhr.onload = function() {
                             if (xhr.status === 200) {
                                 try {
