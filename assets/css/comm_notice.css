@@ -1,18 +1,31 @@
-/*
-main__comm - 타이틀
-comm__link - 카테고리 링크
-comm__table - 게시판 상단
-table__board - 게시판 보드
-table__bottom - 게시판 하단
-comm__write - 글쓰기
-comm__view - 글보기
-comm__modify - 글수정
-*/
-
-#wrap {
-    background-color: var(--backgroundColor);
-    overflow: hidden
-}
+/* 
+==========================================================================
+CSS 구조 개요
+==========================================================================
+- .main__comm: 커뮤니티 메인 타이틀 섹션
+  |-- .title01: 첫 번째 제목 스타일
+  |-- .title02: 두 번째 제목 스타일 (더 큰 텍스트)
+- .comm__link: 카테고리 링크 섹션
+  |-- ul: 링크 목록
+    |-- .links: 개별 링크 스타일링 및 상태 (활성/비활성)
+- .comm__table: 게시판 상단 레이아웃
+  |-- .table__top: 상단 텍스트 입력 및 버튼
+  |-- .table__board: 게시판의 메인 보드
+  |-- .table__bottom: 게시판 페이지 네비게이션
+- .comm__write: 글쓰기 페이지 구성
+  |-- .comm_write1, .comm_write2: 글쓰기 입력 폼
+  |-- .comm_input, .comm_text: 입력 필드와 텍스트 영역
+  |-- .btn_01: 글쓰기 버튼
+- .comm__view: 글 보기 페이지 구성
+  |-- table: 글 내용을 보여주는 테이블
+  |-- .btn_03: 글 관련 작업 버튼 (수정, 삭제 등)
+  |-- .comments__R: 작성 댓글 보기
+  |-- .comments__W: 댓글 작성(저장, 수정, 삭제)
+- .comm__modify: 글 수정 페이지 구성
+  |-- .comm_write1, .comm_write2, .comm_write3: 수정을 위한 입력 폼
+  |-- .comm_input, .comm_text: 입력 필드와 텍스트 영역
+  |-- .btn_04: 수정 완료 버튼
+========================================================================== */
 
 /* main__comm - 타이틀 */
 .main__comm .title01 {
@@ -50,8 +63,8 @@ comm__modify - 글수정
 
 .comm__link .links li {
     background-color: var(--pointColor);
-    width: 18rem;
-    height: 18rem;
+    width: 17rem;
+    height: 17rem;
     /* margin-left: 1.25rem; */
     border-radius: 1.875rem;
 }
@@ -107,7 +120,9 @@ comm__modify - 글수정
 
 /* comm__table - 게시판 상단 */
 .comm__table {
-    margin-top: 6.25rem;
+    width: 1190px;
+    margin: 0 auto;
+    padding-top: 5rem;
 }
 
 .table__top {
@@ -130,7 +145,7 @@ comm__modify - 글수정
 }
 
 .table__top .right input {
-    padding: 0.7rem 1.5rem;
+    padding: 0.65rem 1.5rem;
     border-radius: 0.3125rem;
     font-size: 1rem;
     font-family: var(--fontN);
@@ -147,7 +162,7 @@ comm__modify - 글수정
 }
 
 .table__top .right .btns1 {
-    padding: 0.7rem 2rem;
+    padding: 0.5rem 2rem;
     border-radius: 0.3125rem;
     background-color: var(--mainColor);
     color: var(--white);
@@ -158,7 +173,7 @@ comm__modify - 글수정
 }
 
 .table__top .right .btns2 {
-    padding: 0.7rem 1.6rem;
+    padding: 0.5rem 1.6rem;
     border-radius: 0.3125rem;
     background-color: var(--mainColor);
     color: var(--white);
@@ -172,6 +187,7 @@ comm__modify - 글수정
 
 .table__board {
     border-top: 0.1875rem solid var(--mainColor);
+    border-bottom: 0.1875rem solid var(--mainColor);
 }
 
 .table__board th {
@@ -183,6 +199,11 @@ comm__modify - 글수정
     border-bottom: 1px solid var(--mainColor);
     padding: 0.9375rem 0.3125rem;
     text-align: center;
+}
+
+.table__board td {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--pointColor);
 }
 
 /* table__bottom - 게시판 하단 */
@@ -229,7 +250,6 @@ comm__modify - 글수정
     margin-top: 3.75rem;
     color: var(--mainColor);
     font-family: var(--fontG);
-    margin-left: 10%;
 }
 
 .comm__write .comm_write2 {
@@ -240,11 +260,10 @@ comm__modify - 글수정
     margin-top: 1.75rem;
     color: var(--mainColor);
     font-family: var(--fontG);
-    margin-left: 10%;
 }
 
 .comm__write .comm_input {
-    width: 80%;
+    width: 100%;
     line-height: 3;
     border: 1px solid var(--mainColor);
     font-size: 0.9375rem;
@@ -253,6 +272,7 @@ comm__modify - 글수정
     align-items: center;
     display: flex;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .comm__write .comm_text {
@@ -264,11 +284,12 @@ comm__modify - 글수정
     border-radius: 0.5rem;
     display: flex;
     margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .comm__write .btn_01 {
     text-align: right;
-    margin-right: 10%;
     margin-top: 0.3125rem;
 }
 
@@ -369,6 +390,7 @@ comm__modify - 글수정
     align-items: center;
     display: flex;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 
 .comm__modify .comm_text {
@@ -380,6 +402,8 @@ comm__modify - 글수정
     border-radius: 0.5rem;
     display: flex;
     margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .comm__modify .btn_04 {
@@ -404,57 +428,49 @@ comm__modify - 글수정
         width: 100%;
     }
 
-    .comm__link .links li {
-        width: 10rem;
-        height: 10rem;
+    .comm__table {
+        width: 82%;
     }
 
-    .comm__link .links li span {
-        font-size: 0.875rem;
-        margin-left: 1rem;
+    .comm__link .links li {
+        background-color: var(--pointColor);
+        width: 10rem;
+        height: 10rem;
+        /* margin-left: 1.25rem; */
+        border-radius: 1.875rem;
     }
 
     .comm__link .links li .comm1,
     .comm__link .links li .comm3 {
+        vertical-align: top;
+        width: 32%;
+        margin-top: -18%;
+        margin-left: 50%;
+        background-repeat: no-repeat;
         background-size: contain;
-        margin-top: -0.9375rem;
     }
 
-    .comm__link .links li .comm2 {
-        background-size: contain;
-        /* height: 50%; */
-        margin-top: -0.4375rem;
-    }
-
+    .comm__link .links li .comm2,
     .comm__link .links li .comm4 {
+        vertical-align: top;
+        width: 32%;
+        margin-top: -10%;
+        margin-left: 50%;
+        background-repeat: no-repeat;
         background-size: contain;
-        /* height: 50%; */
-        margin-top: -0.0625rem;
     }
 
-
-    .table__top .left,
-    .table__top .left em {
-        font-size: 1rem;
+    .table__top>.right {
+        width: 60%;
     }
 
-    .table__top .right .btns1,
-    .table__top .right .btns2 {
-        flex-direction: column;
-        padding: 0.7rem 1.4rem;
-        cursor: pointer;
-        font-size: 0.875rem;
-        border: 2px solid var(--mainColor);
-    }
-
-    .table__top .right select,
     .table__top .right input {
-        padding: 0.5rem 1.3rem;
-    }
-
-    .table__bottom {
-        font-size: 0.875rem;
-        padding: 1rem 1rem;
+        width: 30%;
+        padding: 0.7rem 1.5rem;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        font-family: var(--fontN);
+        border: 2px solid var(--pointColor);
     }
 }
 

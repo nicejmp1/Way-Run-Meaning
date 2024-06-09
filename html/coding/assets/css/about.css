@@ -1,7 +1,11 @@
 /* 
     |--about__title : 어바웃 페이지 상단 타이틀&이미지
+    |--about__banner : 첫번째 배너 부분
+    |--about__slide : 움직이는 띠
+    |--about__banner2 : 두번째 메인 배너 부분
 */
 
+/* about__title */
 .about__title {}
 
 .about__title .aboutT__h1 {
@@ -24,13 +28,21 @@
     margin-top: 50px;
 }
 
+/* about__banner */
+
 .about__banner {
-    margin-top: 10rem;
+    margin-top: 7rem;
     background-color: var(--mainColor);
+    height: 500px;
 }
 
-.about__banner .about__banner1-1 p {
-    width: 30%;
+.about__banner .banner__container .about__banner1-1 {
+    padding-top: 5rem;
+    margin-left: 16%;
+}
+
+.about__banner .banner__container .about__banner1-1>p {
+    width: 25%;
     background-color: var(--pointColor);
     text-align: center;
     font-size: 40px;
@@ -38,6 +50,50 @@
     color: var(--mainColor);
     font-weight: bold;
     border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 8px;
 }
 
-.about__banner .about__banner1-2 {}
+.about__banner .banner__container .about__banner1-1>span {
+    width: 20%;
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--fontN);
+    color: var(--pointColor);
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+.about__banner .banner__container .about__banner1-2 {
+    padding-top: 5rem;
+    margin-right: 16%;
+}
+
+.about__banner .banner__container .about__banner1-2>img {
+    width: 10%;
+    margin-bottom: 30px;
+    display: flex;
+    background-color: var(--pointColor);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.about__banner .banner__container .about__banner1-2>span {
+    width: 20%;
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--fontN);
+    color: var(--pointColor);
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+/* about__slide */
+.about__slide {
+    margin-top: 7rem;
+    background-color: var(--pointColor);
+}
+
+/* about__banner2 */

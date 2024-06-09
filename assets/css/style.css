@@ -12,7 +12,9 @@
 @import "login.css";
 @import "main.css";
 @import "comm_notice.css";
-@import "about.css";
+@import "feed.css";
+/* @import "card.css";
+@import "editmember.css"; */
 
 /* 로그인 로그아웃 */
 /* 외부CSS  */

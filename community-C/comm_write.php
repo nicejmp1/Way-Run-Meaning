@@ -40,7 +40,7 @@
                 <div class="comm__inner">
                     <div class="comm__write">
                         <form action="comm_writeSave.php" name="comm_writeSave" method="post">
-                        <fieldset>
+                            <fieldset>
                                 <legend class="blind">게시글 작성하기</legend>
                                 <div>
                                     <label class="comm_write1" for="boardTitle">제목</label>
@@ -64,5 +64,17 @@
         <!--//main -->
         <?php include "../include/footer.php" ?>
     </div>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/translations/ko.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#boardContents'), {
+                language: 'ko'
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </body>
 </html>

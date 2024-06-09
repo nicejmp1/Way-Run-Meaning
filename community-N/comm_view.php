@@ -9,7 +9,6 @@
     <meta charset="UTF-8">
     <title>WayRunMeaning : 러닝 & 마라톤 - 공지사항</title>
     <?php include "../include/head.php" ?>
-    <link rel="stylesheet" href="../coding/assets/css/comm_notice.css">
 </head>
 
 <body>
@@ -71,5 +70,4 @@
     <!-- //main -->
         <?php include "../include/footer.php" ?>
     </div>
-</body>
 </html>
