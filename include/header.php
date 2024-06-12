@@ -7,9 +7,9 @@
             <nav class="nav" role="navigation">
                 <ul>
                     <li><a href="main.html">대회일정</a></li>
-                    <li><a href="../community-N/comm_notice.php">커뮤러닝</a></li>
-                    <li><a href="#">런피드</a></li>
-                    <li><a href="#">런뉴스</a></li>
+                    <li><a href="../aboutpage/about.php">마이페이지</a></li>
+                    <li><a href="../aboutpage/about.php">어바웃</a></li>
+                    <li><a href="../community-N/comm_notice.php">커뮤니티</a></li>
                 </ul>
             </nav>
             <div class="member">

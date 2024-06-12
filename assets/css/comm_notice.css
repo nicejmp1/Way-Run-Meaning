@@ -19,11 +19,8 @@ CSS 구조 개요
 - .comm__view: 글 보기 페이지 구성
   |-- table: 글 내용을 보여주는 테이블
   |-- .btn_03: 글 관련 작업 버튼 (수정, 삭제 등)
-<<<<<<< HEAD
   |-- .comments__R: 작성 댓글 보기
   |-- .comments__W: 댓글 작성(저장, 수정, 삭제)
-=======
->>>>>>> 1d1bd09c9a0ee7597ee5787e72f2d32a90788782
 - .comm__modify: 글 수정 페이지 구성
   |-- .comm_write1, .comm_write2, .comm_write3: 수정을 위한 입력 폼
   |-- .comm_input, .comm_text: 입력 필드와 텍스트 영역
