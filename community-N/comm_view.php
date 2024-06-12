@@ -152,7 +152,7 @@
                             alert(response.message);
                         }
                     } catch (e) {
-                        alert('로그인 후 작성이 가능합니다. ' + e.message);
+                        alert('로그인 후 작성이 가능합니다.');
                     }
                 } else {
                     alert('서버와의 통신에 실패했습니다. 관리자에게 문의하세요!');
@@ -185,7 +185,7 @@
                                     alert(response.message);
                                 }
                             } catch (e) {
-                                alert('로그인 후 삭제가 가능합니다. ' + e.message);
+                                alert('로그인 후 삭제가 가능합니다.');
                             }
                         } else {
                             alert('서버와의 통신에 실패했습니다.');
@@ -240,7 +240,7 @@
                                         alert(response.message);
                                     }
                                 } catch (e) {
-                                    alert('로그인 후 수정이 가능합니다. ' + e.message);
+                                    alert('로그인 후 수정이 가능합니다.');
                                 }
                             } else {
                                 alert('서버와의 통신에 실패했습니다.');

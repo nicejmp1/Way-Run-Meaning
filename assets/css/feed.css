@@ -8,7 +8,7 @@ CSS 구조 개요
 ========================================================================== */
 
 /* feed__title - 타이틀 */
-.feed__title .title01 {
+/* .feed__title .title01 {
     text-align: center;
     margin-top: 0.625rem;
     font-size: 1.25rem;
@@ -104,15 +104,17 @@ CSS 구조 개요
     margin-bottom: 5px;
 }
 
-.feed__write textarea {
-    width: 100%;
-    resize: none;
-    border-radius: 5px;
-    padding: 1rem;
-    font-size: 1rem;
-    color: var(--black500);
+*/ .feed__write textarea {
+    width: 79.5%;
+    height: 50vh;
+    line-height: 1.5;
+    border: 1px solid var(--mainColor);
+    font-size: 0.9375rem;
+    border-radius: 0.5rem;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
     box-sizing: border-box;
-    min-height: 600px;
 }
 
 .feed__write .file input {

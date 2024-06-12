@@ -75,7 +75,7 @@
                     <div class="btn_03">
                         <a href="comm_modify.php?boardID=<?=$_GET['boardID']?>" class="btn__01">수정하기</a>
                         <a href="comm_delete.php?boardID=<?=$_GET['boardID']?>" class="btn__02" onclick="return confirm('정말 삭제하시겠습니까?')">삭제하기</a>
-                        <a href="comm_notice.php" class="btn__03">목록보기</a>
+                        <a href="comm_question.php" class="btn__03">목록보기</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                             alert(response.message);
                         }
                     } catch (e) {
-                        alert('로그인 후 작성이 가능합니다. ' + e.message);
+                        alert('로그인 후 작성이 가능합니다.');
                     }
                 } else {
                     alert('서버와의 통신에 실패했습니다. 관리자에게 문의하세요!');
@@ -185,7 +185,7 @@
                                     alert(response.message);
                                 }
                             } catch (e) {
-                                alert('로그인 후 삭제가 가능합니다. ' + e.message);
+                                alert('로그인 후 삭제가 가능합니다.');
                             }
                         } else {
                             alert('서버와의 통신에 실패했습니다.');
@@ -240,7 +240,7 @@
                                         alert(response.message);
                                     }
                                 } catch (e) {
-                                    alert('로그인 후 수정이 가능합니다. ' + e.message);
+                                    alert('로그인 후 수정이 가능합니다.');
                                 }
                             } else {
                                 alert('서버와의 통신에 실패했습니다.');

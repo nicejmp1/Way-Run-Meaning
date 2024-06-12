@@ -23,7 +23,7 @@
                             <li>
                                 문의 이메일
                                 <ul>
-                                    <li><a href="mailto:nicejpm@naver.com">nicejpm@naver.com</a></li>
+                                    <li><a href="mailto:wownd456@gmail.com">wownd456@gmail.com</a></li>
                                 </ul>
                             </li>
                         </ul>
